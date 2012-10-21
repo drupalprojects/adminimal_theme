@@ -1,0 +1,138 @@
+/* Import the Open Sans webfont from Google CDN */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek,cyrillic,vietnamese);
+
+/* Admin menu */
+
+body.adminimal-menu div#admin-menu {
+    background: #333; 
+    font-family: Open Sans, "Segoe UI", "Helvetica", sans-serif;
+    background: none repeat scroll 0 0 #202020;
+    border-bottom: 1px solid #111111;                       
+}
+
+body.adminimal-menu div#admin-menu li.admin-menu-toolbar-home-menu {
+    background: transparent;                       
+}
+
+body.adminimal-menu div#admin-menu ul.dropdown span.admin-menu-home-icon {
+    background: url("images/home.png") no-repeat scroll 0 2px transparent;
+    display: block;
+    margin: 5px 0 0;
+    padding: 0;
+    width: 13px;               
+}
+
+body.adminimal-menu div#admin-menu ul.dropdown span.admin-menu-home-icon:hover {
+    background-position: 0px -86px;
+}
+
+body.adminimal-menu div#admin-menu a {
+    font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    border: none !important;
+}
+
+body.adminimal-menu div#admin-menu a:hover {
+    background-color: #0074bd;
+    color: #fff;
+}
+
+body.adminimal-menu #admin-menu .dropdown li li {
+    background-color: #1f1f1f;
+}
+
+body.adminimal-menu #admin-menu .dropdown li li>li.admin-menu-toolbar-category {
+    background: #fff !important;
+}
+
+body.adminimal-menu #admin-menu .dropdown li li li:hover, body.adminimal-menu .dropdown li:hover{
+    background: #0074bd !important;
+}
+
+body.adminimal-menu #admin-menu .dropdown a {
+    border-right: none;
+}
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-toolbar-category a {
+    line-height: 20px;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li {
+    opacity: 1;
+}
+
+body.adminimal-menu #admin-menu .dropdown li li:hover, #admin-menu .dropdown li li.iehover {
+    background-color: #333;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li a {
+    border: none;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable {
+    background: url("images/square.png") no-repeat scroll 145px 11px #1F1F1F;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable a {
+    background: transparent !important;
+    width: 135px;
+    padding-right: 25px;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable:hover {
+    background: url("images/square.png") no-repeat scroll 145px -83px #0074bd !important;
+}
+
+
+/* Shortcuts bar */
+
+body.adminimal-menu div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu {
+    padding: 0;
+    margin: 0;
+}
+
+body.adminimal-menu div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li {
+    float: left;
+    list-style: none outside none;
+    padding: 0;
+}
+
+body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts{
+    float: right;
+    line-height: 18px;
+    padding: 5px 10px;
+}
+
+body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts:hover{
+    text-decoration: none;
+}
+
+body.adminimal-menu #admin-menu .dropdown li..admin-menu-action a {
+    border: none !important;
+}
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a {
+    background: #444;
+    padding: 5px 10px;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper li.admin-menu-action.admin-menu-account > a{
+    background: #4D8F46;
+    border: medium none;
+    padding: 5px 10px;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shortcuts ul li a {
+    background: url("images/shortcut.png") no-repeat scroll 7px 7px transparent;
+    border-radius: 0 0 0 0;
+    display: block;
+    margin-right: 0;
+    padding: 5px 10px;
+    text-indent: 16px;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shortcuts ul li a:hover {
+    background-color: #0074bd;
+    background-position: 7px -78px;
+}
