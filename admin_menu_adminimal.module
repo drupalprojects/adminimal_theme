@@ -3,11 +3,10 @@
 /**
  * @file
  * Themes Administration menu like Adminimal theme.
- *
  */
 
 /**
- * Implementation of hook_page_build().
+ * Implements hook_page_build().
  */
 function admin_menu_adminimal_page_build(&$page) {
   if (!isset($page['page_bottom']['admin_menu'])) {
@@ -80,7 +79,7 @@ function admin_menu_adminimal_admin_menu_output_alter(&$content) {
 }
 
 /**
- * Implements template_preprocess_html().
+ * Implements hook_preprocess_html().
  */
 function admin_menu_adminimal_preprocess_html(&$vars) {
 
