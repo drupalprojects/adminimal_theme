@@ -6,6 +6,7 @@ body.adminimal-menu div#admin-menu {
   background: #333;
   background: none repeat scroll 0 0 #202020;
   border-bottom: 1px solid #111111;
+  position: fixed;
   font-family: Open Sans, "Segoe UI", "Helvetica", sans-serif;
 }
 
@@ -120,10 +121,22 @@ body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a {
   padding: 5px 10px;
 }
 
-body.adminimal-menu #admin-menu #admin-menu-wrapper li.admin-menu-action .admin-menu-account > a {
-  background: #4d8f46;
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a:hover {
+  background: #b73939;
+}
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-users {
+  padding: 2px 0 0;
+}
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-account a {
+  background: #4d8f46 !important;
   border: medium none;
   padding: 5px 10px;
+}
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-account a:hover {
+  background: #277d1e !important;
 }
 
 body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shortcuts ul li a {
