@@ -1,13 +1,17 @@
 /* Import the Open Sans webfont from Google CDN */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek,cyrillic,vietnamese);
 
+body.adminimal-menu.admin-menu {
+    margin-top: 29px !important;
+}
+
 /* Admin menu */
 body.adminimal-menu div#admin-menu {
   background: #333;
   background: none repeat scroll 0 0 #202020;
   border-bottom: 1px solid #111111;
-  position: fixed;
   font-family: Open Sans, "Segoe UI", "Helvetica", sans-serif;
+  position: fixed;
 }
 
 body.adminimal-menu div#admin-menu li.admin-menu-toolbar-home-menu {
