@@ -19,7 +19,7 @@ function admin_menu_adminimal_enable() {
     // Display message to the administrator that the module is disabled.
     drupal_set_message(t('<strong>Administration menu Adminimal Theme</strong> module successfully enabled!<br />Your old Administration menu Toolbar theme was automatically disabled to avoid styling issues. Disabling the Adminimal menu module will automatically re-enable your old toolbar theme, so you have nothing to worry about.'), 'status');
 
-    // Let the database know that "Administration menu Toolbar style" was disabled.
+    // Let the database know that the module was disabled.
     variable_set('admin_menu_adminimal_toolbar-disabled', TRUE);
 
   }

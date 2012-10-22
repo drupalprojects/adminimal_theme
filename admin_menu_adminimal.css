@@ -45,8 +45,8 @@ body.adminimal-menu #admin-menu .dropdown li li > li.admin-menu-toolbar-category
   background: #fff !important;
 }
 
-body.adminimal-menu #admin-menu .dropdown li li li:hover, 
-body.adminimal-menu .dropdown li:hover{
+body.adminimal-menu #admin-menu .dropdown li li li:hover,
+body.adminimal-menu .dropdown li:hover {
   background: #0074bd !important;
 }
 
@@ -62,7 +62,7 @@ body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li {
   opacity: 1;
 }
 
-body.adminimal-menu #admin-menu .dropdown li li:hover, 
+body.adminimal-menu #admin-menu .dropdown li li:hover,
 body.adminimal-menu #admin-menu .dropdown li li.iehover {
   background-color: #333;
 }
@@ -72,7 +72,7 @@ body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li a {
 }
 
 body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable {
-  background: url("images/square.png") no-repeat scroll 145px 11px #1F1F1F;
+  background: url("images/square.png") no-repeat scroll 145px 11px #1f1f1f;
 }
 
 body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable a {
@@ -101,13 +101,13 @@ body.adminimal-menu div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.me
   padding: 0;
 }
 
-body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts{
+body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts {
   float: right;
   line-height: 18px;
   padding: 5px 10px;
 }
 
-body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts:hover{
+body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts:hover {
   text-decoration: none;
 }
 
@@ -120,8 +120,8 @@ body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a {
   padding: 5px 10px;
 }
 
-body.adminimal-menu #admin-menu #admin-menu-wrapper li.admin-menu-action .admin-menu-account > a{
-  background: #4D8F46;
+body.adminimal-menu #admin-menu #admin-menu-wrapper li.admin-menu-action .admin-menu-account > a {
+  background: #4d8f46;
   border: medium none;
   padding: 5px 10px;
 }
