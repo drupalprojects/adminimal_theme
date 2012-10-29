@@ -1,0 +1,86 @@
+/* Views and Ctools */
+
+.overlay ul.secondary {
+
+    background: none repeat scroll 0 0 transparent;
+
+    float: left;
+
+    margin: 0;
+
+    overflow: visible;
+
+}
+
+
+
+.views-ui-display-tab-bucket .ctools-button-processed {
+
+    position: absolute;
+
+    right: 5px;
+
+    top: 5px;
+
+    border-radius: 4px;
+
+}
+
+
+
+.ctools-dropbutton-processed {
+
+    border-radius: 4px;
+
+}
+
+
+
+#views-ui-preview-form .arguments-preview, #views-ui-preview-form .form-type-textfield {
+
+    margin-left: 14px;
+
+    margin-top: 0px;
+
+}
+
+
+
+#preview-submit-wrapper {
+
+    margin-top: 8px;
+
+}
+
+
+
+#views-ui-preview-form .form-type-checkbox {
+
+    margin-left: 2px;
+
+    margin-top: 8px;
+
+}
+
+
+
+#page-manager-list-pages td.page-manager-page-operations .ctools-dropbutton {
+
+    right: auto;
+
+}
+
+
+.views-exposed-widget {
+    float: left;
+    padding-right: 20px;
+}
+
+.views-exposed-widget.views-submit-button {
+    clear: both;
+}
+
+.views-exposed-form label {
+    font: 23px "Open Sans Light";
+    padding-bottom: 5px;
+}

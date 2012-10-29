@@ -1,0 +1,14 @@
+name = Adminimal
+description = A simple one-column, tableless, responsive administration theme.
+core = 7.x
+stylesheets[screen][] = css/reset.css
+stylesheets[screen][] = css/style.css
+stylesheets[screen][] = css/custom.css
+stylesheets[screen][] = css/modules/views.css
+settings[shortcut_module_link] = 1
+regions[content] = Content
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[sidebar_first] = First sidebar
+regions_hidden[] = sidebar_first
