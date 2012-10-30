@@ -5,6 +5,9 @@
   outline-style: none !important;
 }
 
+/* Import the Open Sans webfont from Google CDN */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek,cyrillic,vietnamese);
+
 body {
   color:#000;
   background:#fff;
@@ -1324,6 +1327,29 @@ input#edit-preview:hover {
 }
 
 input#edit-preview:active {
+  box-shadow:0 2px 2px rgba(0,0,0,0.75) inset;
+}
+
+/* Orange Button */
+
+input#edit-buttons-revert {
+  cursor:pointer;
+  padding:5px 10px;
+  margin-bottom:1em;
+  margin-right:1em;/* LTR */
+  color:#fff;
+  text-align:center;
+  font-weight:normal;
+  font-size:1.077em;
+  font-family:"Lucida Grande",Verdana,sans-serif;
+  background:#f69231;
+}
+
+input#edit-buttons-revert:hover {
+  background:#ef6114;
+}
+
+input#edit-buttons-revert:active {
   box-shadow:0 2px 2px rgba(0,0,0,0.75) inset;
 }
 /* Configuration menu blocks */
