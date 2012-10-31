@@ -273,6 +273,7 @@ pre {
   font-family:Open Sans,Helvetica,sans-serif;
   font-size: 32px;
   font-weight: 300;
+  line-height: 38px;
   margin:0;
   padding:0 0 12px;
 }
@@ -306,7 +307,7 @@ ul.primary li {
 ul.primary li a:link,ul.primary li a.active,ul.primary li a:active,ul.primary li a:visited,ul.primary li a:hover,ul.primary li.active a {
   display:block;
   float:left;/* LTR */
-  line-height:2.60em;
+  line-height: 18px;
   background-color:#a6a7a2;
   color:#000;
   font-weight:normal;
