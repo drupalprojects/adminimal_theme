@@ -166,6 +166,10 @@ pre {
   margin:0.5em 0;
   white-space:pre-wrap;
 }
+
+strong {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
 /**
  * Skip link.
  */
@@ -641,9 +645,9 @@ fieldset legend {
   padding-bottom:0;
 }
 
-.form-item label {
+.form-item label, .exposed-filters .form-item label {
   font: Open Sans,Helvetica,sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 300;
   margin:0;
   padding-bottom:5px;
@@ -959,6 +963,7 @@ h1#overlay-title {
   font-weight: 300;
   margin:0;
   padding:0 0 5px;
+  line-height: 44px;
 }
 
 #overlay-titlebar .add-or-remove-shortcuts {
