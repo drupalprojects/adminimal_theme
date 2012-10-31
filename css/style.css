@@ -36,8 +36,8 @@ legend {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family:Open Sans light;
-  font-weight:normal;
+  font-family:Open Sans,Helvetica,sans-serif;
+  font-weight: 300;
   margin:10px 0;
 }
 
@@ -270,7 +270,9 @@ pre {
 #branding h1.page-title {
   color:#FFFFFF;
   float:left;
-  font:32px "Open Sans Light";
+  font-family:Open Sans,Helvetica,sans-serif;
+  font-size: 32px;
+  font-weight: 300;
   margin:0;
   padding:0 0 12px;
 }
@@ -311,7 +313,9 @@ ul.primary li a:link,ul.primary li a.active,ul.primary li a:active,ul.primary li
   border-width:1px 1px 0 1px;
   border-style:solid;
   border-color:#a6a7a2;
-  font:16px "Open Sans Light";
+  font-family: Open Sans,Helvetica,sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   margin:0;
   padding:10px 20px;
   text-transform:none;
@@ -533,9 +537,9 @@ tr.drag-previous {
 
 table th {
   background:none repeat scroll 0 0 #E1E2DC;
-  font-family:open sans light;
-  font-size:21px;
-  font-weight:normal;
+  font-family: Open Sans,Helvetica,sans-serif;
+  font-size: 21px;
+  font-weight: 300;
   padding:12px 10px;
 }
 
@@ -609,9 +613,9 @@ fieldset legend {
   padding:0 3px;
   margin:0;
   margin-left:-3px;
-  font-family:Open Sans Light;
+  font-family:Open Sans,Helvetica,sans-serif;
   font-size:24px;
-  font-weight:lighter;
+  font-weight: 300;
 }
 /**
  * Form elements.
@@ -637,7 +641,9 @@ fieldset legend {
 }
 
 .form-item label {
-  font:23px "Open Sans Light";
+  font: Open Sans,Helvetica,sans-serif;
+  font-size: 23px;
+  font-weight: 300;
   margin:0;
   padding-bottom:5px;
 }
@@ -735,7 +741,9 @@ ul.action-links li {
 
 ul.action-links a {
   padding-left:15px;/* LTR */
-  font:23px "Open Sans light";
+  font: Open Sans,Helvetica,sans-serif;
+  font-size: 23px;
+  font-weight: 300;
   background:transparent url(../images/add.png) no-repeat 0 center;
   line-height:30px;
 }
@@ -766,7 +774,9 @@ div.admin-panel {
 }
 
 div.admin-panel h3 {
-  font:23px "open sans light";
+  font: Open Sans,Helvetica,sans-serif;
+  font-size: 23px;
+  font-weight: 300;
   margin:0;
   padding-bottom:9px;
   text-transform:none;
@@ -943,7 +953,9 @@ div.breadcrumb a:hover {
 }
 
 h1#overlay-title {
-  font:32px "Open Sans Light";
+  font: Open Sans,Helvetica,sans-serif;
+  font-size: 32px;
+  font-weight: 300;
   margin:0;
   padding:0 0 5px;
 }
@@ -969,9 +981,9 @@ h1#overlay-title {
     border-radius: 0 0 0 0;
     color: #000000;
     display: inline-block;
-    font-family: Open Sans Light;
+    font-family: Open Sans,Helvetica,sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 300;
     margin: 0 0 2px;
     outline: 0 none;
     padding: 4px 15px;
@@ -1477,6 +1489,8 @@ body.adminimal-theme .token-tree th {
 }
 
 .views-exposed-form label {
-  font: 23px "Open Sans Light";
+  font-family: Open Sans,Helvetica,sans-serif;
+  font-size: 23px;
+  font-weight: 300;
   padding-bottom: 5px;
 }
