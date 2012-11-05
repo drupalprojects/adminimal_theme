@@ -1500,3 +1500,53 @@ body.adminimal-theme .token-tree th {
   font-weight: 300;
   padding-bottom: 5px;
 }
+
+/* Views and Ctools */
+.overlay ul.secondary{
+  background:none repeat scroll 0 0 transparent;
+  float:left;
+  margin:0;
+  overflow:visible;
+}
+
+.views-ui-display-tab-bucket .ctools-button-processed{
+  border-radius:4px;
+  position:absolute;
+  right:5px;
+  top:5px;
+}
+
+.ctools-dropbutton-processed{
+  border-radius:4px;
+}
+
+#views-ui-preview-form.arguments-preview,#views-ui-preview-form.form-type-textfield{
+  margin-left:14px;
+  margin-top:0px;
+}
+
+#preview-submit-wrapper{
+  margin-top:8px;
+}
+
+#views-ui-preview-form.form-type-checkbox{
+  margin-left:2px;
+  margin-top:8px;
+}
+
+#page-manager-list-pages td.page-manager-page-operations .ctools-dropbutton{
+  right:auto;
+}
+
+.views-exposed-widget{
+  float:left;
+  padding-right:20px;
+}
+
+.views-exposed-widget .views-submit-button{
+  clear:both;
+}
+
+.views-exposed-form label{
+  padding-bottom:10px;
+}
