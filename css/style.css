@@ -1551,3 +1551,21 @@ body.adminimal-theme .token-tree th {
 .views-exposed-form label{
   padding-bottom:10px;
 }
+
+.ui-widget table th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#ui-datepicker-div {
+    border: 5px solid #333;
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+
+.ui-widget table thead th {
+background: #555;
+color: white;
+}
