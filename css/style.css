@@ -651,7 +651,7 @@ fieldset legend {
   font-size: 20px;
   font-weight: 300;
   margin:0;
-  padding-bottom:5px;
+  padding: 0.5em 0;
 }
 
 .form-item label.option {
@@ -1591,4 +1591,8 @@ body.page-admin-appearance fieldset legend {
 
 body.page-admin-appearance fieldset fieldset {
   background-color: white !important;
+}
+
+.views-attachment .options-set label {
+    font-weight: 300;
 }
