@@ -556,7 +556,6 @@ table th.active {
 
 table th a {
   display:block;
-  position:relative;
 }
 
 table th.active a {
@@ -1645,4 +1644,6 @@ body.page-admin-appearance fieldset fieldset {
     background: #ffffbf;
 } 
 
-
+input.form-checkbox, input.form-radio {
+    vertical-align: baseline;
+}
