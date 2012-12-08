@@ -564,9 +564,10 @@ table th.active a {
 }
 
 table th.active img {
-  position:absolute;
-  top:3px;
-  right:3px;/* LTR */
+    float: right;
+    position: relative;
+    right: -20px;
+    top: 3px;/* LTR */
 }
 
 table td.active {
@@ -997,8 +998,13 @@ h1#overlay-title {
     text-transform: none;
 }
 
+#overlay-tabs li a:hover {
+    background: none repeat scroll 0 0 #0074BD;
+    color: #FFFFFF;
+}
 
-#overlay-tabs li.active a, #overlay-tabs li.active a.active, #overlay-tabs li.active a:active, #overlay-tabs li.active a:visited {
+
+#overlay-tabs li.active a, #overlay-tabs li.active a.active, #overlay-tabs li.active a:active, #overlay-tabs li.active a:visited, #overlay-tabs li.active a:hover {
     background-color: #FFFFFF;
     margin: 0;
     padding-bottom: 4px;
@@ -1646,4 +1652,29 @@ body.page-admin-appearance fieldset fieldset {
 
 input.form-checkbox, input.form-radio {
     vertical-align: baseline;
+}
+
+table.sticky-header {
+    z-index: 999;
+}
+
+.ctools-content ul.actions {
+    margin: 0;
+    padding: 0;
+}
+
+.ctools-button-processed:hover {
+    border-color: #999999;
+}
+
+div.form-item-view-args input#preview-args {
+    margin-top: 0.6em;
+}
+
+.ctools-dropbutton ul.right.actions li input {
+    color: #0074BD;
+}
+
+.views-ui-dialog .form-item-options-tokenize {
+    margin-top: 10px;  
 }
