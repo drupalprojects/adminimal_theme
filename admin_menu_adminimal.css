@@ -1,6 +1,19 @@
 /* Import the Open Sans webfont from Google CDN */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek,cyrillic,vietnamese);
 
+/* Blink Animation */
+@keyframes blink {
+    0% {background-color: #f69231;}
+    50% {background-color: #d94f13;}
+    99% {background-color: #f69231;}
+}
+
+@-webkit-keyframes blink {
+    0% {background-color: #f69231;}
+    50% {background-color: #d94f13;}
+    99% {background-color: #f69231;}
+}
+
 body.adminimal-menu.admin-menu {
     margin-top: 29px !important;
 }
@@ -11,7 +24,6 @@ body.adminimal-menu div#admin-menu {
   background: none repeat scroll 0 0 #202020;
   border-bottom: 1px solid #111111;
   font-family: Open Sans, "Segoe UI", "Helvetica", sans-serif;
-  position: fixed;
 }
 
 body.adminimal-menu div#admin-menu li.admin-menu-toolbar-home-menu {
@@ -155,4 +167,36 @@ body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shor
 body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shortcuts ul li a:hover {
   background-color: #0074bd;
   background-position: 7px -78px;
+}
+
+body.adminimal-menu #admin-menu .admin-menu-search input {
+    background: none no-repeat scroll right center #444;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    color: #999999;
+    font-size: 12px;
+    margin: 0 !important;
+    outline: medium none;
+    padding: 5px 22px 3px 8px;
+    width: 110px;
+    height: 20px;
+}
+
+body.adminimal-menu #admin-menu .admin-menu-search input:focus, #admin-menu .admin-menu-search input:hover, #admin-menu .admin-menu-search input:active {
+    background: none no-repeat scroll right center #888;
+    color: #eee;
+}
+
+body.adminimal-menu li.admin-menu-search:hover {
+    background: transparent !important;
+}
+
+body.adminimal-menu #admin-menu li.highlight {
+  background-color: #ef6114 !important;
+  animation: blink 0.5s ease infinite;
+  -webkit-animation: blink 0.5s ease infinite; 
+}
+body.adminimal-menu #admin-menu li.highlight > a {
+  border-color: #ef6114 !important;
+  color: #fff !important;
 }
