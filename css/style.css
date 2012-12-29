@@ -70,10 +70,11 @@ dl {
 }
 
 dl dd,dl dl {
-  background:url("../images/circle-arrow-small.png") no-repeat scroll 0 2px transparent;
-  margin-bottom:20px;
-  margin-left:7px;
-  text-indent:20px;
+    background: url("../images/small-bullet.png") no-repeat scroll 0 7px transparent;
+    color: #444444;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-indent: 10px;
 }
 
 blockquote {

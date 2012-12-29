@@ -16,14 +16,23 @@ function adminimal_preprocess_maintenance_page(&$vars) {
  * Override or insert variables into the html template.
  */
 function adminimal_preprocess_html(&$vars) {
+
   // Add conditional CSS for IE8 and below.
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+
   // Add conditional CSS for IE7 and below.
   drupal_add_css(path_to_theme() . '/css/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+
   // Add conditional CSS for IE6.
   drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+
   // Add theme name to body class.
   $vars['classes_array'][] = 'adminimal-theme';
+
+  // Add icons to the admin configuration page.
+  if (theme_get_setting('display_icons_config')) {
+    drupal_add_css(path_to_theme() . '/css/icons-config.css', array('group' => CSS_THEME, 'weight' => 10, 'preprocess' => FALSE));
+  }
 }
 
 /**
@@ -114,4 +123,69 @@ function adminimal_css_alter(&$css) {
   if (isset($css['misc/ui/jquery.ui.theme.css'])) {
     $css['misc/ui/jquery.ui.theme.css']['data'] = drupal_get_path('theme', 'adminimal') . '/css/jquery.ui.theme.css';
   }
+}
+
+/**
+ * Override of theme_admin_block().
+ * Adding classes to the administration blocks see issue #1869690.
+ */
+function adminimal_admin_block($variables) {
+  $block = $variables['block'];
+  $output = '';
+
+  // Don't display the block if it has no content to display.
+  if (empty($block['show'])) {
+    return $output;
+  }
+
+  if (!empty($block['path'])) {
+    $output .= '<div class="admin-panel ' . check_plain(str_replace("/"," ",$block['path'])) . '">';
+  }
+  else if (!empty($block['title'])) {
+    $output .= '<div class="admin-panel ' . check_plain(strtolower($block['title'])) . '">';
+  }
+  else {
+    $output .= '<div class="admin-panel">';
+  }
+  
+  if (!empty($block['title'])) {
+    $output .= '<h3 class="title">' . $block['title'] . '</h3>';
+  }
+  
+  if (!empty($block['content'])) {
+    $output .= '<div class="body">' . $block['content'] . '</div>';
+  }
+  else {
+    $output .= '<div class="description">' . $block['description'] . '</div>';
+  }
+  
+  $output .= '</div>';
+
+  return $output;
+}
+
+/**
+ * Override of theme_admin_block_content().
+ * Adding classes to the administration blocks see issue #1869690.
+ */
+function adminimal_admin_block_content($variables) {
+  $content = $variables['content'];
+  $output = '';
+
+  if (!empty($content)) {
+    $class = 'admin-list';
+    if ($compact = system_admin_compact_mode()) {
+      $class .= ' compact';
+    }
+    $output .= '<dl class="' . $class . '">';
+    foreach ($content as $item) {
+      $output .= '<div class="admin-block-item ' . check_plain(strtolower($item['title'])) . '"><dt>' . l($item['title'], $item['href'], $item['localized_options']) . '</dt>';
+      if (!$compact && isset($item['description'])) {
+        $output .= '<dd class="description">' . filter_xss_admin($item['description']) . '</dd>';
+      }
+      $output .= '</div>';
+    }
+    $output .= '</dl>';
+  }
+  return $output;
 }
