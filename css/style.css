@@ -1,6 +1,6 @@
 /**
  * Generic elements.
- *//* Kill that ugly webkit outline */
+ *//* Remove the webkit outline */
 * {
   outline-style: none !important;
 }
@@ -353,6 +353,9 @@ ul.secondary {
   line-height:1.385em;
   overflow:hidden;
   background-color:#fff;
+  text-align: left;
+  float: right;
+  width: 100%;
 }
 
 ul.secondary li {
@@ -949,6 +952,9 @@ div.breadcrumb a:hover {
   background:transparent none;
   margin:-1.4em 0 0.3em 0;/* LTR */
   overflow:visible;
+  text-align: right;
+  float: left;
+  width: 100%;
 }
 
 .overlay #content {

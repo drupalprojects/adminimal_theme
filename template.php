@@ -179,7 +179,7 @@ function adminimal_admin_block_content($variables) {
     }
     $output .= '<dl class="' . $class . '">';
     foreach ($content as $item) {
-      $output .= '<div class="admin-block-item ' . check_plain(str_replace("/"," ",$item['path'])) . '"><dt>' . l($item['title'], $item['href'], $item['localized_options']) . '</dt>';
+      $output .= '<div class="admin-block-item ' . check_plain(str_replace("/","-",$item['path'])) . '"><dt>' . l($item['title'], $item['href'], $item['localized_options']) . '</dt>';
       if (!$compact && isset($item['description'])) {
         $output .= '<dd class="description">' . filter_xss_admin($item['description']) . '</dd>';
       }
