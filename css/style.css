@@ -70,11 +70,12 @@ dl {
 }
 
 dl dd,dl dl {
-    background: url("../images/small-bullet.png") no-repeat scroll 0 7px transparent;
+    background: url("../images/small-bullet.png") no-repeat scroll 0 6px transparent;
     color: #444444;
     margin-bottom: 10px;
     margin-left: 5px;
     text-indent: 10px;
+    line-height: 18px;
 }
 
 blockquote {
@@ -170,7 +171,7 @@ pre {
 
 strong {
     font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: 600 !important;
+    font-weight: bold !important;
 }
 /**
  * Skip link.
@@ -632,7 +633,7 @@ fieldset legend {
  */
 
 .form-item {
-  padding:0;
+  padding: 0 1em 0 0;
   margin:0 0 10px;
 }
 
@@ -1233,7 +1234,7 @@ body div.status,body.ok {
 
 #edit-pages-apply, #edit-pages-reset {
     float: left;
-    margin-top: 38px;
+    margin-top: 40px;
 }
 
 body.adminimal-theme ul.secondary li a, body.adminimal-theme ul.secondary li a:hover, body.adminimal-theme ul.secondary li.active a, body.adminimal-theme ul.secondary li.active a.active {
@@ -1247,6 +1248,8 @@ body.adminimal-theme .views-ui-display-tab-bucket h3 {
     margin: 0;
     padding: 6px 6px 10px;
 }
+
+div.fieldset-description {padding-bottom: 0.5em;}
 
 /* Buttons */
 
@@ -1281,7 +1284,9 @@ div.exposed-filters input#edit-submit:active {
 /* Green Button */
 
 input#edit-submit,
-input#edit-save-continue,
+input[id^="save-continue"],
+input[id^="edit-save"],
+input#edit-save,
 input#edit-actions-save {
   cursor:pointer;
   padding:5px 10px;
@@ -1296,21 +1301,27 @@ input#edit-actions-save {
 }
 
 input#edit-submit:hover,
-input#edit-save-continue:hover,
+input[id^="save-continue"]:hover,
+input[id^="edit-save"]:hover,
+input#edit-save:hover,
 input#edit-actions-save:hover {
   background:#0a6700;
 }
 
 input#edit-submit:active,
-input#edit-save-continue:active,
+input[id^="save-continue"]:active,
+input[id^="edit-save"]:active,
+input#edit-save:active,
 input#edit-actions-save:active {
   box-shadow:0 2px 2px rgba(0,0,0,0.75) inset;
+  background:#333;
 }
 /* Red Button */
 
 input#edit-delete,
 input#remove-button,
 input#edit-remove,
+input#edit-clear,
 .page-admin-modules-uninstall input#edit-submit {
   cursor:pointer;
   padding:5px 10px;
@@ -1327,6 +1338,7 @@ input#edit-remove,
 input#edit-delete:hover,
 input#remove-button:hover,
 input#edit-remove:hover,
+input#edit-clear:hover,
 body.page-admin-modules-uninstall input#edit-submit:hover {
     background:#990000;
 }
@@ -1334,13 +1346,18 @@ body.page-admin-modules-uninstall input#edit-submit:hover {
 input#edit-delete:active,
 input#remove-button:active,
 input#edit-remove:active,
+input#edit-clear:active,
 body.page-admin-modules-uninstall input#edit-submit:active {
   box-shadow:0 2px 2px rgba(0,0,0,0.75) inset;
+  background:#333;
 }
 
 /* Blue Button */
 
-input#edit-preview {
+input#edit-preview,
+input#edit-next,
+input#preview-submit,
+input[id^="edit-return"] {
   cursor:pointer;
   padding:5px 10px;
   margin-bottom:1em;
@@ -1353,12 +1370,19 @@ input#edit-preview {
   background:#0074BD;
 }
 
-input#edit-preview:hover {
+input#edit-preview:hover,
+input#edit-next:hover,
+input#preview-submit:hover,
+input[id^="edit-return"]:hover {
   background:#004c99;
 }
 
-input#edit-preview:active {
-  box-shadow:0 2px 2px rgba(0,0,0,0.75) inset;
+input#edit-preview:active,
+input#edit-next:active,
+input#preview-submit:active,
+input[id^="edit-return"]:active {
+  box-shadow: 0 2px 2px rgba(0,0,0,0.75) inset;
+  background:#333;
 }
 
 /* Orange Button */
@@ -1388,6 +1412,7 @@ input#edit-buttons-revert:hover {
 #edit-actions-cancel:active,
 input#edit-buttons-revert:active {
   box-shadow:0 2px 2px rgba(0,0,0,0.75) inset;
+  background:#333;
 }
 /* Configuration menu blocks */
 
@@ -1684,4 +1709,27 @@ div.form-item-view-args input#preview-args {
 
 .views-ui-dialog .form-item-options-tokenize {
     margin-top: 10px;  
+}
+
+#dblog-filter-form .form-actions {
+    clear: both;
+    float: left;
+    padding: 0;
+}
+
+.container-inline .form-actions, .container-inline.form-actions {
+    clear: both;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+div.admin-panel .description {
+    margin: 0 0 3px;
+    padding: 0 0 0.5em;
+}
+
+#permissions td.module {
+    font-weight: bold;
+    font-family: sans-serif;
 }
