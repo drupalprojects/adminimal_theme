@@ -1,5 +1,5 @@
 name = Adminimal
-description = A simple one-column, tableless, responsive administration theme.
+description = A simple one-column, tableless, minimalist administration theme.
 core = 7.x
 stylesheets[screen][] = css/reset.css
 stylesheets[screen][] = css/style.css
