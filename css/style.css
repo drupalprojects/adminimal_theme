@@ -1283,6 +1283,7 @@ div.exposed-filters input#edit-submit:active {
 /* Green Button */
 
 input#edit-submit,
+input#edit-actions-submit,
 input[id^="save-continue"],
 input[id^="edit-save"],
 input#edit-save,
@@ -1300,6 +1301,7 @@ input#edit-actions-save {
 }
 
 input#edit-submit:hover,
+input#edit-actions-submit:hover,
 input[id^="save-continue"]:hover,
 input[id^="edit-save"]:hover,
 input#edit-save:hover,
@@ -1308,6 +1310,7 @@ input#edit-actions-save:hover {
 }
 
 input#edit-submit:active,
+input#edit-actions-submit:active,
 input[id^="save-continue"]:active,
 input[id^="edit-save"]:active,
 input#edit-save:active,
@@ -1731,4 +1734,33 @@ div.admin-panel .description {
 #permissions td.module {
     font-weight: bold;
     font-family: sans-serif;
+}
+
+body.page-node-add ul.admin-list li {
+    background-position: 0 50%;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+body.page-node-add ul.admin-list li div.description {
+    margin: 0;
+}
+
+#dashboard .canvas-content a.button:hover {
+    color: #fff;
+}
+
+div.contextual-links-wrapper ul.contextual-links, a.contextual-links-trigger, div.contextual-links-active a.contextual-links-trigger {
+    border-radius: 0;
+}
+
+body.page-admin-dashboard .container-inline .form-actions, .container-inline.form-actions {
+  margin-top: 0;
+}
+
+/* Margin fix for some pages in overlay mode */
+body.page-admin-help.overlay #page,
+body.page-admin-appearance.overlay #page {
+    margin: 0;
+    padding: 0 20px 20px;
 }
