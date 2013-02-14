@@ -1,6 +1,7 @@
 name = Administration menu Adminimal Theme
 description = Clean and minimal theme for the administration menu module.
 stylesheets[screen][] = admin_menu_adminimal.css
+scripts[] = admin_menu_adminimal.js
 package = Administration
 core = 7.x
 dependencies[] = admin_menu

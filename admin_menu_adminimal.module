@@ -6,6 +6,24 @@
  */
 
 /**
+ * Implements hook_menu().
+ */
+function admin_menu_adminimal_menu() {
+  $items = array();
+  $items['admin/config/administration/adminimal_menu'] = array(
+    'title' => 'Adminimal menu',
+    'description' => 'Adjust adminimal menu settings.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('admin_menu_adminimal_settings'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'adminimal_menu_settings.inc',
+  );
+
+  return $items;
+
+}
+
+/**
  * Implements hook_page_build().
  */
 function admin_menu_adminimal_page_build(&$page) {
@@ -44,21 +62,24 @@ function admin_menu_adminimal_page_build(&$page) {
  */
 function admin_menu_adminimal_admin_menu_output_build(&$content) {
 
-  // Add shortcuts bar.
-  $content['shortcut'] = array(
-    '#access' => module_exists('shortcut'),
-    '#weight' => 200,
-    '#prefix' => '<div class="shortcut-toolbar">',
-    '#suffix' => '</div>',
-  );
-  $content['shortcut']['shortcuts'] = array(
-    // Shortcut module's CSS relies on Toolbar module's markup.
-    // @see http://drupal.org/node/1217038
-    '#prefix' => '<div id="toolbar">',
-    '#suffix' => '</div>',
-    // @todo Links may contain .active-trail classes.
-    '#pre_render' => array('shortcut_toolbar_pre_render'),
-  );
+  if (variable_get('admin_menu_adminimal_render', 'collapsed') != 'hidden') {
+    // Add shortcuts bar.
+    $content['shortcut'] = array(
+      '#access' => module_exists('shortcut'),
+      '#weight' => 200,
+      '#prefix' => '<div class="shortcut-toolbar">',
+      '#suffix' => '</div>',
+    );
+    $content['shortcut']['shortcuts'] = array(
+      // Shortcut module's CSS relies on Toolbar module's markup.
+      // @see http://drupal.org/node/1217038
+      '#prefix' => '<div id="toolbar">',
+      '#suffix' => '</div>',
+      // @todo Links may contain .active-trail classes.
+      '#pre_render' => array('shortcut_toolbar_pre_render'),
+    );
+  }
+
 }
 
 /**
@@ -76,6 +97,15 @@ function admin_menu_adminimal_admin_menu_output_alter(&$content) {
   $content['icon']['icon']['#attributes']['class'][] = 'admin-menu-toolbar-home-menu';
   $page['#attributes']['class'][] = 'adminimal-menu';
 
+  // Hide the menu.
+  if (variable_get('admin_menu_adminimal_render', 'collapsed') == 'exclusive') {
+    unset($content['icon']['icon']);
+    unset($content['search']);
+    foreach ($content['menu'] as $key => $link) {
+      // Move local tasks on 'admin' into icon menu.
+      unset($content['menu'][$key]);
+    }
+  }
 }
 
 /**
@@ -85,4 +115,8 @@ function admin_menu_adminimal_preprocess_html(&$vars) {
 
   // Add the "adminimal" class to the body for better css selection.
   $vars['classes_array'][] = 'adminimal-menu';
+
+  // Add the shortcut render mode class.
+  $vars['classes_array'][] = variable_get('admin_menu_adminimal_render', 'collapsed');
+
 }

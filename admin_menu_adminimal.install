@@ -75,5 +75,6 @@ function admin_menu_adminimal_uninstall() {
   // Clean up the module variables from database after uninstall.
   variable_del('admin_menu_adminimal_toolbar-disabled');
   variable_del('admin_menu_adminimal_core-toolbar-disabled');
+  variable_del('admin_menu_adminimal_render');
 
 }

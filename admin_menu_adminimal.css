@@ -8,7 +8,19 @@
     99% {background-color: #f69231;}
 }
 
+@-moz-keyframes blink {
+    0% {background-color: #f69231;}
+    50% {background-color: #d94f13;}
+    99% {background-color: #f69231;}
+}
+
 @-webkit-keyframes blink {
+    0% {background-color: #f69231;}
+    50% {background-color: #d94f13;}
+    99% {background-color: #f69231;}
+}
+
+@-o-keyframes blink {
     0% {background-color: #f69231;}
     50% {background-color: #d94f13;}
     99% {background-color: #f69231;}
@@ -194,9 +206,71 @@ body.adminimal-menu li.admin-menu-search:hover {
 body.adminimal-menu #admin-menu li.highlight {
   background-color: #ef6114 !important;
   animation: blink 0.5s ease infinite;
-  -webkit-animation: blink 0.5s ease infinite; 
+  -moz-animation: blink 0.5s ease infinite;
+  -webkit-animation: blink 0.5s ease infinite;
+  -o-animation: blink 0.5s ease infinite; 
 }
+
 body.adminimal-menu #admin-menu li.highlight > a {
   border-color: #ef6114 !important;
   color: #fff !important;
+}
+
+/* Newline render mode */
+body.adminimal-menu.admin-menu.newline div#admin-menu div#admin-menu-wrapper div.shortcut-toolbar {
+    clear: both;
+    border-top: 1px solid #000;
+}
+
+body.adminimal-menu.admin-menu.newline {
+    margin-top: 56px !important;
+}
+
+body.adminimal-menu.admin-menu.newline #overlay-container, body.adminimal-menu.admin-menu.newline .overlay-modal-background, body.adminimal-menu.admin-menu.newline .overlay-element, body.adminimal-menu.admin-menu.newline #overlay {
+    padding-top: 30px !important;
+}
+
+/* Collapsed render mode */
+body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu {
+    position: absolute;
+}
+
+body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li {
+    float: none;
+    display: none;
+}
+
+body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label {
+    display: block;
+    cursor: default;
+}
+
+body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label a:hover {
+    background: url("images/shortcut.png") no-repeat scroll 7px 7px #202020 !important;
+    color: #EEEEEE !important;
+}
+
+body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu:hover li {
+    display: block;
+    background: #202020;
+}
+
+
+/* Dropdown render mode */
+.toolbar-shortcuts select#shortcut-menu {
+    -webkit-appearance: none;
+    background: url("images/shortcut.png") no-repeat scroll 7px 7px #222222;
+    border: medium none;
+    color: #EEEEEE;
+    font-family: Open Sans;
+    font-size: 12px;
+    padding: 5px 4px 4px 24px;
+}
+
+.toolbar-shortcuts select#shortcut-menu option:hover {
+    cursor: pointer;
+}
+
+.toolbar-shortcuts select#shortcut-menu option:first-child {
+    display: none;
 }
