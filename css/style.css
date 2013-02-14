@@ -354,7 +354,7 @@ ul.secondary {
   line-height:1.385em;
   overflow:hidden;
   background-color:#fff;
-  text-align: left;
+  text-align: right;
   width: 100%;
 }
 
@@ -589,6 +589,7 @@ table tr.selected td.active,table tr.selected td {
 
 table.system-status-report tr {
   border-bottom:1px solid #ccc;
+  border-color: rgba(0,0,0,0.1);
 }
 
 table.system-status-report tr.ok {
@@ -596,20 +597,43 @@ table.system-status-report tr.ok {
   background-color:#e5ffe2;
 }
 
+table.system-status-report tr.ok:hover {
+  background-color:#c8edc4;
+}
+
 table.system-status-report tr.info {
   color:#040f37;
   background-color:#bdf;
 }
 
+table.system-status-report tr.info:hover {
+  background-color:#a5c4e3;
+}
+
 table.system-status-report tr.warning {
   color:#840;
-  background-color:#fffce5;
+  background-color:#fffbe2;
+}
+
+table.system-status-report tr.warning:hover {
+  background-color:#f3ecb9;
 }
 
 table.system-status-report tr.error {
-  color:#8c2e0b;
-  background-color:#fef5f1;
-}/* Fieldsets */
+  color:#fff;
+  background-color:#e26969;
+}
+
+table.system-status-report tr.error td {
+  color:#fff;
+}
+
+table.system-status-report tr.error:hover {
+  color:#fff;
+  background-color:#ca4444;
+}
+
+/* Fieldsets */
 
 fieldset {
   border:solid 1px #ddd;
@@ -1754,13 +1778,51 @@ div.contextual-links-wrapper ul.contextual-links, a.contextual-links-trigger, di
     border-radius: 0;
 }
 
-body.page-admin-dashboard .container-inline .form-actions, .container-inline.form-actions {
+body.page-admin-dashboard .container-inline .form-actions, body.page-admin-dashboard .container-inline.form-actions {
   margin-top: 0;
 }
 
 /* Margin fix for some pages in overlay mode */
 body.page-admin-help.overlay #page,
+body.page-admin-reports-updates-update #page,
 body.page-admin-appearance.overlay #page {
     margin: 0;
     padding: 0 20px 20px;
+}
+
+.system-themes-list-disabled .theme-selector {
+    float: left;
+    opacity: 0.5;
+    padding: 20px 20px 20px 0;
+    width: 300px;
+}
+
+.system-themes-list-disabled .theme-selector:hover {
+    opacity: 1;
+}
+
+#system-themes-page {
+    padding-top: 20px;
+}
+
+#system-themes-page h2 {
+    color: #555555;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.system-themes-list-enabled .theme-info h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.system-themes-list-enabled .theme-default .theme-info h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.system-themes-list-disabled {
+    border-top: 5px solid #CDCDCD;
+    padding-top: 20px;
 }
