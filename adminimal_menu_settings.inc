@@ -62,5 +62,5 @@ function admin_menu_adminimal_settings_submit($form, &$form_state) {
   admin_menu_flush_caches();
 
   // Display a message to the user.
-  //drupal_set_message(t('The configuration options have been saved.'));
+  drupal_set_message(t('The configuration options have been saved.'));
 }
