@@ -217,47 +217,48 @@ body.adminimal-menu #admin-menu li.highlight > a {
 }
 
 /* Newline render mode */
-body.adminimal-menu.admin-menu.newline div#admin-menu div#admin-menu-wrapper div.shortcut-toolbar {
+body.adminimal-menu.admin-menu.menu-render-newline div#admin-menu div#admin-menu-wrapper div.shortcut-toolbar {
     clear: both;
     border-top: 1px solid #000;
 }
 
-body.adminimal-menu.admin-menu.newline {
+body.adminimal-menu.admin-menu.menu-render-newline {
     margin-top: 56px !important;
 }
 
-body.adminimal-menu.admin-menu.newline #overlay-container, body.adminimal-menu.admin-menu.newline .overlay-modal-background, body.adminimal-menu.admin-menu.newline .overlay-element, body.adminimal-menu.admin-menu.newline #overlay {
+body.adminimal-menu.admin-menu.menu-render-newline #overlay-container, body.adminimal-menu.admin-menu.newline .overlay-modal-background, body.adminimal-menu.admin-menu.newline .overlay-element, body.adminimal-menu.admin-menu.newline #overlay {
     padding-top: 30px !important;
 }
 
 /* Collapsed render mode */
-body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu {
+body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu {
     position: absolute;
 }
 
-body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li {
+body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li {
     float: none;
     display: none;
+    border: none;
 }
 
-body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label {
+body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label {
     display: block;
     cursor: default;
 }
 
-body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label a:hover {
+body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label a:hover {
     background: url("images/shortcut.png") no-repeat scroll 7px 7px #202020 !important;
     color: #EEEEEE !important;
 }
 
-body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu:hover li {
+body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu:hover li {
     display: block;
     background: #202020;
 }
 
 
 /* Dropdown render mode */
-.toolbar-shortcuts select#shortcut-menu {
+body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#shortcut-menu {
     -webkit-appearance: none;
     background: url("images/shortcut.png") no-repeat scroll 7px 7px #222222;
     border: medium none;
@@ -267,10 +268,10 @@ body.adminimal-menu.admin-menu.collapsed div.shortcut-toolbar div#toolbar div.to
     padding: 5px 4px 4px 24px;
 }
 
-.toolbar-shortcuts select#shortcut-menu option:hover {
+body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#shortcut-menu option:hover {
     cursor: pointer;
 }
 
-.toolbar-shortcuts select#shortcut-menu option:first-child {
+body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#shortcut-menu option:first-child {
     display: none;
 }

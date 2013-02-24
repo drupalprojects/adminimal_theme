@@ -20,7 +20,7 @@ function admin_menu_adminimal_settings($form, &$form_state) {
   $form['shortcuts']['admin_menu_adminimal_render'] = array(
     '#type' => 'select',
     '#title' => t('Rendering method'),
-    '#default_value' => variable_get('admin_menu_adminimal_render', 'inline'),
+    '#default_value' => variable_get('admin_menu_adminimal_render', 'collapsed'),
     '#options' => array(
       'hidden' => t('Hidden'),
       'inline' => t('Inline'),

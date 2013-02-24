@@ -117,6 +117,6 @@ function admin_menu_adminimal_preprocess_html(&$vars) {
   $vars['classes_array'][] = 'adminimal-menu';
 
   // Add the shortcut render mode class.
-  $vars['classes_array'][] = variable_get('admin_menu_adminimal_render', 'collapsed');
+  $vars['classes_array'][] = 'menu-render-'.variable_get('admin_menu_adminimal_render', 'collapsed');
 
 }
