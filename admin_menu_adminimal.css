@@ -154,7 +154,11 @@ body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a:hov
 }
 
 body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-users {
-  padding: 2px 0 0;
+  border-left: 1px solid #000;
+}
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-users a:hover {
+    background: #0074BD;
 }
 
 body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-account a {
@@ -274,4 +278,9 @@ body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#sh
 
 body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#shortcut-menu option:first-child {
     display: none;
+}
+
+body.adminimal-menu #admin-menu .dropdown .admin-menu-tab {
+    background: #444;
+    padding-bottom: 2px;
 }
