@@ -8,7 +8,7 @@
 /**
  * Create the settings page form.
  */
-function admin_menu_adminimal_settings($form, &$form_state) {
+function adminimal_admin_menu_settings($form, &$form_state) {
 
   // Create the shortcut category.
   $form['shortcuts'] = array(
@@ -17,10 +17,10 @@ function admin_menu_adminimal_settings($form, &$form_state) {
   );
 
   // Create the select list.
-  $form['shortcuts']['admin_menu_adminimal_render'] = array(
+  $form['shortcuts']['adminimal_admin_menu_render'] = array(
     '#type' => 'select',
     '#title' => t('Rendering method'),
-    '#default_value' => variable_get('admin_menu_adminimal_render', 'collapsed'),
+    '#default_value' => variable_get('adminimal_admin_menu_render', 'collapsed'),
     '#options' => array(
       'hidden' => t('Hidden'),
       'inline' => t('Inline'),
@@ -46,7 +46,7 @@ function admin_menu_adminimal_settings($form, &$form_state) {
 /**
  * Submit handler for views_sexy_throbber_settings().
  */
-function admin_menu_adminimal_settings_submit($form, &$form_state) {
+function adminimal_admin_menu_settings_submit($form, &$form_state) {
 
   // Exclude unnecessary elements.
   form_state_values_clean($form_state);

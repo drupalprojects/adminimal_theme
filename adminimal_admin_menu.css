@@ -1,5 +1,5 @@
 /* Import the Open Sans webfont from Google CDN */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek,cyrillic,vietnamese);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek,cyrillic,vietnamese);
 
 /* Blink Animation */
 @keyframes blink {
@@ -68,6 +68,10 @@ body.adminimal-menu div#admin-menu a:hover {
 
 body.adminimal-menu #admin-menu .dropdown li li {
   background-color: #1f1f1f;
+}
+
+body.adminimal-menu #admin-menu .dropdown li li.expandable ul {
+  margin-top: -28px;
 }
 
 body.adminimal-menu #admin-menu .dropdown li li > li.admin-menu-toolbar-category {
@@ -212,7 +216,7 @@ body.adminimal-menu #admin-menu li.highlight {
   animation: blink 0.5s ease infinite;
   -moz-animation: blink 0.5s ease infinite;
   -webkit-animation: blink 0.5s ease infinite;
-  -o-animation: blink 0.5s ease infinite; 
+  -o-animation: blink 0.5s ease infinite;
 }
 
 body.adminimal-menu #admin-menu li.highlight > a {
