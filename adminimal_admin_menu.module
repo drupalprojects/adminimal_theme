@@ -30,11 +30,15 @@ function adminimal_admin_menu_page_build(&$page) {
   if (!_adminimal_admin_menu_access()) {
     return;
   }
+  $path = drupal_get_path('module', 'adminimal_admin_menu');
+
+  // Attach the CSS and JavaScript assets.
+  drupal_add_css($path . '/adminimal_admin_menu.css');
+  drupal_add_js($path . '/adminimal_admin_menu.js', 'file');
 
   if (!isset($page['page_bottom']['admin_menu'])) {
     return;
   }
-  $path = drupal_get_path('module', 'adminimal_admin_menu');
   $attached = &$page['page_bottom']['admin_menu']['#attached'];
   $options = array('every_page' => TRUE);
 
@@ -43,10 +47,6 @@ function adminimal_admin_menu_page_build(&$page) {
   if (module_exists('shortcut')) {
     $attached['css'][drupal_get_path('module', 'shortcut') . '/shortcut.css'] = $options;
   }
-
-  // Attach the CSS and JavaScript assets.
-  $attached['css'][$path . '/adminimal_admin_menu.css'] = $options;
-  $attached['js'][$path . '/adminimal_admin_menu.js'] = $options;
 
   $settings = array();
   // Add current path to support menu item highlighting.
