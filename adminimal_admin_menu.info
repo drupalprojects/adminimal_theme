@@ -3,3 +3,6 @@ description = Clean and minimal theme for the administration menu module.
 package = Administration
 core = 7.x
 dependencies[] = admin_menu
+
+stylesheets[screen][] = adminimal_admin_menu.css
+scripts[] = adminimal_admin_menu.js
