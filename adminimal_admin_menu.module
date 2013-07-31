@@ -27,6 +27,10 @@ function adminimal_admin_menu_menu() {
  * Implements hook_page_build().
  */
 function adminimal_admin_menu_page_build(&$page) {
+  if (!_admin_menu_adminimal_access()) {
+    return;
+  }
+
   if (!isset($page['page_bottom']['admin_menu'])) {
     return;
   }
@@ -39,6 +43,10 @@ function adminimal_admin_menu_page_build(&$page) {
   if (module_exists('shortcut')) {
     $attached['css'][drupal_get_path('module', 'shortcut') . '/shortcut.css'] = $options;
   }
+
+  // Attach the CSS and JavaScript assets.
+  $attached['css'][$path . '/admin_menu_adminimal.css'] = $options;
+  $attached['js'][$path . '/admin_menu_adminimal.js'] = $options;
 
   $settings = array();
   // Add current path to support menu item highlighting.
@@ -112,11 +120,29 @@ function adminimal_admin_menu_admin_menu_output_alter(&$content) {
  * Implements hook_preprocess_html().
  */
 function adminimal_admin_menu_preprocess_html(&$vars) {
-
+  if (!_admin_menu_adminimal_access()) {
+    return;
+  }
   // Add the "adminimal" class to the body for better css selection.
   $vars['classes_array'][] = 'adminimal-menu';
 
   // Add the shortcut render mode class.
   $vars['classes_array'][] = 'menu-render-'.variable_get('adminimal_admin_menu_render', 'collapsed');
 
+}
+
+/**
+ * Check if the user has access to use the admin menu.
+ * @return  boolean Result of access checks.
+ */
+function _admin_menu_adminimal_access() {
+  if (!user_access('access administration menu') || admin_menu_suppress(FALSE)) {
+    return FALSE;
+  }
+
+  // Performance: Skip this entirely for AJAX requests.
+  if (strpos($_GET['q'], 'js/') === 0) {
+    return FALSE;
+  }
+  return TRUE;
 }
