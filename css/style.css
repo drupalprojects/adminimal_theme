@@ -70,12 +70,12 @@ dl {
 }
 
 dl dd,dl dl {
-    background: url("../images/small-bullet.png") no-repeat scroll 0 6px transparent;
-    color: #444444;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    text-indent: 10px;
-    line-height: 18px;
+  background: url("../images/small-bullet.png") no-repeat scroll 0 6px transparent;
+  color: #444444;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  text-indent: 10px;
+  line-height: 18px;
 }
 
 blockquote {
@@ -170,13 +170,13 @@ pre {
 }
 
 strong {
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: bold !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: bold !important;
 }
+
 /**
  * Skip link.
  */
-
 #skip-link {
   margin-top:0;
   position:absolute;
@@ -204,10 +204,10 @@ strong {
 #skip-link a:hover,#skip-link a:focus,#skip-link a:active {
   outline:0;
 }
+
 /**
  * Branding.
  */
-
 #branding {
   overflow:hidden;
   padding:20px 20px 0 20px;/* LTR */
@@ -249,10 +249,10 @@ strong {
   text-align:center;
   width:80px;
 }
+
 /**
  * Help.
  */
-
 #help {
   font-size:0.923em;
   margin-top:1em;
@@ -265,10 +265,10 @@ strong {
 #help div.more-help-link {
   text-align:right;/* LTR */
 }
+
 /**
  * Page title.
  */
-
 #page-title {
   background:#333;
   padding-top:20px;
@@ -284,10 +284,10 @@ strong {
   margin:0;
   padding:0 0 12px;
 }
+
 /**
  * Console.
  */
-
 #console {
   margin:9px 0 10px;
 }
