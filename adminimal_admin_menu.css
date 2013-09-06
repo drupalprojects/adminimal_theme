@@ -26,10 +26,6 @@
     99% {background-color: #f69231;}
 }
 
-html {
-  margin-top: 29px !important;
-}
-
 /* Admin menu */
 body.adminimal-menu div#admin-menu {
   background: #333;
