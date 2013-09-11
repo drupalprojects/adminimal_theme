@@ -13,6 +13,12 @@ div.vertical-tabs fieldset {
   padding: 0;
   margin: 0;
 }
+div.vertical-tabs .field-group-tab fieldset {
+  border: solid 1px #ddd;
+  border-top: 3px solid #0074BD;
+  padding: 12px;
+  margin: 18px 0;
+}
 div.vertical-tabs .vertical-tabs-list {
   border-bottom: 1px solid #ccc;
   float: left; /* LTR */
