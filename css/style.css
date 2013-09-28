@@ -771,7 +771,7 @@ input.form-button-disabled,input.form-button-disabled:active {
 }
 
 input.form-autocomplete,input.form-text,input.form-file,textarea.form-textarea,select.form-select {
-  padding:6px 6px 7px 6px;
+  padding:5px 7px;
   border:1px solid #ddd;
   background:#fff;
   color:#333;
