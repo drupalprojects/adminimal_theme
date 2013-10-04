@@ -1605,7 +1605,7 @@ body.adminimal-theme .token-tree th {
   font-family: Open Sans,Helvetica,sans-serif;
   font-size: 23px;
   font-weight: 300;
-  padding-bottom: 5px;
+  padding: 0.25em;
 }
 
 /* Views and Ctools */
