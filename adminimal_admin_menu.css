@@ -67,7 +67,8 @@ body.adminimal-menu div#admin-menu ul.dropdown span.admin-menu-home-icon:hover {
   background-position: 0px -86px;
 }
 
-body.adminimal-menu div#admin-menu a {
+body.adminimal-menu div#admin-menu a,
+body.adminimal-menu div#admin-menu span {
   border: none !important;
   font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 12px;
