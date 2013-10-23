@@ -28,7 +28,7 @@
 body {
   color: #000;
   background: #fff;
-  font:normal 13px/1.538em Open Sans,Helvetica,sans-serif;
+  font:normal 13px/1.538em Open Sans, "Segoe UI", "Helvetica", sans-serif;
 }
 
 a {
@@ -53,7 +53,7 @@ legend {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-weight: 300;
   margin: 10px 0;
 }
@@ -294,7 +294,7 @@ strong {
 #branding h1.page-title {
   color: #FFFFFF;
   float: left;
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 32px;
   font-weight: 300;
   line-height: 38px;
@@ -338,7 +338,7 @@ ul.primary li a:link,ul.primary li a.active,ul.primary li a:active,ul.primary li
   border-width: 1px 1px 0 1px;
   border-style: solid;
   border-color: #a6a7a2;
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: 300;
   margin: 0;
@@ -564,7 +564,7 @@ tr.drag-previous {
 
 table th {
   background: none repeat scroll 0 0 #E1E2DC;
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 300;
   padding: 10px;
@@ -663,7 +663,7 @@ fieldset legend {
   padding: 0 3px;
   margin: 0;
   margin-left: -3px;
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 20px;
   font-weight: 300;
 }
@@ -691,7 +691,7 @@ fieldset legend {
 }
 
 .form-item label, .exposed-filters .form-item label {
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 20px;
   font-weight: 300;
   margin: 0;
@@ -803,7 +803,7 @@ ul.action-links li {
 
 ul.action-links a {
   padding-left: 15px;/* LTR */
-  font: Open Sans,Helvetica,sans-serif;
+  font: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 23px;
   font-weight: 300;
   background: transparent url(../images/add.png) no-repeat 0 center;
@@ -836,7 +836,7 @@ div.admin-panel {
 }
 
 div.admin-panel h3 {
-  font: Open Sans,Helvetica,sans-serif;
+  font: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 23px;
   font-weight: 300;
   margin: 0;
@@ -1027,7 +1027,7 @@ div.breadcrumb a:hover {
 }
 
 h1#overlay-title {
-  font: Open Sans,Helvetica,sans-serif;
+  font: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 32px;
   font-weight: 300;
   margin: 0;
@@ -1056,7 +1056,7 @@ h1#overlay-title {
   border-radius: 0 0 0 0;
   color: #000000;
   display: inline-block;
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 300;
   margin: 0 0 2px;
@@ -1602,7 +1602,7 @@ body.adminimal-theme .token-tree th {
 }
 
 .views-exposed-form label {
-  font-family: Open Sans,Helvetica,sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 23px;
   font-weight: 300;
   padding: 0.25em;
@@ -1689,7 +1689,7 @@ body.page-admin-appearance fieldset legend {
   padding: 0 3px !important;
   margin: 0 !important;
   margin-left: -3px !important;
-  font-family: Open Sans,Helvetica,sans-serif !important;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif !important;
   font-size: 24px !important;
   font-weight: 300 !important;
 }
