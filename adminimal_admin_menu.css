@@ -285,7 +285,7 @@ body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#sh
     background: url("images/shortcut.png") no-repeat scroll 7px 7px #222222;
     border: medium none;
     color: #EEEEEE;
-    font-family: Open Sans;
+    font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
     font-size: 12px;
     padding: 5px 4px 4px 24px;
 }
@@ -301,4 +301,19 @@ body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#sh
 body.adminimal-menu #admin-menu .dropdown .admin-menu-tab {
     background: #444;
     padding-bottom: 2px;
+}
+
+
+/* Environment indicator 2.x */
+body.adminimal-menu #admin-menu #environment-indicator {
+  text-shadow: none;
+}
+
+body.adminimal-menu #admin-menu #environment-indicator .environment-indicator-name {
+  background-image: none;
+  border-left: 1px solid #323232;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 5px 10px;
 }
