@@ -49,7 +49,7 @@
  * The !important is added because the "admin_menu" module adds it to its css. So if you remove the !important statement the top margin will be ignored
  * and it wont be displayed correctly. If you want to remove the top margin do it from the "admin_menu" module settings page.
  * Go to admin/config/administration/admin_menu and uncheck the "Adjust top margin".*/
-body.admin-menu.adminimal-menu {
+body.admin-menu.adminimal-menu.not-front {
     margin-top: 29px !important;
 }
 
