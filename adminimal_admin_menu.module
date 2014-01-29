@@ -125,6 +125,14 @@ function adminimal_admin_menu_preprocess_html(&$vars) {
   }
   // Add the "adminimal" class to the body for better css selection.
   $vars['classes_array'][] = 'adminimal-menu';
+  
+  // Add frontend and backend classes to the body.
+  if (path_is_admin(current_path())) {
+    $vars['classes_array'][] = 'adminimal-backend';
+  }
+  else {
+    $vars['classes_array'][] = 'adminimal-frontend';
+  }
 
   // Add the shortcut render mode class.
   $vars['classes_array'][] = 'menu-render-'.variable_get('adminimal_admin_menu_render', 'collapsed');
