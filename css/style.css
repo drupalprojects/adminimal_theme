@@ -140,7 +140,7 @@ abbr,acronym {
 }
 
 ul,.block ul,.item-list ul {
-  list-style-type: disc;
+  list-style-type: square;
   list-style-image: none;
   margin: 0.25em 0 0.25em 1.5em;/* LTR */
 }
@@ -227,7 +227,7 @@ strong {
  */
 #branding {
   overflow: hidden;
-  padding: 20px 20px 0 20px;/* LTR */
+  padding: 10px 20px 0 20px;/* LTR */
   position: relative;
   background-color: #333;
 }
@@ -683,7 +683,7 @@ fieldset legend {
   font-weight: 300;
   margin: 0;
   margin-right: 1em;
-  padding: 0.25em 0;
+  padding: 0.5em 0;
   width: initial;
 }
 
@@ -702,7 +702,7 @@ fieldset legend {
 }
 
 .form-managed-file .form-file,.form-managed-file .form-submit {
-  margin-left: 10px;
+  margin-right: 1em;
 }
 
 input.empty {
@@ -768,8 +768,12 @@ input.form-autocomplete,input.form-text,input.form-file,textarea.form-textarea,s
   color: #333;
 }
 
+#module-filter-modules {
+  min-height: 0 !important;
+}
+
 input#edit-module-filter-name {
-  background: none repeat scroll 0 0 #FFFFFF;
+  background: transparent;
   border:none;
   border-bottom: 3px solid #DDDDDD;
   color: #333333;
@@ -777,10 +781,13 @@ input#edit-module-filter-name {
   font-size: 32px;
   line-height: 38px;
   font-weight: 100;
-  padding: 5px 9px;
   text-align: center;
-  margin-left: -9px;
   width: 100%;
+}
+
+body.page-admin-modules input#edit-module-filter-name {
+  padding: 5px 9px;
+  margin-left: -9px;
 }
 
 input#edit-module-filter-name:active, input#edit-module-filter-name:focus {
@@ -789,6 +796,32 @@ input#edit-module-filter-name:active, input#edit-module-filter-name:focus {
 
 label[for=edit-module-filter-name], label[for=edit-module-filter-name] {
   display: none !important;
+}
+
+.module-filter-clear {
+  display: block;
+  float: right;
+  position: relative;
+  right: 30px;
+  top: 12px;
+  top: -47px;
+}
+
+body.page-admin-modules .module-filter-clear {
+  top: -47px;
+}
+
+.module-filter-clear a {
+    background: url(../images/x.svg) scroll no-repeat 0 0;
+    display: block;
+    font-size: 0;
+    height: 29px;
+    margin-left: 0;
+    width: 29px;
+}
+
+.module-filter-clear a:hover {
+    background: url(../images/x-hover.svg) scroll no-repeat 0 0;
 }
 
 html.js .toggle-enable {
@@ -1199,6 +1232,11 @@ form.field-multiple-table th.field-label {
   background: transparent;
 }
 
+
+form .field-multiple-table th.field-label {
+  padding-left: 18px;
+}
+
 form.field-multiple-table tr.even {
   background: transparent;
 }
@@ -1313,6 +1351,7 @@ ul.ui-autocomplete {
 
 body.adminimal-theme .ctools-dropbutton-processed {
   border-radius: 0;
+  background: #FFFFFF;
 }
 
 body #page-manager-list-pages-form.form-item {
@@ -1821,8 +1860,17 @@ table.sticky-header {
   padding: 0;
 }
 
+.ctools-button-processed {
+  border-color: #CCCCCC;
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+
 .ctools-button-processed:hover {
   border-color: #999999;
+}
+
+.ctools-no-js .ctools-content ul, .ctools-button-processed .ctools-content ul {
+  margin: 0.25em;
 }
 
 div.form-item-view-args input#preview-args {
@@ -1969,13 +2017,13 @@ div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.media-wrapper {
 }
 
 #media-browser-tabset ul.tabs.primary li a:hover {
-	background: #0074BD;
-	color: #fff;
+  background: #0074BD;
+  color: #fff;
 }
 
 #media-browser-tabset ul.tabs.primary li.ui-state-active a:hover {
-	background: #fff;
-	color: #111;
+  background: #fff;
+  color: #111;
 }
 
 .progress .bar {
@@ -1987,4 +2035,47 @@ div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.media-wrapper {
 
 .progress .filled, .progress .bar .filled {
   background: none repeat scroll 0 0 #0074BD !important;
+}
+
+.update tr.error, .update tr.error.even:hover, .update tr.error.odd:hover {
+  background: none repeat scroll 0 0 #B73939 !important;
+  color: #fff;
+}
+
+.update tr.error .version-recommended {
+  background: none repeat scroll 0 0 #B73939;
+}
+
+.update .security-error {
+  color: #FFFFFF;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.update table.version-security .version-title {
+  color: #FFFFFF;
+}
+
+table.update tr.error td, table.update tr.error th {
+  color: #fff;
+}
+
+.text-format-wrapper .form-item {
+  padding-right: 0;
+}
+
+.form-textarea-wrapper textarea {
+  resize:vertical;
+}
+
+div.krumo-root {
+  border-color: #ddd;
+}
+
+div.krumo-wrapper ul {
+  margin: 0;
+}
+
+div.krumo-wrapper li {
+  list-style: none outside none;
 }

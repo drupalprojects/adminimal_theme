@@ -26,3 +26,11 @@ Drupal.behaviors.adminimal_module_filter_box = {
   }
 };
 })(jQuery);
+
+(function($) {
+Drupal.behaviors.infiniteScrollAddClass = {
+  attach: function (context, settings) {
+    $('#console .messages.status').has("div.krumo-root").removeClass().addClass( "krumo-wrapper" );
+  }
+};
+})(jQuery);
