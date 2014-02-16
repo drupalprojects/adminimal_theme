@@ -79,7 +79,7 @@ div.vertical-tabs .vertical-tabs-panes {
   padding: 10px 15px 10px 0; /* LTR */
 }
 div.vertical-tabs fieldset.vertical-tabs-pane > legend {
-  display: none;
+  /*display: none;*/
 }
 .vertical-tabs-pane .fieldset-wrapper > div:first-child {
   padding-top: 5px;
