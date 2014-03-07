@@ -2078,3 +2078,7 @@ div.krumo-wrapper ul {
 div.krumo-wrapper li {
   list-style: none outside none;
 }
+
+#module-filter-tabs.bottom-fixed {
+    position: relative;
+}
