@@ -33,8 +33,10 @@ function adminimal_admin_menu_page_build(&$page) {
   $path = drupal_get_path('module', 'adminimal_admin_menu');
 
   // Attach the CSS and JavaScript assets.
+  drupal_add_css($path . '/slicknav/slicknav.css');
   drupal_add_css($path . '/adminimal_admin_menu.css');
   drupal_add_js($path . '/adminimal_admin_menu.js', 'file');
+  drupal_add_js($path . '/slicknav/jquery.slicknav.js', 'file');
 
   if (!isset($page['page_bottom']['admin_menu'])) {
     return;
@@ -114,6 +116,28 @@ function adminimal_admin_menu_admin_menu_output_alter(&$content) {
       unset($content['menu'][$key]);
     }
   }
+
+  // Prepare the responsive menu and Join the Icon menu with the administration menu.
+  $responsivemenu = array_merge($content['icon'], $content['menu']);
+
+  // Give it ID to target it later with js and css.
+  $responsivemenu['#wrapper_attributes']['id'] = 'admin-menu-menu-responsive';
+
+  // Move the icon menu to the top.
+  $responsivemenu['icon']['#weight'] = '-100';
+
+  // Change the link title to Administration.
+  $responsivemenu['admin/index']['#title'] = t('Administration');
+
+  // Bind the responsive menu the the content varable so it can be rendered.
+  $content['responsive-menu'] = $responsivemenu;
+
+  // Create the responsive shortucts.
+  $content['responsive']['shortcuts'] = array(
+    '#prefix' => '<div id="responsive-shortcuts">',
+    '#suffix' => '</div>',
+    '#pre_render' => array('shortcut_toolbar_pre_render'),
+  );
 }
 
 /**
@@ -136,6 +160,20 @@ function adminimal_admin_menu_preprocess_html(&$vars) {
 
   // Add the shortcut render mode class.
   $vars['classes_array'][] = 'menu-render-'.variable_get('adminimal_admin_menu_render', 'collapsed');
+  
+  // Fix the viewport, correcting the mobile device zoom.
+  /** @todo - Mybre remove this and let the theme manage the view pont.
+   *  But i was suprised that only few "responsive" drupal themes were fixing
+   *  the viewport.
+   */
+  $viewport = array(
+   '#tag' => 'meta',
+   '#attributes' => array(
+     'name' => 'viewport',
+     'content' => 'width=device-width, initial-scale=1, maximum-scale=1',
+   ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
 
 }
 
