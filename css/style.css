@@ -1603,15 +1603,11 @@ table.token-tree span.expander {
 }
 
 /* Link Icons */
-ul.links .inline li.edit {
-  background: url("images/wrench-screwdriver.png") no-repeat scroll 0 2px transparent;
-  padding-left: 18px;
+ul.links.inline li.edit {
   text-transform: capitalize;
 }
 
-ul.links .inline li.delete {
-  background: url("images/minus-circle.png") no-repeat scroll 0 2px transparent;
-  padding-left: 18px;
+ul.links.inline li.delete {
   text-transform: capitalize;
 }
 
