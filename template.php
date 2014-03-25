@@ -16,7 +16,16 @@ function adminimal_preprocess_maintenance_page(&$vars) {
  * Override or insert variables into the html template.
  */
 function adminimal_preprocess_html(&$vars) {
+
+  // Get adminimal folder path.
   $adminimal_path = drupal_get_path('theme', 'adminimal');
+
+  // Get enabled themes.
+  $active_themes = list_themes();
+
+  if ($active_themes['adminimal']->status == 0) {
+  	drupal_set_message(t('Adminimal Theme must be enabled to work properly. Please enable it from the Apperance page.'), 'warning');
+  }
 
   // Add conditional CSS for IE8 and below.
   drupal_add_css($adminimal_path . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
@@ -34,6 +43,8 @@ function adminimal_preprocess_html(&$vars) {
   if (theme_get_setting('display_icons_config')) {
     drupal_add_css($adminimal_path . '/css/icons-config.css', array('group' => CSS_THEME, 'weight' => 10, 'preprocess' => FALSE));
   }
+
+  
 }
 
 /**
@@ -180,6 +191,9 @@ function adminimal_admin_block_content($variables) {
     }
     $output .= '<dl class="' . $class . '">';
     foreach ($content as $item) {
+      if (!$item['path']) {
+          $item['path']='';
+      }
       $output .= '<div class="admin-block-item ' . check_plain(str_replace("/","-",$item['path'])) . '"><dt>' . l($item['title'], $item['href'], $item['localized_options']) . '</dt>';
       if (!$compact && isset($item['description'])) {
         $output .= '<dd class="description">' . filter_xss_admin($item['description']) . '</dd>';

@@ -1567,10 +1567,16 @@ input#edit-buttons-revert {
   background: #f69231;
 }
 
+a#edit-cancel,a#edit-actions-cancel {
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
 #edit-cancel:hover,
 #edit-actions-cancel:hover,
 input#edit-buttons-revert:hover {
   background: #ef6114;
+  text-decoration: none;
 }
 
 #edit-cancel:active,
