@@ -44,7 +44,6 @@ function adminimal_preprocess_html(&$vars) {
     drupal_add_css($adminimal_path . '/css/icons-config.css', array('group' => CSS_THEME, 'weight' => 10, 'preprocess' => FALSE));
   }
 
-  
 }
 
 /**
@@ -57,6 +56,7 @@ function adminimal_preprocess_page(&$vars) {
     '#theme' => 'menu_local_tasks',
     '#secondary' => $vars['tabs']['#secondary'],
   );
+
 }
 
 /**
@@ -174,6 +174,7 @@ function adminimal_admin_block($variables) {
   $output .= '</div>';
 
   return $output;
+  
 }
 
 /**
