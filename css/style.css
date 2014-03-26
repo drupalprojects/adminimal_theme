@@ -1358,39 +1358,48 @@ body #page-manager-list-pages-form.form-item {
 }
 
 body div.warning {
-  background-image: url("../images/alert.png");
-  background-position: 0 50%;
-  background-color: #e5a200;
-  color: #fff;
-  border: none;
+  background-image: url("images/warning.svg");
+  background-position: 12px 50%;
+  background-color: #fffecb;
+  color: #ff9421;
+  border-top: 0;
+  border-left: 5px solid #ff9421;
+  border-right: 0;
+  border-bottom: 0;
 }
 
 body div.warning a {
-  color: #fffcb7;
+  color: #0074bd;
 }
 
 body div.error {
-  background-image: url("../images/error.png");
-  border: none;
-  background-position: 0 50%;
-  background-color: #b73939;
-  color: #fff;
+  background-image: url("images/error.svg");
+  background-color: #ffdddd;
+  background-position: 12px 50%;
+  color: #c70000;
+  border-top: 0;
+  border-left: 5px solid #c70000;
+  border-right: 0;
+  border-bottom: 0;
 }
 
 body div.error a {
-  color: #FFF7BB;
+  color: #0074bd;
 }
 
 body div.status {
-  background-image: url("../images/check.png");
-  background-position: 0 50%;
-  background-color: #4d8f46;
-  color: #fff;
-  border: none;
+  background-image: url("images/status.svg");
+  background-position: 12px 50%;
+  background-color: #d6ffcb;
+  color: #1a7000;
+  border-top: 0;
+  border-left: 5px solid #1a7000;
+  border-right: 0;
+  border-bottom: 0;
 }
 
 body div.status a {
-  color: #e5ffb3;
+  color: #0074bd;
 }
 
 #edit-pages-apply, #edit-pages-reset {
@@ -2083,4 +2092,14 @@ div.krumo-wrapper li {
 
 #module-filter-tabs.bottom-fixed {
     position: relative;
+}
+
+.dev-query {
+    background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    color: #82eb12;
+    display: block;
+    font-family: courier;
+    overflow: auto;
+    padding: 5px;
 }
