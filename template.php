@@ -192,7 +192,7 @@ function adminimal_admin_block_content($variables) {
     }
     $output .= '<dl class="' . $class . '">';
     foreach ($content as $item) {
-      if (!$item['path']) {
+      if (!isset($item['path'])) {
           $item['path']='';
       }
       $output .= '<div class="admin-block-item ' . check_plain(str_replace("/","-",$item['path'])) . '"><dt>' . l($item['title'], $item['href'], $item['localized_options']) . '</dt>';
