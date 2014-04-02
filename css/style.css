@@ -624,17 +624,13 @@ table.system-status-report tr.warning {
   background-color: #fffbe2;
 }
 
-table.system-status-report tr.error {
-  color: #fff;
-  background-color: #e26969;
+.adminimal-backend table tr.error {
+  color: #C70000;
+  background-color: #FFDDDD;
 }
 
-tr.error a {
-  color: #FFF7BB;	
-}
-
-table.system-status-report tr.error td {
-  color: #fff;
+.adminimal-backend table tr.error td {
+  color: #C70000;
 }
 
 /* Fieldsets */
@@ -1604,17 +1600,17 @@ div.admin-panel {
 }
 
 /* Table hover style */
-tr.even:hover,tr.odd:hover {
-  background: #FFFFBF !important;
+.adminimal-backend tr.even:hover, .adminimal-backend tr.odd:hover {
+  background: #FFFFBF;
 }
 
 /* Tokens */
-.token-tree {
-  margin-left: 0 !important;
+.adminimal-backend .token-tree {
+  margin-left: 0;
 }
 
-table.token-tree span.expander {
-  margin-left: -5px !important;
+.adminimal-backend table.token-tree span.expander {
+  margin-left: -5px;
 }
 
 /* Link Icons */
@@ -1790,25 +1786,25 @@ body.adminimal-theme .token-tree th {
 }
 
 /* Omega Fieldset fix */
-body.page-admin-appearance fieldset {
-  border: solid 1px #ddd !important;
-  border-top: 3px solid #0074BD !important;
+body.page-admin-appearance.adminimal-backend fieldset {
+  border: solid 1px #ddd;
+  border-top: 3px solid #0074BD;
   padding: 12px !important;
   margin: 18px 0 !important;
 }
 
-body.page-admin-appearance fieldset legend {
-  background: white !important;
-  padding: 0 3px !important;
-  margin: 0 !important;
-  margin-left: -3px !important;
-  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif !important;
-  font-size: 24px !important;
-  font-weight: 300 !important;
+body.page-admin-appearance.adminimal-backend fieldset legend {
+  background: white;
+  padding: 0 3px;
+  margin: 0;
+  margin-left: -3px;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-body.page-admin-appearance fieldset fieldset {
-  background-color: white !important;
+body.page-admin-appearance.adminimal-backend fieldset fieldset {
+  background-color: white;
 }
 
 .views-attachment .options-set label {
