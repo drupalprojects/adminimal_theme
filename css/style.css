@@ -1786,25 +1786,25 @@ body.adminimal-theme .token-tree th {
 }
 
 /* Omega Fieldset fix */
-body.page-admin-appearance.adminimal-backend fieldset {
-  border: solid 1px #ddd;
-  border-top: 3px solid #0074BD;
+body.page-admin-appearance fieldset {
+  border: solid 1px #ddd !important;
+  border-top: 3px solid #0074BD !important;
   padding: 12px !important;
   margin: 18px 0 !important;
 }
 
-body.page-admin-appearance.adminimal-backend fieldset legend {
-  background: white;
-  padding: 0 3px;
-  margin: 0;
-  margin-left: -3px;
-  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
+body.page-admin-appearance fieldset legend {
+  background: white !important;
+  padding: 0 3px !important;
+  margin: 0 !important;
+  margin-left: -3px !important;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 300 !important;
 }
 
-body.page-admin-appearance.adminimal-backend fieldset fieldset {
-  background-color: white;
+body.page-admin-appearance fieldset fieldset {
+  background-color: white !important;
 }
 
 .views-attachment .options-set label {

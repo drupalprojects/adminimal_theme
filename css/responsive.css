@@ -1,20 +1,20 @@
 /* Mobile (portrait and landscape) */
-@media only screen 
+@media only screen
 and (max-width : 480px) {
   /* Mobile only Styles */
 		#branding {
 			padding: 0;
 			border-bottom: 5px solid #0074BD;
 		}
-		
+
 		#branding .breadcrumb {
 			padding: 10px 10px 0px 10px;
 		}
-		
+
 		#branding h1.page-title {
 			padding: 0 0 15px 10px;
 		}
-		
+
 		#branding .add-or-remove-shortcuts {
 			display: none;
 		}
@@ -25,7 +25,7 @@ and (max-width : 480px) {
 			padding: 10px 0;
 			position: relative;
 		}
-		
+
 		ul.primary {
 			float: none;
 			clear: both;
@@ -110,14 +110,48 @@ and (max-width : 480px) {
     input[size] {
     	width: 99%;
     }
-    
+
 		.system-themes-list-enabled .theme-default .theme-info h3 {
 			clear: both;
 			padding-top: 10px;
 		}
-		
+
 		table.sticky-header {
 			display: none;
+		}
+
+		.system-themes-list-enabled .theme-info {
+			clear: both;
+			float: left;
+			margin-top: 1em;
+		}
+
+		ul.action-links li {
+			clear: both;
+			float: left;
+			margin: 0 1em 0 0;
+			padding-bottom: 1em;
+		}
+
+		ul.action-links li:last-child {
+			padding-bottom: 0;
+		}
+
+		.ctools-dropbutton-processed {
+			position: relative;
+		}
+		.views-display-top .ctools-button-processed, .views-ui-display-tab-bucket .ctools-button-processed {
+			font-size: 13px;
+			left: 5px;
+			margin-bottom: 10px;
+			position: relative;
+			top: 5px;
+		}
+
+		.views-display-columns > * {
+			width: 100%;
+			margin-left: 0;
+			padding-left: 0;
 		}
 }
 
@@ -126,7 +160,11 @@ and (max-width : 480px) {
 and (min-width : 481px)
 and (max-width : 1024px) {
   /* Tablet only styles */
-	.overflow-fix {
-		overflow: auto;
-	}
+		.overflow-fix {
+			overflow: auto;
+		}
+
+		.ctools-dropbutton-processed {
+			position: relative;
+		}
 }
