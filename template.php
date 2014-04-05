@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * This file contains the main theme functions hooks and overrides.
+ */
+
+/**
  * Override or insert variables into the maintenance page template.
  */
 function adminimal_preprocess_maintenance_page(&$vars) {
@@ -20,14 +25,6 @@ function adminimal_preprocess_html(&$vars) {
   // Get adminimal folder path.
   $adminimal_path = drupal_get_path('theme', 'adminimal');
 
-  // Get enabled themes.
-  $active_themes = list_themes();
-
-  if ($active_themes['adminimal']->status == 0) {
-  	global $base_url;
-  	drupal_set_message(t('Adminimal Theme must be enabled to work properly. Please enable it from the <a href="@link">Appearance page</a>.', array('@link' => $base_url . '/admin/appearance')), 'warning');
-  }
-
   // Add conditional CSS for IE8 and below.
   drupal_add_css($adminimal_path . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
 
@@ -45,6 +42,16 @@ function adminimal_preprocess_html(&$vars) {
     drupal_add_css($adminimal_path . '/css/icons-config.css', array('group' => CSS_THEME, 'weight' => 10, 'preprocess' => FALSE));
   }
 
+	// Fix the viewport and zooming in mobile devices.
+  $viewport = array(
+   '#tag' => 'meta',
+   '#attributes' => array(
+     'name' => 'viewport',
+     'content' => 'width=device-width, maximum-scale=2, minimum-scale=1, user-scalable=yes, initial-scale=1',
+   ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
+
 }
 
 /**
@@ -57,6 +64,14 @@ function adminimal_preprocess_page(&$vars) {
     '#theme' => 'menu_local_tasks',
     '#secondary' => $vars['tabs']['#secondary'],
   );
+
+  // Get enabled themes.
+  $active_themes = list_themes();
+
+  if ($active_themes['adminimal']->status == 0) {
+    global $base_url;
+    drupal_set_message(t('Adminimal Theme must be enabled to work properly. Please enable it from the <a href="@link">Appearance page</a>.', array('@link' => $base_url . '/admin/appearance')), 'warning');
+  }
 
 }
 
@@ -83,7 +98,7 @@ function adminimal_node_add_list($variables) {
 }
 
 /**
- * Overrides theme_adminimal_block_content().
+ * Implements theme_adminimal_block_content().
  *
  * Use unordered list markup in both compact and extended mode.
  */
@@ -106,8 +121,8 @@ function adminimal_adminimal_block_content($variables) {
 }
 
 /**
- * Override of theme_tablesort_indicator().
- *
+ * Implements theme_tablesort_indicator().
+ * 
  * Use our own image versions, so they show up as black and not gray on gray.
  */
 function adminimal_tablesort_indicator($variables) {
@@ -139,7 +154,7 @@ function adminimal_css_alter(&$css) {
 }
 
 /**
- * Override of theme_admin_block().
+ * Implements theme_admin_block().
  * Adding classes to the administration blocks see issue #1869690.
  */
 function adminimal_admin_block($variables) {
@@ -152,9 +167,9 @@ function adminimal_admin_block($variables) {
   }
 
   if (!empty($block['path'])) {
-    $output .= '<div class="admin-panel ' . check_plain(str_replace("/"," ",$block['path'])) . '">';
+    $output .= '<div class="admin-panel ' . check_plain(str_replace("/", " ", $block['path'])) . ' ">';
   }
-  else if (!empty($block['title'])) {
+  elseif (!empty($block['title'])) {
     $output .= '<div class="admin-panel ' . check_plain(strtolower($block['title'])) . '">';
   }
   else {
@@ -179,7 +194,7 @@ function adminimal_admin_block($variables) {
 }
 
 /**
- * Override of theme_admin_block_content().
+ * Implements theme_admin_block_content().
  * Adding classes to the administration blocks see issue #1869690.
  */
 function adminimal_admin_block_content($variables) {
@@ -196,7 +211,7 @@ function adminimal_admin_block_content($variables) {
       if (!isset($item['path'])) {
           $item['path']='';
       }
-      $output .= '<div class="admin-block-item ' . check_plain(str_replace("/","-",$item['path'])) . '"><dt>' . l($item['title'], $item['href'], $item['localized_options']) . '</dt>';
+      $output .= '<div class="admin-block-item ' . check_plain(str_replace("/", "-", $item['path'])) . '"><dt>' . l($item['title'], $item['href'], $item['localized_options']) . '</dt>';
       if (!$compact && isset($item['description'])) {
         $output .= '<dd class="description">' . filter_xss_admin($item['description']) . '</dd>';
       }
@@ -210,7 +225,7 @@ function adminimal_admin_block_content($variables) {
 /**
  * Implements theme_table().
  */
-function adminimal_table ($variables) {
+function adminimal_table($variables) {
   $header = $variables['header'];
   $rows = $variables['rows'];
   $attributes = $variables['attributes'];
@@ -277,7 +292,7 @@ function adminimal_table ($variables) {
         $header_count += isset($header_cell['colspan']) ? $header_cell['colspan'] : 1;
       }
       else {
-        $header_count++;
+        ++$header_count;
       }
     }
     $rows[] = array(array(
@@ -349,6 +364,6 @@ function adminimal_table ($variables) {
   }
 
   $output .= "</table>\n";
-	$output .= "</div>\n";
+  $output .= "</div>\n";
   return $output;
 }

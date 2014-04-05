@@ -76,6 +76,10 @@ and (max-width : 480px) {
 			width: 100%;
 		}
 
+		.form-item label, .exposed-filters .form-item label {
+			margin: 0 0.5em 0.25em 0;
+		}
+
 		.container-inline div, .container-inline label {
 			display: block;
 		}
@@ -153,6 +157,40 @@ and (max-width : 480px) {
 			margin-left: 0;
 			padding-left: 0;
 		}
+
+		div.vertical-tabs {
+			background: #fff;
+			border: none;
+		}
+		
+		div.vertical-tabs .vertical-tabs-list {
+			margin: 0;
+			width: 100%;
+			padding-bottom: 20px;
+			width: 100%;
+			border: none;
+		}
+		div.vertical-tabs .vertical-tabs-panes {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			clear: both;
+		}
+		div.vertical-tabs ul li.vertical-tab-button a {
+			background: none repeat scroll 0 0 #eee;
+			border: none;
+		}
+
+		div.vertical-tabs ul li.vertical-tab-button a {
+			background: #eee;
+			border: none;
+		}
+
+		div.vertical-tabs ul li.vertical-tab-button a:hover, div.vertical-tabs ul li.selected a:hover, div.vertical-tabs ul li.selected a, div.vertical-tabs ul li.selected a:focus, div.vertical-tabs ul li.selected a:active {
+			background: #ddd;
+			border: none;
+		}
+
 }
 
 /* Tablets (portrait and landscape) */
