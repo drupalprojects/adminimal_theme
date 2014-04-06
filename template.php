@@ -42,12 +42,12 @@ function adminimal_preprocess_html(&$vars) {
     drupal_add_css($adminimal_path . '/css/icons-config.css', array('group' => CSS_THEME, 'weight' => 10, 'preprocess' => FALSE));
   }
 
-	// Fix the viewport and zooming in mobile devices.
+  // Fix the viewport and zooming in mobile devices.
   $viewport = array(
    '#tag' => 'meta',
    '#attributes' => array(
      'name' => 'viewport',
-     'content' => 'width=device-width, maximum-scale=2, minimum-scale=1, user-scalable=yes, initial-scale=1',
+     'content' => 'width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no, initial-scale=1',
    ),
   );
   drupal_add_html_head($viewport, 'viewport');
@@ -64,14 +64,6 @@ function adminimal_preprocess_page(&$vars) {
     '#theme' => 'menu_local_tasks',
     '#secondary' => $vars['tabs']['#secondary'],
   );
-
-  // Get enabled themes.
-  $active_themes = list_themes();
-
-  if ($active_themes['adminimal']->status == 0) {
-    global $base_url;
-    drupal_set_message(t('Adminimal Theme must be enabled to work properly. Please enable it from the <a href="@link">Appearance page</a>.', array('@link' => $base_url . '/admin/appearance')), 'warning');
-  }
 
 }
 

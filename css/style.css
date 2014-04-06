@@ -2292,3 +2292,10 @@ body.adminimal-backend a.cke_dialog_ui_button_ok:hover {
 	background: #0A6700;
 	border-color: #0A6700;
 }
+
+.messages.theme-disabled {
+	background: #eee;
+	border: none;
+	border-left: 5px solid #6B6B6B;
+	padding: 10px 15px;
+}

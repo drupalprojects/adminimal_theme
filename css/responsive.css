@@ -4,6 +4,9 @@ and (max-width : 480px) {
   /* Mobile only Styles */
 		#branding {
 			padding: 0;
+		}
+
+		#branding.has-primary-tabs {
 			border-bottom: 5px solid #0074BD;
 		}
 

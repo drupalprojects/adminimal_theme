@@ -53,10 +53,9 @@ Drupal.behaviors.krumo_remove_class = {
   }
 };
 
-// Add media queries.
+// Add media query classes to the body tag.
 Drupal.behaviors.adminimal_media_queries = {
 	attach: function (context, settings) {
-		// Add media query class to the body. 
 		jRes.addFunc([
 			{
 				breakpoint: 'mobile',
@@ -90,6 +89,9 @@ Drupal.behaviors.adminimal_media_queries = {
 // Move the active primary tab on mobile to be displayed last. 
 Drupal.behaviors.adminimal_move_active_primary_tab = {
 	attach: function (context, settings) {
+  	// Add primary tabs class to the branding div for the bottom border.
+    $('#branding').has("ul.tabs.primary").addClass( "has-primary-tabs" );
+
 		// register enter and exit functions for a single breakpoint
 		jRes.addFunc({
 			breakpoint: 'mobile',
