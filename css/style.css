@@ -2091,7 +2091,7 @@ div.krumo-wrapper li {
     position: relative;
 }
 
-.dev-query {
+body.adminimal-backend div.dev-query {
     background: none repeat scroll 0 0 #000000;
     bottom: 0;
     color: #82eb12;
