@@ -1107,6 +1107,7 @@ div.breadcrumb a:hover {
 
 #overlay-titlebar {
   padding: 0;
+  white-space: normal;
 }
 
 h1#overlay-title {
