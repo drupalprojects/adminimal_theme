@@ -1167,6 +1167,7 @@ h1#overlay-title {
   line-height: 1.54em;
   margin: 0;
   right: 0px;
+  white-space: nowrap;
 }
 
 /* Shortcut theming */
