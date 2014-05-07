@@ -2305,3 +2305,8 @@ body.adminimal-backend a.cke_dialog_ui_button_ok:hover {
 body.adminimal-backend ul.rules-operations a, .rules-elements-add ul.action-links a {
 	font-size: inherit;
 }
+
+body.adminimal-backend .rules-autocomplete-button {
+    height: 27px;
+    top: -2px;
+}
