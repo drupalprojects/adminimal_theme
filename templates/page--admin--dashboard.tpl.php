@@ -47,8 +47,8 @@
 
 	<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 
-	<?php if ($page['content']['dashboard']): ?>
-		<div id="dashboard">
+	<?php if (isset($page['content']['dashboard'])): ?>
+		<div id="dashboard-wrapper">
 			<?php print render($page['content']['dashboard']); ?>
 		</div>
 	<?php endif; ?>
