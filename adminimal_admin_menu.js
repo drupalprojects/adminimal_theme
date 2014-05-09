@@ -75,7 +75,7 @@ Drupal.admin.behaviors.responsiveshortcuts = function (context, settings, $admin
   if(jQuery("div.toolbar-shortcuts ul.menu li").length){
 
 	  // Create the dropdown base
-	  $("<select id='responsive-shortcuts-dropdown'/>").appendTo("#responsive-shortcuts div.toolbar-shortcuts");
+	  $("<select id='responsive-shortcuts-dropdown'/>").appendTo("#admin-menu-shortcuts-responsive div.toolbar-shortcuts");
 
 	  // Create default option "Select"
 	  $("<option />", {
@@ -83,31 +83,31 @@ Drupal.admin.behaviors.responsiveshortcuts = function (context, settings, $admin
 	    "class"     :  "hide",
 	    "value"     :  "",
 	    "text"      :  Drupal.t('Shortcuts')
-	  }).appendTo("#responsive-shortcuts div.toolbar-shortcuts select");
+	  }).appendTo("#admin-menu-shortcuts-responsive div.toolbar-shortcuts select");
 
 	  // Populate dropdown with menu items
-	  $("#responsive-shortcuts div.toolbar-shortcuts a").each(function() {
+	  $("#admin-menu-shortcuts-responsive div.toolbar-shortcuts a").each(function() {
 	    var el = $(this);
 	    $("<option />", {
 	      "value"   :  el.attr("href"),
 	      "text"    :  el.text()
-	    }).appendTo("#responsive-shortcuts div.toolbar-shortcuts select");
+	    }).appendTo("#admin-menu-shortcuts-responsive div.toolbar-shortcuts select");
 	  });
 
       // Redirect the user when selecting an option.
-	  $("#responsive-shortcuts div.toolbar-shortcuts select").change(function() {
+	  $("#admin-menu-shortcuts-responsive div.toolbar-shortcuts select").change(function() {
 	    window.location = $(this).find("option:selected").val();
 	  });
 
 	  // Clean the mess.
-	  $('#responsive-shortcuts div.toolbar-shortcuts ul').remove();
+	  $('#admin-menu-shortcuts-responsive div.toolbar-shortcuts ul').remove();
 	  // Move the select box into the responsive menu.
-	  $("#responsive-shortcuts").prependTo(".slicknav_menu");
+	  $("#admin-menu-shortcuts-responsive").prependTo(".slicknav_menu");
 
 	  }
 
   // Remove the edit shortcuts link from the DOM to avoid duble rendering.
-  $('#responsive-shortcuts #edit-shortcuts').remove();
+  $('#admin-menu-shortcuts-responsive #edit-shortcuts').remove();
 
 };
 

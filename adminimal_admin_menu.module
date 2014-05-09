@@ -134,7 +134,7 @@ function adminimal_admin_menu_admin_menu_output_alter(&$content) {
 
   // Create the responsive shortucts.
   $content['responsive']['shortcuts'] = array(
-    '#prefix' => '<div id="responsive-shortcuts">',
+    '#prefix' => '<div id="admin-menu-shortcuts-responsive">',
     '#suffix' => '</div>',
     '#pre_render' => array('shortcut_toolbar_pre_render'),
   );
@@ -159,8 +159,8 @@ function adminimal_admin_menu_preprocess_html(&$vars) {
   }
 
   // Add the shortcut render mode class.
-  $vars['classes_array'][] = 'menu-render-'.variable_get('adminimal_admin_menu_render', 'collapsed');
-  
+  $vars['classes_array'][] = 'menu-render-' . variable_get('adminimal_admin_menu_render', 'collapsed');
+
   // Fix the viewport, correcting the mobile device zoom.
   /** @todo - Mybre remove this and let the theme manage the view pont.
    *  But i was suprised that only few "responsive" drupal themes were fixing
