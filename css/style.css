@@ -2310,3 +2310,7 @@ body.adminimal-backend .rules-autocomplete-button {
     height: 27px;
     top: -2px;
 }
+
+body.adminimal-backend ul.rules-autocomplete .rules-dsac-group {
+    background-color: transparent;
+}

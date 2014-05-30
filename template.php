@@ -34,18 +34,6 @@ function adminimal_preprocess_html(&$vars) {
   // Add conditional CSS for IE6.
   drupal_add_css($adminimal_path . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
 
-
-	// Add custom css for small changes, see # for more info.
-	$custom_css = $adminimal_path . '/css/custom.css';
-	if (file_exists($custom_css)) {
-		drupal_add_css($custom_css, array('group' => CSS_THEME, 'weight' => 1000, 'preprocess' => FALSE));
-	} else {
-		file_unmanaged_save_data("/* Enter your custom css code here.\r\n * To avoid !important when overriding selectors use the * 'body.adminimal-theme'  prefix */\r\n", $custom_css, FILE_EXISTS_ERROR);
- 		if (file_exists($custom_css)) {
-			drupal_add_css($custom_css, array('group' => CSS_THEME, 'weight' => 1000, 'preprocess' => FALSE));
-		}
-	}
-
   // Add theme name to body class.
   $vars['classes_array'][] = 'adminimal-theme';
 
