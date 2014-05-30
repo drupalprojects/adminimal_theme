@@ -679,7 +679,7 @@ fieldset legend {
   font-weight: 300;
   margin: 0;
 	margin: 0 0.5em 0 0;
-	padding: 0.25em 0;
+	padding: 0.5em 0;
   width: initial;
 }
 
@@ -1717,7 +1717,7 @@ body.adminimal-theme .token-tree th {
   font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 23px;
   font-weight: 300;
-  padding: 0.25em;
+  padding: 0.25em 0;
 }
 
 /* Views and Ctools */
@@ -2307,10 +2307,20 @@ body.adminimal-backend ul.rules-operations a, .rules-elements-add ul.action-link
 }
 
 body.adminimal-backend .rules-autocomplete-button {
-    height: 27px;
-    top: -2px;
+  height: 27px;
+  top: -2px;
 }
 
 body.adminimal-backend ul.rules-autocomplete .rules-dsac-group {
-    background-color: transparent;
+  background-color: transparent;
+}
+
+#media-browser-page #branding {
+	background: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+#media-tabs-wrapper {
+    float: left;
 }
