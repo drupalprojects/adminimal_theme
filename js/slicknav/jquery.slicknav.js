@@ -370,4 +370,4 @@
 			return returns !== undefined ? returns : this;
 		}
 	};
-}(jQuery, document, window));
+}($jQueryAdminimal, document, window));

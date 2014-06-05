@@ -111,4 +111,4 @@ Drupal.admin.behaviors.responsiveshortcuts = function (context, settings, $admin
 
 };
 
-})(jQuery);
+})($jQueryAdminimal);

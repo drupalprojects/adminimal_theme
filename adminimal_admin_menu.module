@@ -33,10 +33,11 @@ function adminimal_admin_menu_page_build(&$page) {
   $path = drupal_get_path('module', 'adminimal_admin_menu');
 
   // Attach the CSS and JavaScript assets.
-  drupal_add_css($path . '/slicknav/slicknav.css');
+  drupal_add_css($path . '/js/slicknav/slicknav.css');
   drupal_add_css($path . '/adminimal_admin_menu.css');
-  drupal_add_js($path . '/adminimal_admin_menu.js', 'file');
-  drupal_add_js($path . '/slicknav/jquery.slicknav.js', 'file');
+  drupal_add_js($path . '/js/jquery.min.js', array( 'type' => 'file', 'scope' => 'header', 'weight' => 888 ));
+	drupal_add_js($path . '/js/slicknav/jquery.slicknav.js', array( 'type' => 'file', 'scope' => 'header', 'weight' => 888 ));
+	drupal_add_js($path . '/js/adminimal_admin_menu.js', array( 'type' => 'file', 'scope' => 'header', 'weight' => 888 ));
 
   if (!isset($page['page_bottom']['admin_menu'])) {
     return;
