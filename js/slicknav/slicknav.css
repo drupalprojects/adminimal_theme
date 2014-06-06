@@ -98,3 +98,156 @@
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
 }
+
+/* ADMiNiMAL MENU STYLING */
+.slicknav_menu {
+	display:none;
+}
+
+#admin-menu-menu-responsive {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	#admin-menu-menu, a#edit-shortcuts, li.admin-menu-account, #admin-menu-search, #admin-menu-users, {
+		display:none;
+	}
+
+	#admin-menu {
+		display: none !important;
+	}
+
+	body.admin-menu, body.admin-menu.adminimal-menu.adminimal-backend, body.admin-menu.adminimal-menu.adminimal-frontend {
+		margin-top: 0px !important;
+	}
+
+	.slicknav_menu {
+		display:block;
+	}
+
+	#admin-menu-shortcuts-responsive {
+	    background: url("../../images/circledown.svg") no-repeat scroll 16px 50% transparent;
+	    float: right;
+	}
+
+	#admin-menu-shortcuts-responsive select {
+	    -moz-appearance: none;
+	    -webkit-appearance: none;
+	    text-indent: 0.01px;
+	    text-overflow: '';
+	    border: none;
+	    font-size: 0px;
+	    background: transparent;
+	    height: 46px;
+	    width: 46px;
+	    display: block;
+	}
+
+	#admin-menu-shortcuts-responsive select option {
+	    font-size: 14px;
+	    background: #fff;
+	    color: #333;
+	}
+
+}
+
+.slicknav_btn {
+	float: left;
+}
+
+.slicknav_menu {
+    background: none repeat scroll 0 0 #222222;
+    padding: 0;
+    font-family: Open Sans, "Segoe UI", "Helvetica", sans-serif;
+    color: color: #FFFFFF;
+}
+
+.slicknav_menu a, .slicknav_menu a:link, .slicknav_menu a:active {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.slicknav_menu:after {
+    clear: none;
+}
+
+.slicknav_btn {
+    margin: 0;
+    outline: medium none;
+    padding: 5px 10px;
+    text-shadow: none;
+    border-radius: 0;
+}
+
+.slicknav_icon {
+	display: none;
+}
+
+.slicknav_menu .slicknav_menutxt {
+	text-shadow: none;
+	font-weight: normal;
+}
+
+.slicknav_nav a:hover, .slicknav_nav .slicknav_item:hover {
+	border-radius: 0;
+}
+
+.slicknav_nav li.expandable, #admin-menu .slicknav_nav .dropdown li {
+	float: none !important;
+}
+
+.slicknav_nav .slicknav_item {
+	
+}
+
+.slicknav_btn {
+    background: url("../../images/menu.svg") no-repeat scroll 8px 16px rgba(0, 0, 0, 0);
+    font-size: 23px;
+    padding: 10px 34px;
+}
+
+.slicknav_menu:after {
+    clear: both;
+}
+
+.slicknav_nav .slicknav_item:hover, .slicknav_nav a:hover {
+    background: none repeat scroll 0 0 #0074BD;
+    border-radius: 0;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+.slicknav_nav .slicknav_arrow i {
+    display: inline-block;
+    background: url("../../images/menu-arrows.svg") no-repeat scroll 0px 3px rgba(0, 0, 0, 0);
+    font-size: 0.8em;
+    height: 16px;
+    margin: 0 0 0 0.4em;
+    width: 16px;
+}
+
+.slicknav_open .slicknav_arrow i.open {
+	background: url("../../images/menu-arrows.svg") no-repeat scroll -37px 0 rgba(0, 0, 0, 0);
+}
+
+.slicknav_nav li.admin-menu-toolbar-home-menu {
+	background-color: #333;
+}
+
+li.admin-menu-icon.slicknav_parent > a {
+	padding: 0;
+	margin: 0;
+}
+
+li.admin-menu-icon.slicknav_parent > a > span.slicknav_arrow {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -5px;
+}
+
+.slicknav_nav li.admin-menu-toolbar-home-menu span.admin-menu-home-icon {
+    background: url("../../images/house.svg") no-repeat scroll 17px 10px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+}

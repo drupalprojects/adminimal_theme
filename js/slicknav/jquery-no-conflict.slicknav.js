@@ -370,7 +370,7 @@
 			return returns !== undefined ? returns : this;
 		}
 	};
-}(jQuery, document, window));
+}($jQueryAdminimal, document, window));
 
 (function($) {
 
@@ -429,4 +429,4 @@ Drupal.admin.behaviors.responsiveshortcuts = function (context, settings, $admin
   $('#admin-menu-shortcuts-responsive #edit-shortcuts').remove();
 
 };
-})(jQuery);
+})($jQueryAdminimal);
