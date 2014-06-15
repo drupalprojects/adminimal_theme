@@ -2377,9 +2377,12 @@ body.adminimal-backend ul.rules-autocomplete .rules-dsac-group {
 
 .views-ui-dialog .ui-dialog-titlebar-close span {
     display: block;
+    left: 0;
+    top: 0;
 }
 
 .views-ui-dialog #edit-options .collapsible {
     float: left;
     width: auto;
+    clear: both;
 }
