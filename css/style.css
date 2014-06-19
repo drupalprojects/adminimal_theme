@@ -1984,9 +1984,11 @@ body.page-admin-appearance.overlay #page {
 }
 
 .system-themes-list-disabled .theme-selector {
-  float: left;
+  display: inline-block;
+  float: none;
   opacity: 0.5;
   padding: 20px 20px 20px 0;
+  vertical-align: top;
   width: 300px;
 }
 
