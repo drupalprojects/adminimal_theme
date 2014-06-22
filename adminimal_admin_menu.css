@@ -20,27 +20,31 @@
 
 /* Blink Animation */
 @keyframes blink {
-    0% {background-color: #f69231;}
-    50% {background-color: #d94f13;}
-    99% {background-color: #f69231;}
+    0% {background-color: #f69231; color: #fff;}
+    50% {background-color: #d94f13; color: #fff;}
+    100% {background-color: #f69231; color: #fff;}
 }
 
 @-moz-keyframes blink {
-    0% {background-color: #f69231;}
-    50% {background-color: #d94f13;}
-    99% {background-color: #f69231;}
+    0% {background-color: #f69231; color: #fff;}
+    50% {background-color: #d94f13; color: #fff;}
+    100% {background-color: #f69231; color: #fff;}
 }
 
 @-webkit-keyframes blink {
-    0% {background-color: #f69231;}
-    50% {background-color: #d94f13;}
-    99% {background-color: #f69231;}
+    0% {background-color: #f69231; color: #fff;}
+    50% {background-color: #d94f13; color: #fff;}
+    100% {background-color: #f69231; color: #fff;}
 }
 
 @-o-keyframes blink {
-    0% {background-color: #f69231;}
-    50% {background-color: #d94f13;}
-    99% {background-color: #f69231;}
+    0% {background-color: #f69231; color: #fff;}
+    50% {background-color: #d94f13; color: #fff;}
+    100% {background-color: #f69231; color: #fff;}
+}
+
+body.admin-menu.adminimal-menu #admin-menu *::-moz-focus-inner {
+  border: 0;
 }
 
 /* Admin menu */
@@ -65,15 +69,11 @@ body.adminimal-menu div#admin-menu li.admin-menu-toolbar-home-menu {
 }
 
 body.adminimal-menu div#admin-menu ul.dropdown span.admin-menu-home-icon {
-  background: url("images/home.png") no-repeat scroll 0 2px transparent;
+  background: url("images/home.svg") no-repeat scroll 0 0 transparent;
   display: block;
   margin: 5px 0 0;
   padding: 0;
-  width: 13px;
-}
-
-body.adminimal-menu div#admin-menu ul.dropdown span.admin-menu-home-icon:hover {
-  background-position: 0px -86px;
+  width: 15px;
 }
 
 body.adminimal-menu div#admin-menu a,
@@ -114,6 +114,10 @@ body.adminimal-menu #admin-menu .dropdown li.admin-menu-toolbar-category a {
   line-height: 20px;
 }
 
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-toolbar-category a:focus {
+  background: #0074BD;
+}
+
 body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li {
   opacity: 1;
 }
@@ -132,7 +136,7 @@ body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable {
 }
 
 body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable a {
-  background: transparent !important;
+  background: transparent;
   padding-right: 25px;
   width: 135px;
 }
@@ -168,6 +172,10 @@ body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts:hover {
   text-decoration: none;
 }
 
+body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts:focus {
+  background: #0074BD;
+}
+
 body.adminimal-menu #admin-menu .dropdown li.admin-menu-action a {
   border: none !important;
 }
@@ -177,7 +185,8 @@ body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a {
   padding: 5px 10px;
 }
 
-body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a:hover {
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a:hover,
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a:focus {
   background: #b73939;
 }
 
@@ -235,17 +244,22 @@ body.adminimal-menu li.admin-menu-search:hover {
     background: transparent !important;
 }
 
-body.adminimal-menu #admin-menu li.highlight {
-  background-color: #ef6114 !important;
-  animation: blink 0.5s ease infinite;
-  -moz-animation: blink 0.5s ease infinite;
-  -webkit-animation: blink 0.5s ease infinite;
-  -o-animation: blink 0.5s ease infinite;
+body.adminimal-menu div#admin-menu li.highlight {
+  background-color: #ef6114;
+  animation: blink 1s ease both infinite;
+  -moz-animation: blink 1s ease both infinite;
+  -webkit-animation: blink 1s ease both infinite;
+  -o-animation: blink 1s ease both infinite;
+  color: #fff;
 }
 
 body.adminimal-menu #admin-menu li.highlight > a {
-  border-color: #ef6114 !important;
-  color: #fff !important;
+  border-color: #ef6114;
+  color: #fff;
+  animation: blink 1s ease both infinite;
+  -moz-animation: blink 1s ease both infinite;
+  -webkit-animation: blink 1s ease both infinite;
+  -o-animation: blink 1s ease both infinite;
 }
 
 /* Newline render mode */
