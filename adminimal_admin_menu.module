@@ -37,6 +37,28 @@ function adminimal_admin_menu_page_build(&$page) {
   // Attach the CSS and JavaScript assets.
   drupal_add_css($path . '/adminimal_admin_menu.css');
 
+	// Support for the Environment Indicator module.
+  if (module_exists('environment_indicator')) {
+  $environment_info = environment_indicator_get_active();
+	  drupal_add_css('
+      div.slicknav_menu a.slicknav_btn:after {
+      	content: "' . $environment_info['name']. '";
+      	margin-left: 1em;
+      	color: ' . $environment_info['text_color'] . ';
+      	font-size: 12px;
+      	background-color: ' . $environment_info['color'] . ';
+				padding: 2px 5px;
+			}
+			#admin-menu-wrapper {background: #222 !important;}
+			',
+      array(
+        'group' => CSS_DEFAULT,
+        'type' => 'inline',
+        'preprocess' => FALSE,
+        'weight' => '100',
+      ));
+	}
+
 	// Check if both slicknav and custom jQuery must be loaded.
 	if ($load_slicknav and $load_jQuery) {
 	  drupal_add_js($path . '/js/jquery.min.js', array( 'type' => 'file', 'scope' => 'header', 'weight' => 888 ));
@@ -77,6 +99,7 @@ function adminimal_admin_menu_page_build(&$page) {
     'data' => array('admin_menu' => array('toolbar' => $settings)),
     'type' => 'setting',
   );
+
 }
 
 /**
