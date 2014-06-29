@@ -1271,24 +1271,24 @@ div.warning {
 }
 
 /* Disable overlay message */
-#overlay-disable-message {
+body.adminimal-backend #overlay-disable-message {
   background-color: #addafc;
 }
 
-#overlay-disable-message a,#overlay-disable-message a:visited {
+body.adminimal-backend #overlay-disable-message a,#overlay-disable-message a:visited {
   color: #000;
 }
 
-#overlay-disable-message a:focus,#overlay-disable-message a:active {
+body.adminimal-backend #overlay-disable-message a:focus,#overlay-disable-message a:active {
   outline: none;
   text-decoration: underline;
 }
 
-.overlay-disable-message-focused a {
+body.adminimal-backend .overlay-disable-message-focused a {
   padding: 0.4em 0.6em;
 }
 
-.overlay-disable-message-focused #overlay-dismiss-message {
+body.adminimal-backend .overlay-disable-message-focused #overlay-dismiss-message {
   background-color: #59a0d8;
   color: #fff;
   -moz-border-radius: 8px;
@@ -1296,23 +1296,23 @@ div.warning {
   border-radius: 8px;
 }
 
-#ctools-export-ui-list-form.form-submit {
+body.adminimal-backend #ctools-export-ui-list-form.form-submit {
   float: left;
   margin-top: 36px;
 }
 
-a.imce-filefield-opener {
+body.adminimal-backend a.imce-filefield-opener {
   margin: 5px 0;
 }
 
-div.autocomplete-deluxe-multiple {
+body.adminimal-backend div.autocomplete-deluxe-multiple {
   background: none repeat scroll 0 0 #FFFFFF;
   padding: 0;
   width: auto;
   min-width: 500px;
 }
 
-.autocomplete-deluxe-item {
+body.adminimal-backend .autocomplete-deluxe-item {
   background: none repeat scroll 0 0 #555555;
   border: 0 none;
   border-radius: 0 0 0 0;
@@ -1323,7 +1323,7 @@ div.autocomplete-deluxe-multiple {
   padding: 7px 20px 7px 10px;
 }
 
-.autocomplete-deluxe-item-delete {
+body.adminimal-backend .autocomplete-deluxe-item-delete {
   background: url("../images/ui-icons-ffffff-256x240.png") no-repeat scroll -100px -130px transparent;
   display: block;
   font-size: 1px;
@@ -1334,24 +1334,52 @@ div.autocomplete-deluxe-multiple {
   width: 12px;
 }
 
-ul.ui-autocomplete {
-  max-height: 240px;
-  max-width: 240px;
+body.adminimal-backend ul.ui-autocomplete {
+  max-height: 300px;
+  max-width: 300px;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0;
   position: relative;
+  border: 1px solid #DDD;
+  margin-left: -2px;
 }
 
-.ui-autocomplete .ui-menu-item a {
+body.adminimal-backend div.autocomplete-deluxe-container input.autocomplete-deluxe-form-single {
+	background: #fff;
+}
+
+body.adminimal-backend .ui-autocomplete .ui-menu-item a {
   display: block;
   line-height: 1.5;
   padding: 5px 10px;
   text-decoration: none;
+  color: #777;
 }
 
-.ui-autocomplete a:hover .autocomplete-deluxe-highlight-char{
-  color:white;
+body.adminimal-backend ul.ui-autocomplete li.ui-menu-item .ui-state-focus {
+	background: inherit;
+	color: inherit;
+}
+
+body.adminimal-backend .ui-menu .ui-menu-item a.ui-state-focus {
+	margin: 0;
+}
+
+body.adminimal-backend .autocomplete-deluxe-highlight-char {
+  color: #000;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+body.adminimal-backend .ui-autocomplete .ui-menu-item a.ui-state-focus:hover {
+  background-color: #0074BD;
+  color: #fff;
+  cursor: pointer;
+}
+
+body.adminimal-backend a.ui-state-focus:hover .autocomplete-deluxe-highlight-char {
+  color: #caf631;
 }
 
 body.adminimal-theme .ctools-dropbutton-processed {
@@ -2209,6 +2237,11 @@ body.adminimal-backend .cke_toolgroup {
 body.adminimal-backend .cke_combo_button {
   background: #fff;
   border: 1px solid #ccc;
+}
+
+body.adminimal-backend .cke_combo_off a.cke_combo_button:hover {
+  background: #fff;
+  border: 1px solid #0074BD;
 }
 
 body.adminimal-backend .cke_button_on {
