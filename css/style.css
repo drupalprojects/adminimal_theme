@@ -1864,6 +1864,10 @@ body.adminimal-theme .token-tree th {
   clear: both;
 }
 
+#views-ui-config-item-form .dependent-options {
+  margin-left: 18px; /* Restore views default from being overridden by .form-item */
+}
+
 .views-exposed-form label{
   padding-bottom: 10px;
 }
