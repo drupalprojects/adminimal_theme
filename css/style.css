@@ -2517,6 +2517,11 @@ body.adminimal-theme .views-edit-view .views-display-top {
   padding: 0px;
 }
 
+body.adminimal-theme ul#views-display-menu-tabs {
+  width: auto;
+  margin-right: 18em;
+}
+
 body.adminimal-theme .views-display-top ul#views-display-menu-tabs li {
   margin: 0px;
 }
