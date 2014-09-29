@@ -2486,9 +2486,8 @@ body.adminimal-theme .views-ui-dialog .ui-dialog-titlebar-close span {
 }
 
 body.adminimal-theme .views-ui-dialog #edit-options .collapsible {
-  float: left;
+  float: unset;
   width: auto;
-  clear: both;
 }
 
 body.adminimal-theme div.views-display-settings #edit-display-settings-title {
@@ -2668,25 +2667,29 @@ body.adminimal-theme .custom_css_not_found .css_path {
 }
 
 #autosave-status {
-    height: auto;
-    left: 0;
-    padding: 1em;
-    background: #37A5DA;
+  height: auto;
+  left: 0;
+  padding: 1em;
+  background: #37A5DA;
 }
 
 #autosave-status #status {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 #autosave-status a {
-    display: inline-block;
-    padding: 0.3em 0.5em;
-    background: #444;
-    text-decoration: none;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  background: #444;
+  text-decoration: none;
 }
 
 #autosave-status a:hover,
 #autosave-status a:focus {
-    background: #222;
+  background: #222;
 }
 
+/* Fix SemanticViews module see #2340681 */
+body.page-admin-structure-views-view #views-ui-edit-display-form #edit-options #edit-style-options-row fieldset#edit-style-options-row--2 {
+  float: left;
+}
