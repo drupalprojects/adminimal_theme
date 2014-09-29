@@ -811,16 +811,16 @@ body.page-admin-modules .module-filter-clear {
 }
 
 .module-filter-clear a {
-    background: url(../images/x.svg) scroll no-repeat 0 0;
-    display: block;
-    font-size: 0;
-    height: 29px;
-    margin-left: 0;
-    width: 29px;
+  background: url(../images/x.svg) scroll no-repeat 0 0;
+  display: block;
+  font-size: 0;
+  height: 29px;
+  margin-left: 0;
+  width: 29px;
 }
 
 .module-filter-clear a:hover {
-    background: url(../images/x-hover.svg) scroll no-repeat 0 0;
+  background: url(../images/x-hover.svg) scroll no-repeat 0 0;
 }
 
 html.js .toggle-enable {
