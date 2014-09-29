@@ -2666,3 +2666,27 @@ body.adminimal-theme .custom_css_not_found .css_path {
 .form-wrapper {
   margin-bottom: 20px;
 }
+
+#autosave-status {
+    height: auto;
+    left: 0;
+    padding: 1em;
+    background: #37A5DA;
+}
+
+#autosave-status #status {
+    margin-left: 0;
+}
+
+#autosave-status a {
+    display: inline-block;
+    padding: 0.3em 0.5em;
+    background: #444;
+    text-decoration: none;
+}
+
+#autosave-status a:hover,
+#autosave-status a:focus {
+    background: #222;
+}
+
