@@ -767,6 +767,18 @@ input.form-autocomplete,input.form-text,input.form-file,textarea.form-textarea,s
   vertical-align: baseline;
 }
 
+/* Fix webkit select on OS X see issue #2351221 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input.form-autocomplete,input.form-text,input.form-file,textarea.form-textarea,select.form-select {
+    -webkit-appearance: none;
+    -webkit-padding-start: 5px;
+    -webkit-padding-end: 16px;
+    -webkit-padding-before: 5px;
+    -webkit-padding-after: 5px;
+    background: url('images/select-arrow.svg') no-repeat right 50% #fff;
+  }
+}
+
 #module-filter-modules {
   min-height: 0 !important;
 }
