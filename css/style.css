@@ -2608,7 +2608,8 @@ body.adminimal-theme .chosen-container.chosen-container-active > a {
   border-color: #0074BD;
 }
 
-body.adminimal-theme .chosen-container.chosen-container-active .chosen-drop {
+body.adminimal-theme .chosen-container.chosen-container-active .chosen-drop,
+body.adminimal-theme .chosen-container-active .chosen-choices {
   border-color: #0074BD;
 }
 
@@ -2616,7 +2617,8 @@ body.adminimal-theme .chosen-container-single .chosen-single div b {
   background-position: 0px 4px;
 }
 
-body.adminimal-theme .chosen-container-single .chosen-drop {
+body.adminimal-theme .chosen-container-single .chosen-drop,
+body.adminimal-theme .chosen-container-multi .chosen-drop {
 	border-radius: 0;
 	box-shadow: none;
 }
@@ -2626,6 +2628,16 @@ body.adminimal-theme .chosen-container-active.chosen-with-drop .chosen-single,
 body.adminimal-theme .chosen-container-active .chosen-choices {
 	box-shadow: none;
 	border-radius: 0;
+}
+body.adminimal-theme .chosen-container-multi .chosen-choices {
+  background: #fff;
+}
+body.adminimal-theme .chosen-container-multi .chosen-choices li.search-choice {
+  background: #e3e3e3;
+  border-color: #e3e3e3;
+}
+body.adminimal-theme .chosen-container .chosen-results li.highlighted {
+  background: #0074BD;
 }
 
 body.adminimal-theme .chosen-container .chosen-results li.group-result {
