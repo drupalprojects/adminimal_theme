@@ -1,0 +1,16 @@
+/**
+ * Page title.
+ */
+#page-title {
+  padding-top: 20px;
+}
+#branding .page-title {
+  color: #fff;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+[dir="rtl"] #branding h1.page-title {
+  float: right;
+}

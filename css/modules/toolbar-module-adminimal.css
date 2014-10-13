@@ -1,0 +1,165 @@
+/**
+ * Toolbar module (core).
+ */
+.toolbar {
+  font-family: "Open Sans", sans-serif;
+}
+
+.toolbar .menu {
+  background: transparent;
+}
+
+.toolbar .toolbar-bar {
+  background-color: #111;
+  box-shadow: none;
+  color: #dddddd;
+}
+
+.toolbar .toolbar-tray-vertical {
+  background-color: #222;
+  border-right: none;
+  box-shadow: none;
+}
+
+.toolbar .toolbar-tray-horizontal {
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.toolbar .toolbar-tray-horizontal > .toolbar-lining {
+  background: #222;
+}
+
+.toolbar .toolbar-tray-horizontal .menu li + li {
+  border: none;
+}
+
+.toolbar .toolbar-tray-vertical .menu li + li {
+  border: none;
+}
+
+.toolbar .toolbar-tray-horizontal .menu li:last-child {
+  border-right: none; /* LTR */
+}
+[dir="rtl"] .toolbar .toolbar-tray-horizontal .menu li:last-child {
+  border-left: none;
+}
+
+.toolbar .toolbar-tray-vertical .menu li:last-child {
+  border-bottom: none;
+}
+
+.toolbar .toolbar-bar .toolbar-tab > .toolbar-item.active {
+  background: #222;
+  color: #fff;
+}
+
+.toolbar-tray a:hover, .toolbar-tray a:active, .toolbar-tray a:focus, .toolbar-tray a.active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.toolbar .toolbar-tray .active-trail > .toolbar-box a, .toolbar .toolbar-tray a.active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.toolbar-tray a {
+  color: #999;
+}
+
+.toolbar-tab a:focus {
+    border-color: transparent;
+}
+
+.toolbar .toolbar-bar .toolbar-item {
+  color: #ccc;
+}
+
+.toolbar .toolbar-bar .toolbar-tab > .toolbar-item:hover,
+.toolbar .toolbar-bar .toolbar-tab > .toolbar-item:focus {
+  background: #222;
+  text-decoration: none;
+  color: #fff;
+}
+
+.toolbar .toolbar-toggle-orientation {
+  background: transparent;
+}
+
+.toolbar .toolbar-tray-horizontal .toolbar-toggle-orientation {
+  border-left: none;
+}
+
+/**
+ * Main menu icons.
+ */
+.toolbar .toolbar-icon:before,
+.toolbar .toolbar-bar .toolbar-icon:before {
+  width: 18px;
+}
+
+.toolbar-icon-system-admin-content:before {
+  background-image: url(../../icons/modules/toolbar/787878/file.svg);
+}
+.toolbar-icon-system-admin-content:active:before,
+.toolbar-icon-system-admin-content:hover:before,
+.toolbar-icon-system-admin-content.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/file.svg);
+}
+.toolbar-icon-system-admin-structure:before {
+  background-image: url(../../icons/modules/toolbar/787878/orgchart.svg);
+}
+.toolbar-icon-system-admin-structure:active:before,
+.toolbar-icon-system-admin-structure:hover:before,
+.toolbar-icon-system-admin-structure.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/orgchart.svg);
+}
+.toolbar-icon-system-themes-page:before {
+  background-image: url(../../icons/modules/toolbar/787878/paintbrush.svg);
+}
+.toolbar-icon-system-themes-page:active:before,
+.toolbar-icon-system-themes-page:hover:before,
+.toolbar-icon-system-themes-page.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/paintbrush.svg);
+}
+.toolbar-icon-user-admin-account:before {
+  background-image: url(../../icons/modules/toolbar/787878/people.svg);
+}
+.toolbar-icon-user-admin-account:active:before,
+.toolbar-icon-user-admin-account:hover:before,
+.toolbar-icon-user-admin-account.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/people.svg);
+}
+.toolbar-icon-system-modules-list:before {
+  background-image: url(../../icons/modules/toolbar/787878/puzzlepiece.svg);
+}
+.toolbar-icon-system-modules-list:active:before,
+.toolbar-icon-system-modules-list:hover:before,
+.toolbar-icon-system-modules-list.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/puzzlepiece.svg);
+}
+.toolbar-icon-system-admin-config:before {
+  background-image: url(../../icons/modules/toolbar/787878/wrench.svg);
+}
+.toolbar-icon-system-admin-config:active:before,
+.toolbar-icon-system-admin-config:hover:before,
+.toolbar-icon-system-admin-config.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/wrench.svg);
+}
+.toolbar-icon-system-admin-reports:before {
+  background-image: url(../../icons/modules/toolbar/787878/barchart.svg);
+}
+.toolbar-icon-system-admin-reports:active:before,
+.toolbar-icon-system-admin-reports:hover:before,
+.toolbar-icon-system-admin-reports.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/barchart.svg);
+}
+.toolbar-icon-help-main:before {
+  background-image: url(../../icons/modules/toolbar/787878/questionmark-disc.svg);
+}
+.toolbar-icon-help-main:active:before,
+.toolbar-icon-help-main:hover:before,
+.toolbar-icon-help-main.active:before {
+  background-image: url(../../icons/modules/toolbar/ffffff/questionmark-disc.svg);
+}

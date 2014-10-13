@@ -1,0 +1,11 @@
+/**
+ * Branding.
+ */
+#branding {
+  overflow: hidden;
+  background-color: #333;
+  padding: 20px 0 15px;
+}
+[dir="rtl"] #branding {
+  padding: 20px 0 15px;
+}
