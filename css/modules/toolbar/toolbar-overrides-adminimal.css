@@ -96,6 +96,12 @@
   border-left: none;
 }
 
+.toolbar-tray-horizontal a:focus, .toolbar-box a:focus {
+  background: #0074BD;
+  color: #fff;
+  text-decoration: none;
+}
+
 /**
  * Handles.
  */
