@@ -13,13 +13,13 @@
  */
 input.button {
   cursor: pointer;
-  background: #e3e3e3;
+  background: #0074BD;
   border: none;
   border-radius: 0;
   padding: 6px 10px;
   margin-bottom: 1em;
   margin-right: 1em;/* LTR */
-  color: #555;
+  color: #fff;
   text-align: center;
   font-weight: normal;
   font-size: 14px;
@@ -27,15 +27,15 @@ input.button {
   -webkit-font-smoothing: antialiased;
 }
 input.button:hover {
-  background: #0074BD;
-  color: #fff;
+  background: #008EE6;
 }
 input.button:focus {
-  color: #000;
-  background: #e3e3e3;
+  background: #008EE6;
+  outline: solid #444 3px;
 }
 input.button:active {
-  box-shadow: 0 2px 2px rgba(0,0,0,0.3) inset;
+  background: #444;
+  outline: solid #eee 3px;
 }
 
 input.button--primary {
@@ -57,6 +57,7 @@ input.button--primary:focus {
   border-radius: 0;
   border: none;
   color: #fff;
+  outline: solid #eee 3px;
 }
 input.button--primary:hover {
   background: #0a6700;
@@ -65,7 +66,6 @@ input.button--primary:hover {
   color: #fff;
 }
 input.button--primary:active {
-  box-shadow: 0 2px 2px rgba(0,0,0,0.75) inset;
   background: #333;
   border-radius: 0;
   border: none;

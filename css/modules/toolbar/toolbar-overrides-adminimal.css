@@ -68,6 +68,11 @@
   color: #999;
 }
 
+.toolbar .toolbar-tray .active-trail > .toolbar-box a,
+.toolbar .toolbar-tray a.active {
+  font-weight: normal;
+}
+
 .toolbar-tab a:focus {
     border-color: transparent;
 }
@@ -92,74 +97,83 @@
 }
 
 /**
+ * Handles.
+ */
+.toolbar .toolbar-icon.toolbar-handle:focus {
+  background-color: transparent;
+}
+
+/**
  * Main menu icons.
  */
-.toolbar .toolbar-icon:before,
-.toolbar .toolbar-bar .toolbar-icon:before {
-  width: 18px;
+@media only screen and (min-width: 38.125em) {
+  .toolbar .toolbar-icon:before,
+  .toolbar .toolbar-bar .toolbar-icon:before {
+    width: 18px;
+  }
 }
 
 .toolbar-icon-system-admin-content:before {
-  background-image: url(../../icons/modules/toolbar/787878/file.svg);
+  background-image: url(icons/787878/file.svg);
 }
 .toolbar-icon-system-admin-content:active:before,
 .toolbar-icon-system-admin-content:hover:before,
 .toolbar-icon-system-admin-content.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/file.svg);
+  background-image: url(icons/ffffff/file.svg);
 }
 .toolbar-icon-system-admin-structure:before {
-  background-image: url(../../icons/modules/toolbar/787878/orgchart.svg);
+  background-image: url(icons/787878/orgchart.svg);
 }
 .toolbar-icon-system-admin-structure:active:before,
 .toolbar-icon-system-admin-structure:hover:before,
 .toolbar-icon-system-admin-structure.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/orgchart.svg);
+  background-image: url(icons/ffffff/orgchart.svg);
 }
 .toolbar-icon-system-themes-page:before {
-  background-image: url(../../icons/modules/toolbar/787878/paintbrush.svg);
+  background-image: url(icons/787878/paintbrush.svg);
 }
 .toolbar-icon-system-themes-page:active:before,
 .toolbar-icon-system-themes-page:hover:before,
 .toolbar-icon-system-themes-page.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/paintbrush.svg);
+  background-image: url(icons/ffffff/paintbrush.svg);
 }
 .toolbar-icon-user-admin-account:before {
-  background-image: url(../../icons/modules/toolbar/787878/people.svg);
+  background-image: url(icons/787878/people.svg);
 }
 .toolbar-icon-user-admin-account:active:before,
 .toolbar-icon-user-admin-account:hover:before,
 .toolbar-icon-user-admin-account.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/people.svg);
+  background-image: url(icons/ffffff/people.svg);
 }
 .toolbar-icon-system-modules-list:before {
-  background-image: url(../../icons/modules/toolbar/787878/puzzlepiece.svg);
+  background-image: url(icons/787878/puzzlepiece.svg);
 }
 .toolbar-icon-system-modules-list:active:before,
 .toolbar-icon-system-modules-list:hover:before,
 .toolbar-icon-system-modules-list.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/puzzlepiece.svg);
+  background-image: url(icons/ffffff/puzzlepiece.svg);
 }
 .toolbar-icon-system-admin-config:before {
-  background-image: url(../../icons/modules/toolbar/787878/wrench.svg);
+  background-image: url(icons/787878/wrench.svg);
 }
 .toolbar-icon-system-admin-config:active:before,
 .toolbar-icon-system-admin-config:hover:before,
 .toolbar-icon-system-admin-config.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/wrench.svg);
+  background-image: url(icons/ffffff/wrench.svg);
 }
 .toolbar-icon-system-admin-reports:before {
-  background-image: url(../../icons/modules/toolbar/787878/barchart.svg);
+  background-image: url(icons/787878/barchart.svg);
 }
 .toolbar-icon-system-admin-reports:active:before,
 .toolbar-icon-system-admin-reports:hover:before,
 .toolbar-icon-system-admin-reports.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/barchart.svg);
+  background-image: url(icons/ffffff/barchart.svg);
 }
 .toolbar-icon-help-main:before {
-  background-image: url(../../icons/modules/toolbar/787878/questionmark-disc.svg);
+  background-image: url(icons/787878/questionmark-disc.svg);
 }
 .toolbar-icon-help-main:active:before,
 .toolbar-icon-help-main:hover:before,
 .toolbar-icon-help-main.active:before {
-  background-image: url(../../icons/modules/toolbar/ffffff/questionmark-disc.svg);
+  background-image: url(icons/ffffff/questionmark-disc.svg);
 }

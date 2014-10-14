@@ -24,12 +24,9 @@ fieldset {
 }
 label {
   display: table;
-  margin: 0 0 0 0.2em; /* LTR */
-  padding: 0;
+  margin: 0;
+  padding: 0.2em 0;
   font-weight: bold;
-}
-[dir="rtl"] label {
-  margin: 0 0.2em 0 0;
 }
 label.error {
   color: #a51b00;
@@ -138,10 +135,9 @@ textarea.form-textarea {
   padding: .3em .4em .3em .5em;
   max-width: 100%;
   border: 1px solid #b8b8b8;
-  border-top-color: #999;
   background: #fff;
   color: #333;
-  border-radius: 2px;
+  border-radius: 0;
   background: #fcfcfa;
   font-size: 1em;
   color: #595959;
@@ -159,7 +155,7 @@ textarea.form-textarea {
 .form-textarea:focus,
 .form-date:focus,
 .form-time:focus {
-  border-color: #40b6ff;
+  border-color: #0074BD;
   outline: 0;
   background-color: #fff;
 }

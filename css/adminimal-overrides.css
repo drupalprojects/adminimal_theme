@@ -1,0 +1,51 @@
+/**
+ * Adminimal global Overrides.
+ * For small changes. 
+ */
+
+/* Override: seven/css/components/admin-panel.css */
+div.admin-panel h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.2em;
+  text-transform: none;
+}
+
+/* Override: components/dropbutton.component-adminimal.css */
+
+body.page-node .dropbutton li {
+  background: #4d8f46;
+}
+
+body.page-node .dropbutton li button,
+.js body.page-node .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button,
+.js body.page-node .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button, 
+body.page-node .form-actions .dropbutton .secondary-action,
+body.page-node .dropbutton li input {
+  border: 0;
+}
+
+.js body.page-node .form-actions .dropbutton-widget {
+  border: 0;
+  background: #4d8f46;
+}
+
+.js body.page-node .form-actions .dropbutton .dropbutton-action > * {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.js body.page-node .form-actions .dropbutton li input {
+  padding: 6px 12px;
+}
+
+.js body.page-node .form-actions .dropbutton li.dropbutton-toggle {
+  background: #555;
+}
+
+.js body.page-node .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
+.js body.page-node .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:hover,
+.js body.page-node .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:focus,
+.js body.page-node .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
+  background: #0A6700;
+}

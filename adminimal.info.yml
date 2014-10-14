@@ -15,7 +15,10 @@ stylesheets:
     - css/components/page-title-adminimal.css
     - css/components/form-adminimal.css
     - css/components/tabs-adminimal.css
-    - css/modules/toolbar-module-adminimal.css
+    - css/modules/toolbar/toolbar.theme-adminimal.css
+    - css/modules/toolbar/toolbar.menu-adminimal.css
+    - css/modules/toolbar/toolbar-overrides-adminimal.css
+    - css/adminimal-overrides.css
 
 # Remove CSS.
 stylesheets-remove:
@@ -26,3 +29,5 @@ stylesheets-remove:
   - form.css
   - page-title.css
   - tabs.css
+  - toolbar.theme.css
+  - toolbar.menu.css

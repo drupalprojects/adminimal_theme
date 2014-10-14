@@ -1,0 +1,57 @@
+/**
+ * @file toolbar.menu.css
+ */
+.toolbar .menu,
+[dir="rtl"] .toolbar .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.toolbar .toolbar-box {
+  display: block;
+  line-height: 1em; /* this prevents the value "normal" from being returned as the line-height */
+  position: relative;
+  width: auto;
+}
+.toolbar .toolbar-tray-horizontal .menu .toolbar-handle,
+.toolbar .toolbar-tray-horizontal .menu ul,
+.toolbar .toolbar-tray-vertical .menu ul {
+  display: none;
+}
+.toolbar .toolbar-tray-vertical li.open > ul {
+  display: block; /* Show the sub-menus */
+}
+.toolbar .toolbar-tray-vertical .toolbar-handle + a {
+  margin-right: 3em; /* LTR */
+}
+[dir="rtl"] .toolbar .toolbar-tray-vertical .toolbar-handle + a {
+  margin-left: 3em;
+  margin-right: 0;
+}
+.toolbar .toolbar-tray .active-trail > .toolbar-box a,
+.toolbar .toolbar-tray a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+/**
+ * Handle.
+ */
+.toolbar .toolbar-handle:hover {
+  cursor: pointer;
+}
+.toolbar .toolbar-icon.toolbar-handle {
+  bottom: 0;
+  display: block;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  right: 0; /* LTR */
+  top: 0;
+  z-index: 1;
+}
+[dir="rtl"] .toolbar .toolbar-icon.toolbar-handle {
+  left: 0;
+  padding: 0;
+  right: auto;
+}
