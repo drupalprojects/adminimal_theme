@@ -2499,7 +2499,7 @@ body.adminimal-theme .views-ui-dialog .ui-dialog-titlebar-close span {
 }
 
 body.adminimal-theme .views-ui-dialog #edit-options .collapsible {
-  float: unset;
+  float: inherit;
   width: auto;
 }
 
