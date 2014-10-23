@@ -59,6 +59,25 @@ label[for] {
   box-shadow: none;
 }
 
+div.layout-region-node-main label {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 100; 
+}
+
+div.layout-region-node-main label button.link {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+div.layout-region-node-main .form-type-textarea span.field-edit-link {
+  font-size: 0.7em;
+  margin: 0.4em;
+  padding: 0.2em;
+  position: relative;
+  top: -0.1em;
+}
+
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
@@ -75,7 +94,7 @@ label[for] {
   background-color: #fcf4f2;
 }
 .form-required:after {
-  background-image: url(../../images/required.svg);
+  background-image: url(icons/required.svg);
   background-size: 7px 7px;
   width: 7px;
   height: 7px;
@@ -158,6 +177,7 @@ textarea.form-textarea {
   border-color: #0074BD;
   outline: 0;
   background-color: #fff;
+  color: #000;
 }
 
 .confirm-parent,
@@ -186,11 +206,9 @@ textarea.form-textarea {
   select {
     cursor: pointer;
     -webkit-appearance: none;
-    padding: 1px 1.571em 1px 0.5em; /* LTR */
+    padding: 1px 1.571em 1px .25em; /* LTR */
     border: 1px solid #a6a6a6;
-    background:
-      url(../../../../misc/icons/333333/caret-down.svg) no-repeat 99% 63%,
-      -webkit-linear-gradient(top, #f6f6f3, #e7e7df); /* LTR */
+    background: url(icons/333333/caret-down.svg) no-repeat 99% 63% #fff;
     font-size: 0.875rem;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
@@ -202,9 +220,9 @@ textarea.form-textarea {
   }
   select:focus,
   select:hover {
-    background-image: url(../../../../misc/icons/333333/caret-down.svg),
-    -webkit-linear-gradient(top, #fcfcfa, #e9e9dd);
+    background-image: url(icons/333333/caret-down.svg);
     color: #1a1a1a;
+    border-color: #0074BD;
   }
   select:hover {
   }
