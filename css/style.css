@@ -22,6 +22,10 @@ body.adminimal-theme *::-moz-focus-inner {
   border: 0;
 }
 
+body.adminimal-theme * {
+  box-sizing: content-box;
+}
+
 body {
   color: #000;
   background: #fff;
@@ -912,7 +916,9 @@ html.js .toggle-enable div:after, html.js .toggle-enable div:before {
 
 input.form-text:focus,input.form-file:focus,textarea.form-textarea:focus,select.form-select:focus {
   color: #000;
-  border-color: #0074BD;
+  border-color: #68A3CF;
+  outline: 2px solid #C1E0FF;
+  outline-offset: 0px;
 }
 
 html.js input.form-autocomplete {
@@ -2308,8 +2314,14 @@ body.adminimal-theme .cke_combo_off a.cke_combo_button:hover {
 
 body.adminimal-theme .cke_button_on {
   background: #fff;
-  box-shadow: none;
-  border-bottom: 3px solid #0074BD;
+  box-shadow: 0px 3px 0px #0074BD;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+body.adminimal-theme .cke_button_on:hover {
+  box-shadow: 0px 3px 0px #0074BD;
 }
 
 body.adminimal-theme .cke_bottom {
@@ -2323,8 +2335,14 @@ body.adminimal-theme .cke_combo_off a.cke_combo_button:active,body.adminimal-the
   box-shadow: none;
 }
 
-body.adminimal-theme a.cke_button_on:hover,body.adminimal-theme  a.cke_button_on:focus,body.adminimal-theme  a.cke_button_on:active {
-  box-shadow: none;
+body.adminimal-theme a.cke_button_on:hover,
+body.adminimal-theme a.cke_button_on:focus,
+body.adminimal-theme a.cke_button_on:active,
+body.adminimal-theme .cke_button:first-child,
+body.adminimal-theme .cke_button:last-child {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 body.adminimal-theme a.cke_button_off:hover,
@@ -2335,6 +2353,9 @@ body.adminimal-theme a.cke_button_disabled:active {
   background: #eee;
   box-shadow: none;
   border-color: #0074BD;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 body.adminimal-theme .cke_reset_all label {
@@ -2456,6 +2477,15 @@ body.adminimal-theme a.cke_dialog_ui_button_ok {
 body.adminimal-theme a.cke_dialog_ui_button_ok:hover {
   background: #0A6700;
   border-color: #0A6700;
+}
+
+body.adminimal-theme a.cke_path_item:hover, body.adminimal-theme a.cke_path_item:focus, body.adminimal-theme a.cke_path_item:active {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  box-shadow: none;
+  text-decoration:none;
+  text-shadow: none;
 }
 
 .messages.theme-disabled {
