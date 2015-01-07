@@ -1867,6 +1867,8 @@ body.adminimal-theme .token-tree th {
   font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 23px;
   font-weight: 300;
+  line-height: inherit;
+  margin-bottom: 0;
   padding: 0.25em 0;
 }
 
