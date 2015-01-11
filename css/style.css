@@ -23,6 +23,8 @@ body.adminimal-theme *::-moz-focus-inner {
 }
 
 body.adminimal-theme * {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -314,13 +316,13 @@ strong {
  * Tabs.
  */
 ul.primary {
-  border-bottom: medium none;
-  float: right;
+  border-bottom: 0;
+  float: left;
+  clear: both;
   font-size: 0.923em;
-  height: 2.6em;
-  margin: 12px 0 0;
+  height: auto;
+  margin: 2px 0 0;
   padding-top: 0;
-  text-transform: uppercase;
 }
 
 ul.primary li {
@@ -377,8 +379,8 @@ ul.secondary {
 }
 
 ul.secondary li {
-  margin: 0 5px;
-  float: none;/* LTR */
+  margin: 5px;
+  float: left;/* LTR */
 }
 
 ul.secondary li a {
@@ -773,6 +775,7 @@ input.form-autocomplete,input.form-text,input.form-file,textarea.form-textarea,s
   background: #fff;
   color: #333;
   vertical-align: baseline;
+  box-sizing: inherit;
 }
 
 /* Fix webkit select on OS X see issue #2351221 */
@@ -2260,6 +2263,9 @@ table.update tr.error td, table.update tr.error th {
 
 .form-textarea-wrapper textarea {
   resize:vertical;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 div.krumo-root {
