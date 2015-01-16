@@ -1875,6 +1875,11 @@ body.adminimal-theme .token-tree th {
   padding: 0.25em 0;
 }
 
+.views-exposed-form .views-exposed-widget .form-submit {
+  /* Add top margin of 34px. */
+  margin-top: 2.429em;
+}
+
 /* Views and Ctools */
 .overlay ul.secondary{
   background: none repeat scroll 0 0 transparent;
