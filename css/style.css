@@ -355,7 +355,6 @@ ul.primary li a:link,ul.primary li a.active,ul.primary li a:active,ul.primary li
   margin: 0;
   padding: 10px 12px;
   color: #797979;
-  text-transform: uppercase;
   background: transparent;
 }
 
@@ -2646,8 +2645,26 @@ body.adminimal-theme .views-displays .secondary a > .icon.add {
 }
 
 body.adminimal-theme #views-display-top #views-display-menu-tabs li.add .action-list {
-  top: 43px;
+  top: 42px;
   text-align: left;
+  width: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+body.adminimal-theme .views-displays .secondary .action-list li {
+  border: none;
+  clear: both;
+}
+
+body.adminimal-theme .views-displays .secondary .action-list li.last  {
+  padding-bottom: 5px;
+}
+
+body.adminimal-theme .views-display-top ul#views-display-menu-tabs li a.active {
+  box-shadow: 0px 1px 0px #0073BC;
+  color: #0073BC;
 }
 
 body.adminimal-theme .views-display-top ul#views-display-menu-tabs li a:hover, 
