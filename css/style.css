@@ -718,7 +718,7 @@ fieldset legend {
   font-size: 20px;
   font-weight: 300;
   margin: 0;
-  margin: 0 0 10px;
+  margin: 0px 0px 4px;
   line-height: 1.4;
   width: initial;
 }
@@ -2824,4 +2824,100 @@ body.adminimal-theme .custom_css_not_found .css_path {
 /* Fix SemanticViews module see #2340681 */
 body.page-admin-structure-views-view #views-ui-edit-display-form #edit-options #edit-style-options-row fieldset#edit-style-options-row--2 {
   float: left;
+}
+
+/* Fix Module Filter form float... see #2444477 */
+body.adminimal-theme #module-filter-update-status-form {
+  float: none;
+  padding-bottom: 1em;
+  clear: both;
+}
+
+body.adminimal-theme #module-filter-update-status-form #edit-module-filter-show {
+  margin-top: 5px;
+}
+
+body.adminimal-theme #module-filter-update-status-form .module-filter-inputs-wrapper {
+  display: block;
+  text-align: center;
+}
+
+body.adminimal-theme.page-admin-reports-updates .update.checked  {
+  text-align: center;
+  margin-top: -10px;
+  color: #9B9B9B;
+}
+
+.adminimal-theme .update tr.error, 
+.adminimal-theme .update tr.error.even:hover, 
+.adminimal-theme .update tr.error.odd:hover {
+  background: #FFFFFF !important;
+  color: #000;
+  border: 1px solid #B73939;
+  border-left-width: 5px;
+  display: inline-table;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.adminimal-theme .update tr.error .update table.version-security .version-title {
+  color: #B73939;
+}
+
+.adminimal-theme .table.update tr.error td, 
+.adminimal-theme table.update tr.error th {
+  color: #B73939;
+}
+
+.adminimal-theme .update tr.error .version-recommended,
+.adminimal-theme .update .version-recommended {
+  background: #EDEDED;
+}
+
+.adminimal-theme .update table.version-security .version-title {
+  color: #B73939;
+}
+
+.adminimal-theme table.update {
+  margin-top: 0;
+}
+
+.adminimal-theme table.update tr.error td, 
+.adminimal-theme table.update tr.error th {
+  color: #B73939;
+}
+
+.adminimal-theme .update .security-error {
+  color: #FF8A18;
+}
+
+.adminimal-theme .update tr td {
+  border: none;
+}
+
+.adminimal-theme.page-admin-reports-updates .content h3 {
+  font-size: 25px;
+  margin: 40px 0 0 0;
+  background: #0074BD;
+  padding: 18px;
+  color: #fff;
+  box-shadow: 3px 0 0px #0074BD;
+}
+
+.adminimal-theme.page-admin-reports-updates .update tr.warning {
+  background: #FFF;
+  border: 1px solid #FF7C43;
+  border-left-width: 5px;
+  display: inline-table;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.adminimal-theme.page-admin-reports-updates .update tr.ok {
+  background: #FFF;
+  opacity: .75;
+}
+
+.adminimal-theme .update tr.warning .version-recommended {
+  background: #EDEDED;
 }
