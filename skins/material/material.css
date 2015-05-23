@@ -252,6 +252,7 @@ body.adminimal-skin-material fieldset {
   border-radius: 3px;
   padding-top: 42px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 body.adminimal-skin-material .fieldset-description {
@@ -356,23 +357,29 @@ body.page-admin-appearance.adminimal-skin-material .theme-selector .theme-descri
 body.page-admin-appearance.adminimal-skin-material .theme-selector .operations {
   padding: 0;
   position: absolute;
-  bottom: 16px;
+  bottom: 0px;
   font-size: 14px;
   width: 100%;
   font-weight: bold;
   margin: 0;
   left: 0px;
-  padding-top: 18px;
+  padding-top: 5px;
   border-top: 1px solid #eee;
 }
 
 body.page-admin-appearance.adminimal-skin-material .theme-selector .operations li {
   float: right;
   border: none;
+  padding: 0;
 }
 
-body.page-admin-appearance.adminimal-skin-material .theme-selector .operations li.first {
-  padding: 0 20px 0 0;
+body.page-admin-appearance.adminimal-skin-material .theme-selector .operations li a {
+  padding: 10px;
+}
+
+body.page-admin-appearance.adminimal-skin-material .theme-selector .operations li.first a{
+  padding: 10px;
+  margin-right: 10px;
 }
 
 body.page-admin-appearance.adminimal-skin-material .theme-selector .operations li a:hover{

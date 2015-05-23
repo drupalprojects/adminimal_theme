@@ -2615,3 +2615,8 @@ body.adminimal-theme #module-filter-update-status-form {
 body.adminimal-theme #module-filter-update-status-form #edit-module-filter-show {
   padding: 10px;
 }
+
+/* Fix Views preview display issue #2486489 by @geoffreyr */
+body.page-admin-structure-views-view #content-wrapper {
+  table-layout: fixed;
+}
