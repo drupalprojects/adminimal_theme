@@ -964,9 +964,8 @@ html.js input.throbbing {
 ul.action-links {
   margin: 20px 0 42px;
   list-style-type: none;
-  display: block;
+  display: inline-block;
   list-style-type: none;
-  float: left;
 }
 
 ul.action-links li {
