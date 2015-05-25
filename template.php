@@ -188,6 +188,16 @@ function adminimal_css_alter(&$css) {
 }
 
 /**
+ * Implements hook_js_alter().
+ */
+function adminimal_js_alter(&$javascript) {
+  // Fix module filter available updates page.
+  if (isset($javascript[drupal_get_path('module','module_filter').'/js/update_status.js'])) {
+    $javascript[drupal_get_path('module','module_filter').'/js/update_status.js']['data'] = drupal_get_path('theme', 'adminimal') . '/js/update_status.js';
+  }
+}
+
+/**
  * Implements theme_admin_block().
  * Adding classes to the administration blocks see issue #1869690.
  */
