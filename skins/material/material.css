@@ -735,6 +735,7 @@ input#edit-remove,
 input#edit-clear,
 a.button.remove,
 input[id*="remove-button"],
+.page-node-delete input#edit-submit,
 .page-admin-modules-uninstall input#edit-submit {
   cursor: pointer;
   padding: 6px 18px;
@@ -757,6 +758,7 @@ input#edit-remove:hover,
 input#edit-clear:hover,
 a.button.remove:hover,
 input[id*="remove-button"]:hover,
+.page-node-delete input#edit-submit:hover,
 body.page-admin-modules-uninstall input#edit-submit:hover {
 
 }
@@ -766,6 +768,7 @@ input#remove-button:active,
 input#edit-remove:active,
 input#edit-clear:active,
 input[id*="remove-button"]:active,
+.page-node-delete input#edit-submit:active,
 body.page-admin-modules-uninstall input#edit-submit:active {
 
 }
@@ -774,6 +777,7 @@ body.page-admin-modules-uninstall input#edit-submit:active {
 input#edit-preview,
 input#edit-next,
 input#preview-submit,
+input.ief-entity-submit,
 input[type="submit"][id^="edit-return"] {
   cursor: pointer;
   border: none;
@@ -793,6 +797,7 @@ input[type="submit"][id^="edit-return"] {
 input#edit-preview:hover,
 input#edit-next:hover,
 input#preview-submit:hover,
+input.ief-entity-submit:hover,
 input[type="submit"][id^="edit-return"]:hover {
 
 }
@@ -800,6 +805,7 @@ input[type="submit"][id^="edit-return"]:hover {
 input#edit-preview:active,
 input#edit-next:active,
 input#preview-submit:active,
+input.ief-entity-submit:active,
 input[type="submit"][id^="edit-return"]:active {
   border: none;
   color: #fff;
