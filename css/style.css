@@ -678,7 +678,7 @@ fieldset {
 
 fieldset legend {
   background: white;
-  padding: 0 3px;
+  padding: 0 6px;
   margin: 0;
   margin-left: -3px;
   font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
@@ -1764,11 +1764,11 @@ body.adminimal-theme .token-tree th {
 
 body.page-admin-appearance fieldset legend {
   background: white !important;
-  padding: 0 3px !important;
+  padding: 0 6px !important;
   margin: 0 !important;
   margin-left: -3px !important;
   font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif !important;
-  font-size: 24px !important;
+  font-size: 22px !important;
   font-weight: 300 !important;
 }
 

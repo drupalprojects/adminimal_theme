@@ -73,7 +73,7 @@ function adminimal_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['adminimal_custom']['style_checkboxes'] = array(
     '#type' => 'checkbox',
     '#title' => t('Style checkboxes and radio buttons in Webkit browsers.'),
-    '#description' => t('Enabling this option will style checkbox and radio buttons for Webkit browsers like Google Chrome, Safari, Opera and their mobile versions. 
+    '#description' => t('Enabling this option will style checkbox and radio buttons for Webkit browsers like Google Chrome, Safari, Opera and their mobile versions.
      Enabling this option will <strong>not</strong> have any negative impact on older browsers that dont support pure CSS styling of checkboxes like Internet Explorer or Firefox.'),
     '#default_value' => theme_get_setting('style_checkboxes'),
   );
@@ -82,6 +82,13 @@ function adminimal_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'checkbox',
     '#title' => t('Display icons in Configuration page'),
     '#default_value' => theme_get_setting('display_icons_config'),
+  );
+
+  $form['adminimal_custom']['avoid_custom_font'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Avoid using "Open Sans" font'),
+    '#description' => t('(useful for languages that are not well supported by the "Open sans" font. Like Japanese for example)'),
+    '#default_value' => theme_get_setting('avoid_custom_font'),
   );
 
   $form['adminimal_custom']['use_custom_media_queries'] = array(

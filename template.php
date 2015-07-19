@@ -51,6 +51,11 @@ function adminimal_preprocess_html(&$vars) {
     drupal_add_css($adminimal_path . '/css/icons-config.css', array('group' => CSS_THEME, 'weight' => 10, 'preprocess' => TRUE));
   }
 
+  // Add icons to the admin configuration page.
+  if (theme_get_setting('avoid_custom_font')) {
+    drupal_add_css($adminimal_path . '/css/avoid_custom_font.css', array('group' => CSS_THEME, 'weight' => 9000, 'preprocess' => TRUE));
+  }
+
   // Define Default media queries.
   $media_query_mobile = 'only screen and (max-width: 480px)';
   $media_query_tablet = 'only screen and (min-width : 481px) and (max-width : 1024px)';
