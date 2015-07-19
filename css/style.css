@@ -962,7 +962,7 @@ html.js input.throbbing {
 }
 
 ul.action-links {
-  margin: 20px 0 10px;
+  margin: 20px 0 42px;
   list-style-type: none;
   display: inline-block;
   list-style-type: none;
@@ -1673,9 +1673,9 @@ body.adminimal-theme .token-tree th {
 }
 
 .views-exposed-form label {
-  font-family: Sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+  font-size: 23px;
+  font-weight: 300;
   line-height: inherit;
   margin-bottom: 0;
   padding: 0.25em 0;
@@ -2496,10 +2496,6 @@ body.adminimal-theme .chosen-container-active .chosen-choices {
   border-color: #0074BD;
 }
 
-body.adminimal-theme .chosen-container.chosen-container-active.chosen-with-drop .chosen-drop {
-  border-top: 1px solid #0074BD;
-}
-
 body.adminimal-theme .chosen-container-single .chosen-single div b {
   background-position: 0px 4px;
 }
@@ -2516,14 +2512,8 @@ body.adminimal-theme .chosen-container-active .chosen-choices {
 	box-shadow: none;
 	border-radius: 0;
 }
-
-body.adminimal-theme .chosen-container-active .chosen-choices {
-  border-color: #0074BD;
-}
-
 body.adminimal-theme .chosen-container-multi .chosen-choices {
   background: #fff;
-  border-color: #DDD;
 }
 body.adminimal-theme .chosen-container-multi .chosen-choices li.search-choice {
   background: #e3e3e3;
@@ -2726,126 +2716,4 @@ body.adminimal-theme.page-admin-reports-updates .update.checked  {
 
 html body.adminimal-theme.page-admin-reports-updates .overflow-fix {
   overflow: initial !important;
-}
-
-/* Improve Commerce Kickstart styling. */
-.adminimal-theme #commerce-kickstart-inline-help-button {
-  margin-bottom: 20px;
-}
-
-.adminimal-theme #commerce-kickstart-inline-help-button #header {
-  margin-top: 10px;
-}
-
-.adminimal-theme .commerce-backoffice-view .vbo-views-form #edit-select {
-  margin-top: 20px;
-}
-
-.adminimal-theme .commerce-backoffice-view .vbo-views-form #edit-select select {
-  height: 17px;
-}
-
-.adminimal-theme .commerce-backoffice-view .vbo-views-form .container-inline.form-wrapper#edit-select input.form-submit {
-  margin-left: -10px;
-}
-
-.adminimal-theme .commerce-backoffice-view div.views-megarow-content {
-  border-bottom: 10px solid #D5E9F2;
-  border-radius: 0;
-  border-top: none;
-  border-color: #D5E9F2;
-}
-
-.adminimal-theme div.views-megarow-content .megarow-header a.close {
-  margin-top: -34px;
-}
-
-.adminimal-theme .commerce-backoffice-view .vbo-views-form select {
-  height: 17px;
-  margin: 0px 10px 0px 0;
-}
-
-.adminimal-theme .commerce-backoffice-view .vbo-views-form .form-submit {
-  margin-top: -1px;
-}
-
-.adminimal-theme #commerce-backoffice-order-status-form {
-  margin-top: 12px;
-}
-
-.adminimal-theme #edit-field-product-und-entities-7-form-product-attributes {
-  margin-bottom: 20px;
-}
-
-.adminimal-theme fieldset.ief-entity-fieldset {
-  margin: 20px 0;
-}
-
-.adminimal-theme div.image-preview {
-  float: none;
-}
-
-.adminimal-theme .image-widget .image-widget-data .file-size {
-  padding-right: 1em;
-}
-
-.adminimal-theme .field-widget-commerce-line-item-manager input {
-  margin-top: 3px;
-}
-
-.adminimal-theme .add-payment .form-submit {
-  margin: 0;
-}
-
-.adminimal-theme table tr.rules-elements-add {
-  background: #fff;
-}
-
-.adminimal-theme table tr.rules-elements-add:hover {
-  background: #fff;
-}
-
-.adminimal-theme .rules-elements-table .tabledrag-toggle-weight-wrapper {
-  position: absolute;
-  right: 48px;
-}
-
-.adminimal-theme .rules-elements-table caption,
-.adminimal-theme .rules-overview-table caption {
-  font-size: 23px;
-  font-weight: 100;
-  padding: 10px 0;
-  text-align: left;
-}
-
-.adminimal-theme .rules-elements-add ul.action-links a {
-  font-family: sans-serif;
-  font-size: 14px;
-}
-
-.adminimal-theme form input.rules-switch-button {
-  font-size: 12px;
-  padding: 5px;
-}
-
-.adminimal-theme .field-widget-inline-entity-form .ief-entity-table tr.ief-row-entity-form {
-  background: #F1F6FF;
-  border: 3px solid #0074BD;
-}
-
-.adminimal-theme .ief-row-form .ief-form-row {
-  border-bottom: 10px solid #FFD477;
-  padding: 10px 10px;
-}
-
-.adminimal-theme .field-widget-inline-entity-form tr.ief-row-form .ief-form-row {
-  background: transparent url("../images/arrow-down.svg") no-repeat 4px 8px;
-}
-
-.adminimal-theme .field-widget-inline-entity-form fieldset {
-  border-top: solid 3px #ddd;
-}
-
-.adminimal-theme .views-ui-dialog {
-  z-index: 1000;
 }
