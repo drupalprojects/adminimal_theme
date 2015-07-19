@@ -2717,3 +2717,12 @@ body.adminimal-theme.page-admin-reports-updates .update.checked  {
 html body.adminimal-theme.page-admin-reports-updates .overflow-fix {
   overflow: initial !important;
 }
+
+.adminimal-theme .focal-point-indicator.form-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.adminimal-theme .focal-point-indicator:after {
+  font-size: 38px;
+}
