@@ -167,6 +167,7 @@ body.adminimal-menu div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.me
   float: left;
   list-style: none outside none;
   padding: 0;
+  margin: 0;
 }
 
 body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts {
