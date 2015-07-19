@@ -31,8 +31,8 @@ function adminimal_admin_menu_page_build(&$page) {
     return;
   }
   $path = drupal_get_path('module', 'adminimal_admin_menu');
-	$load_slicknav = variable_get('adminimal_admin_menu_slicknav', 'TRUE');
-	$load_jQuery = variable_get('adminimal_admin_menu_jquery', 'TRUE');
+	$load_slicknav = variable_get('adminimal_admin_menu_slicknav', TRUE );
+	$load_jQuery = variable_get('adminimal_admin_menu_jquery', TRUE );
 
   // Attach the CSS and JavaScript assets.
   drupal_add_css($path . '/adminimal_admin_menu.css');

@@ -20,27 +20,27 @@
 
 /* Blink Animation */
 @keyframes blink {
-    0% {background-color: #f69231; color: #fff;}
-    50% {background-color: #d94f13; color: #fff;}
-    100% {background-color: #f69231; color: #fff;}
+  0% {background-color: #f69231; color: #fff;}
+  50% {background-color: #d94f13; color: #fff;}
+  100% {background-color: #f69231; color: #fff;}
 }
 
 @-moz-keyframes blink {
-    0% {background-color: #f69231; color: #fff;}
-    50% {background-color: #d94f13; color: #fff;}
-    100% {background-color: #f69231; color: #fff;}
+  0% {background-color: #f69231; color: #fff;}
+  50% {background-color: #d94f13; color: #fff;}
+  100% {background-color: #f69231; color: #fff;}
 }
 
 @-webkit-keyframes blink {
-    0% {background-color: #f69231; color: #fff;}
-    50% {background-color: #d94f13; color: #fff;}
-    100% {background-color: #f69231; color: #fff;}
+  0% {background-color: #f69231; color: #fff;}
+  50% {background-color: #d94f13; color: #fff;}
+  100% {background-color: #f69231; color: #fff;}
 }
 
 @-o-keyframes blink {
-    0% {background-color: #f69231; color: #fff;}
-    50% {background-color: #d94f13; color: #fff;}
-    100% {background-color: #f69231; color: #fff;}
+  0% {background-color: #f69231; color: #fff;}
+  50% {background-color: #d94f13; color: #fff;}
+  100% {background-color: #f69231; color: #fff;}
 }
 
 body.admin-menu.adminimal-menu #admin-menu *::-moz-focus-inner {
@@ -53,8 +53,17 @@ body.admin-menu.adminimal-menu #admin-menu *::-moz-focus-inner {
  * The !important is added because the "admin_menu" module adds it to its css. So if you remove the !important statement the top margin will be ignored
  * and it wont be displayed correctly. If you want to remove the top margin do it from the "admin_menu" module settings page.
  * Go to admin/config/administration/admin_menu and uncheck the "Adjust top margin".*/
-body.admin-menu.adminimal-menu.adminimal-backend {
-    margin-top: 29px !important;
+body.admin-menu.adminimal-menu {
+  margin-top: 0px !important;
+}
+
+body.admin-menu.adminimal-menu:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 29px;
+  top: 0;
+  left: 0;
 }
 
 body.adminimal-menu div#admin-menu {
@@ -138,7 +147,6 @@ body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable {
 body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable a {
   background: transparent;
   padding-right: 25px;
-  width: 135px;
 }
 
 body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable:hover {
@@ -176,6 +184,18 @@ body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts:focus {
   background: #0074BD;
 }
 
+body.adminimal-menu #admin-menu .dropdown li ul {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+body.adminimal-menu #admin-menu .dropdown li ul {
+  border-top: 3px solid #0074BD;
+}
+
+body.adminimal-menu #admin-menu .admin-menu-toolbar-category.expandable .dropdown li ul {
+  border-top: none;
+}
+
 body.adminimal-menu #admin-menu .dropdown li.admin-menu-action a {
   border: none !important;
 }
@@ -195,7 +215,7 @@ body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-users 
 }
 
 body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-users a:hover {
-    background: #0074BD;
+  background: #0074BD;
 }
 
 body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-account a {
@@ -223,25 +243,25 @@ body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shor
 }
 
 body.adminimal-menu #admin-menu .admin-menu-search input {
-    background: none no-repeat scroll right center #444;
-    border: medium none;
-    border-radius: 0 0 0 0;
-    color: #999999;
-    font-size: 12px;
-    margin: 0 !important;
-    outline: medium none;
-    padding: 5px 22px 3px 8px;
-    width: 110px;
-    height: 20px;
+  background: none no-repeat scroll right center #444;
+  border: medium none;
+  border-radius: 0 0 0 0;
+  color: #999999;
+  font-size: 12px;
+  margin: 0 !important;
+  outline: medium none;
+  padding: 5px 22px 3px 8px;
+  width: 110px;
+  height: 20px;
 }
 
 body.adminimal-menu #admin-menu .admin-menu-search input:focus, #admin-menu .admin-menu-search input:hover, #admin-menu .admin-menu-search input:active {
-    background: none no-repeat scroll right center #888;
-    color: #eee;
+  background: none no-repeat scroll right center #888;
+  color: #eee;
 }
 
 body.adminimal-menu li.admin-menu-search:hover {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 body.adminimal-menu div#admin-menu li.highlight {
@@ -250,12 +270,13 @@ body.adminimal-menu div#admin-menu li.highlight {
   -moz-animation: blink 1s ease both infinite;
   -webkit-animation: blink 1s ease both infinite;
   -o-animation: blink 1s ease both infinite;
-  color: #fff;
+  color: #fff !important;
 }
 
-body.adminimal-menu #admin-menu li.highlight > a {
+body.adminimal-menu #admin-menu li.highlight > a,
+body.adminimal-menu #admin-menu li.highlight > li {
   border-color: #ef6114;
-  color: #fff;
+  color: #fff !important;
   animation: blink 1s ease both infinite;
   -moz-animation: blink 1s ease both infinite;
   -webkit-animation: blink 1s ease both infinite;
@@ -264,67 +285,67 @@ body.adminimal-menu #admin-menu li.highlight > a {
 
 /* Newline render mode */
 body.adminimal-menu.admin-menu.menu-render-newline div#admin-menu div#admin-menu-wrapper div.shortcut-toolbar {
-    clear: both;
-    border-top: 1px solid #000;
+  clear: both;
+  border-top: 1px solid #000;
 }
 
 body.adminimal-menu.admin-menu.menu-render-newline {
-    margin-top: 56px !important;
+  margin-top: 56px !important;
 }
 
 body.adminimal-menu.admin-menu.menu-render-newline #overlay-container, body.adminimal-menu.admin-menu.newline .overlay-modal-background, body.adminimal-menu.admin-menu.newline .overlay-element, body.adminimal-menu.admin-menu.newline #overlay {
-    padding-top: 30px !important;
+  padding-top: 30px !important;
 }
 
 /* Collapsed render mode */
 body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu {
-    position: absolute;
+  position: absolute;
 }
 
 body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li {
-    float: none;
-    display: none;
-    border: none;
+  float: none;
+  display: none;
+  border: none;
 }
 
 body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label {
-    display: block;
-    cursor: default;
+  display: block;
+  cursor: default;
 }
 
 body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label a:hover {
-    background: url("images/shortcut.png") no-repeat scroll 7px 7px #202020 !important;
-    color: #EEEEEE !important;
+  background: url("images/shortcut.png") no-repeat scroll 7px 7px #202020 !important;
+  color: #EEEEEE !important;
 }
 
 body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu:hover li {
-    display: block;
-    background: #202020;
+  display: block;
+  background: #202020;
 }
 
 
 /* Dropdown render mode */
 body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#shortcut-menu {
-    -webkit-appearance: none;
-    background: url("images/shortcut.png") no-repeat scroll 7px 7px #222222;
-    border: medium none;
-    color: #EEEEEE;
-    font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
-    font-size: 12px;
-    padding: 5px 4px 4px 24px;
+  -webkit-appearance: none;
+  background: url("images/shortcut.png") no-repeat scroll 7px 7px #222222;
+  border: medium none;
+  color: #EEEEEE;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+  font-size: 12px;
+  padding: 5px 4px 4px 24px;
 }
 
 body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#shortcut-menu option:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body.adminimal-menu.admin-menu.menu-render-dropdown .toolbar-shortcuts select#shortcut-menu option:first-child {
-    display: none;
+  display: none;
 }
 
 body.adminimal-menu #admin-menu .dropdown .admin-menu-tab {
-    background: #444;
-    padding-bottom: 2px;
+  background: #444;
+  padding-bottom: 2px;
 }
 
 
@@ -349,19 +370,21 @@ body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shor
 }
 
 body.adminimal-menu #admin-menu .admin-menu-search input {
-    background: none no-repeat scroll right center #444;
-    border: medium none;
-    -webkit-border-radius: 0 0 0 0;
-    -moz-border-radius: 0 0 0 0;
-    border-radius: 0 0 0 0;
-    color: #999999;
-    font-size: 12px;
-    margin: 0 !important;
-    outline: medium none;
-    padding: 5px 22px 3px 8px;
-    width: 110px;
-    line-height: 20px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+  background: none no-repeat scroll right center #444;
+  border: medium none;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+  color: #999999;
+  font-size: 12px;
+  margin: 0 !important;
+  outline: medium none;
+  padding: 5px 22px 3px 8px;
+  width: 110px;
+  line-height: 20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 28px;
+  box-sizing: border-box;
 }
