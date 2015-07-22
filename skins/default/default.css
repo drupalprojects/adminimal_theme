@@ -5,7 +5,7 @@
     -webkit-appearance:none;
     display: inline-block;
     position: relative;
-    top: 4px;
+    top: 3px;
     margin-right: 0.25em;
     padding: 0;
     background: #fff;
@@ -55,6 +55,32 @@
 
 /* Buttons */
 
+/* Action Links */
+ul.action-links a {
+  border: 2px solid #ED6C28;
+  background: #fff;
+  color: #ED6C28;
+  line-height: 30px;
+  padding: 0px 16px;
+  margin: 20px 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: all, 0.3s;
+}
+
+ul.action-links a:hover {
+  background: #ED6C28;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.action-links a:active, ul.action-links a:focus {
+  outline: 3px solid #ECECEC;
+}
+
 /* Gray Button */
 input.form-submit,
 a.button,
@@ -94,6 +120,7 @@ input[type="submit"][id^="edit-save"],
 input#edit-save,
 input#edit-submit,
 input#edit-actions-save,
+.field-widget-inline-entity-form .container-inline .form-submit,
 #media-browser-page a.button-yes {
   cursor: pointer;
   border-radius: 0;
@@ -116,6 +143,7 @@ input[type="submit"][id^="edit-save"]:hover,
 input#edit-save:hover,
 input#edit-submit:hover,
 input#edit-actions-save:hover,
+.field-widget-inline-entity-form .container-inline .form-submit:hover,
 #media-browser-page a.button-yes:hover {
   background: #0a6700;
   border-radius: 0;
@@ -129,6 +157,7 @@ input[id^="save-continue"]:active,
 input[type="submit"][id^="edit-save"]:active,
 input#edit-save:active,
 input#edit-submit:active,
+.field-widget-inline-entity-form .container-inline .form-submit:active,
 input#edit-actions-save:active {
   box-shadow: 0 2px 2px rgba(0,0,0,0.75) inset;
   background: #333;
@@ -143,6 +172,7 @@ input#remove-button,
 input#edit-remove,
 input#edit-clear,
 a.button.remove,
+.page-node-delete input#edit-submit,
 input[id*="remove-button"],
 .page-admin-modules-uninstall input#edit-submit {
   cursor: pointer;
@@ -164,6 +194,7 @@ input#remove-button:hover,
 input#edit-remove:hover,
 input#edit-clear:hover,
 a.button.remove:hover,
+.page-node-delete input#edit-submit:hover,
 input[id*="remove-button"]:hover,
 body.page-admin-modules-uninstall input#edit-submit:hover {
   background: #990000;
@@ -176,6 +207,7 @@ input#edit-delete:active,
 input#remove-button:active,
 input#edit-remove:active,
 input#edit-clear:active,
+.page-node-delete input#edit-submit:active,
 input[id*="remove-button"]:active,
 body.page-admin-modules-uninstall input#edit-submit:active {
   box-shadow: 0 2px 2px rgba(0,0,0,0.75) inset;
@@ -189,6 +221,7 @@ body.page-admin-modules-uninstall input#edit-submit:active {
 input#edit-preview,
 input#edit-next,
 input#preview-submit,
+input.ief-entity-submit,
 input[type="submit"][id^="edit-return"] {
   cursor: pointer;
   border-radius: 0;
@@ -207,6 +240,7 @@ input[type="submit"][id^="edit-return"] {
 input#edit-preview:hover,
 input#edit-next:hover,
 input#preview-submit:hover,
+input.ief-entity-submit:hover,
 input[type="submit"][id^="edit-return"]:hover {
   background: #004c99;
   border-radius: 0;
@@ -217,6 +251,7 @@ input[type="submit"][id^="edit-return"]:hover {
 input#edit-preview:active,
 input#edit-next:active,
 input#preview-submit:active,
+input.ief-entity-submit:active,
 input[type="submit"][id^="edit-return"]:active {
   box-shadow: 0 2px 2px rgba(0,0,0,0.75) inset;
   background: #333;
