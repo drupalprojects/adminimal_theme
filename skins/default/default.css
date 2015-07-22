@@ -55,32 +55,6 @@
 
 /* Buttons */
 
-/* Action Links */
-ul.action-links a {
-  border: 2px solid #ED6C28;
-  background: #fff;
-  color: #ED6C28;
-  line-height: 30px;
-  padding: 0px 16px;
-  margin: 20px 0;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 14px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  transition: all, 0.3s;
-}
-
-ul.action-links a:hover {
-  background: #ED6C28;
-  color: #fff;
-  text-decoration: none;
-}
-
-ul.action-links a:active, ul.action-links a:focus {
-  outline: 3px solid #ECECEC;
-}
-
 /* Gray Button */
 input.form-submit,
 a.button,
