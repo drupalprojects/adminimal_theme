@@ -71,6 +71,7 @@ div.exposed-filters input#edit-submit {
   font-weight: normal;
   font-size: 1.077em;
   font-family: "Lucida Grande",Verdana,sans-serif;
+  transition: all, 0.3s;
 }
 
 input.form-submit:hover,
@@ -108,6 +109,7 @@ input#edit-actions-save,
   font-size: 1.077em;
   font-family: "Lucida Grande",Verdana,sans-serif;
   background: #4d8f46;
+  transition: all, 0.3s;
 }
 
 input[type="submit"][id^="edit-submit"]:hover,
@@ -161,6 +163,7 @@ input[id*="remove-button"],
   font-size: 1.077em;
   font-family: "Lucida Grande",Verdana,sans-serif;
   background: #b73939;
+  transition: all, 0.3s;
 }
 
 input#edit-delete:hover,
@@ -209,6 +212,7 @@ input[type="submit"][id^="edit-return"] {
   font-size: 1.077em;
   font-family: "Lucida Grande",Verdana,sans-serif;
   background: #0074BD;
+  transition: all, 0.3s;
 }
 
 input#edit-preview:hover,
@@ -251,6 +255,7 @@ input#edit-buttons-revert,
   font-size: 1.077em;
   font-family: "Lucida Grande",Verdana,sans-serif;
   background: #f69231;
+  transition: all, 0.3s;
 }
 
 a#edit-cancel,a#edit-actions-cancel {
@@ -294,4 +299,8 @@ body.page-admin-appearance-settings-omega fieldset {
   border-top: 3px solid #0074BD !important;
   padding: 12px !important;
   margin: 18px 0 !important;
+}
+
+div.breadcrumb a {
+  transition: all, 0.3s;
 }

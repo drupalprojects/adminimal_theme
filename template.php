@@ -70,11 +70,15 @@ function adminimal_preprocess_html(&$vars) {
   $adminimal_skin = theme_get_setting('adminimal_theme_skin');
   if ((!is_null($adminimal_skin))) {
     drupal_add_css($adminimal_path . '/skins/' . $adminimal_skin . '/' . $adminimal_skin . '.css', array('group' => CSS_THEME, 'weight' => 900, 'preprocess' => TRUE));
+    // Add conditional CSS for Mac OS X.
+    drupal_add_css($adminimal_path . '/skins/' . $adminimal_skin . '/mac_os_x.css', array('group' => CSS_THEME, 'weight' => 950, 'preprocess' => TRUE));
     drupal_add_js($adminimal_path . '/skins/' . $adminimal_skin . '/' . $adminimal_skin . '.js');
     $vars['classes_array'][] = 'adminimal-skin-' . $adminimal_skin ;
   }
   else {
     drupal_add_css($adminimal_path . '/skins/default/default.css', array('group' => CSS_THEME, 'weight' => 900, 'preprocess' => TRUE));
+    // Add conditional CSS for Mac OS X.
+    drupal_add_css($adminimal_path . '/skins/default/mac_os_x.css', array('group' => CSS_THEME, 'weight' => 950, 'preprocess' => TRUE));
     drupal_add_js($adminimal_path . '/skins/default/default.js');
     $vars['classes_array'][] = 'adminimal-skin-default' ;
   }
