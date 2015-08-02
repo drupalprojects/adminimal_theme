@@ -333,3 +333,14 @@ ul.action-links a:hover {
 #admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail {
   background: #0074BD;
 }
+
+.overlay #overlay-close,
+.overlay #overlay-close:hover {
+  height: 44px;
+  background-position-y: 10px;
+  left: -36px;
+}
+
+.overlay #overlay-tabs {
+  right: 2px;
+}

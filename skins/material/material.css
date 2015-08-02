@@ -207,15 +207,15 @@ body.adminimal-skin-material ul.action-links a {
   font-size: 15px;
   background: #2196f3;
   color: #FFFFFF;
-  padding: 5px 20px 5px;
+  padding: 3px 20px 2px;
   border-radius: 3px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
   display: inline-block;
 }
 
 body.adminimal-skin-material ul.action-links a:hover {
   background: #29B6F6;
   text-decoration: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
 }
 
 body.adminimal-skin-material .theme-selector {
@@ -550,7 +550,7 @@ body.adminimal-skin-material.style-checkboxes input[type=radio]:disabled:hover {
 }
 .waves-input-wrapper {
   border-radius: 0.2em;
-  vertical-align: bottom;
+  vertical-align: middle;
   z-index: 999;
   margin-right: 1em;
 }
@@ -698,7 +698,7 @@ input#edit-actions-save,
   text-align: center;
   font-weight: normal;
   font-size: 1.077em;
-  background: #009688;
+  background: #0E9C57;
   color: #fff;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -910,4 +910,47 @@ html.js body.adminimal-skin-material #module-filter-submit input {
 
 html.js body.adminimal-skin-material #module-filter-submit .form-actions {
   padding: 20px 0;
+}
+
+body.adminimal-skin-material .form-actions input {
+  height: 24px;
+}
+
+body.adminimal-skin-material .block-search .form-actions input,
+body.adminimal-skin-material .exposed-filters input{
+  height: initial;
+}
+
+body.adminimal-skin-material.overlay #branding {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  box-shadow: none;
+}
+
+body.adminimal-skin-material.overlay div.breadcrumb a:hover {
+  color: #0074bd;
+}
+
+body.adminimal-skin-material.overlay #overlay-close,
+body.adminimal-skin-material.overlay #overlay-close:hover {
+  height: 44px;
+  background-position-y: 10px;
+  left: -36px;
+}
+
+body.adminimal-skin-material.overlay #overlay-tabs {
+  right: 2px;
+}
+
+body.adminimal-skin-material.overlay #overlay-tabs li:first-of-type a {
+  border-radius: 0.2em 0 0 0;
+}
+
+body.adminimal-skin-material.overlay #overlay-tabs li:last-of-type a {
+  border-radius: 0 0.2em 0 0;
+}
+
+body.adminimal-skin-material.overlay ul.secondary {
+  background: #F9F9F9;
 }
