@@ -304,3 +304,32 @@ body.page-admin-appearance-settings-omega fieldset {
 div.breadcrumb a {
   transition: all, 0.3s;
 }
+
+ul.action-links a {
+  padding: 0px 20px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff;
+  line-height: 30px;
+  border: 2px solid #0074BD;
+  margin: 5px auto;
+  border-radius: 100px;
+  display: block;
+  transition: all, 0.3s;
+}
+
+ul.action-links a:hover {
+  text-decoration: none;
+  background: #0074BD;
+  color: #fff;
+}
+
+#admin-menu {
+  box-shadow: none;
+  background: #2B2B2B;
+}
+
+#admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail {
+  background: #0074BD;
+}

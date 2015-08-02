@@ -11,7 +11,7 @@ body.mac .form-item label {
 }
 
 body.mac .exposed-filters .form-item label {
-  line-height: 36px;
+  line-height: 38px;
 }
 
 body.mac.style-checkboxes input[type=checkbox] {
@@ -34,7 +34,7 @@ body.mac.style-checkboxes input[type=radio]:disabled:checked {
 
 body.mac table th {
   font-family: "Helvetica", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #696969;
 }
@@ -45,7 +45,7 @@ body.mac input.form-file {
 }
 
 body.mac #branding h1.page-title {
-  margin: -4px 0 -4px 0;
+  margin: -4px 0 -2px 0;
 }
 
 body.mac div.add-or-remove-shortcuts {
@@ -55,4 +55,9 @@ body.mac div.add-or-remove-shortcuts {
 body.adminimal-theme.mac .exposed-filters .container-inline .form-actions,
 body.mac .exposed-filters .container-inline.form-actions {
   margin: 4px 0 0 -5px;
+}
+
+body.mac input[type="submit"]{
+  position: relative;
+  top: 1px;
 }
