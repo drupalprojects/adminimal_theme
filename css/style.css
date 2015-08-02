@@ -2890,3 +2890,20 @@ html body.adminimal-theme.page-admin-reports-updates .overflow-fix {
 .adminimal-theme #dashboard.customize-inactive .dashboard-region .ui-sortable .block:hover h2 {
   background-position: 5px -33px;
 }
+
+.adminimal-theme #toolbar {
+  box-shadow: none;
+}
+
+.adminimal-theme #toolbar div.toolbar-menu {
+  background: #2D2D2D;
+}
+
+#toolbar div.toolbar-menu ul li.active-trail a {
+  background: #0074BD;
+  text-shadow: none;
+}
+
+div#toolbar div.toolbar-shortcuts ul li a.active {
+  background: #505050;
+}
