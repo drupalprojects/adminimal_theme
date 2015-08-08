@@ -198,7 +198,7 @@ Drupal.behaviors.adminimal_material_wave_effect = {
                     '-moz-transform': scale,
                     '-ms-transform': scale,
                     '-o-transform': scale,
-                    'transform': scale,
+                    'transform': scale
                 };
 
                 ripple.setAttribute('style', convertStyle(style));
