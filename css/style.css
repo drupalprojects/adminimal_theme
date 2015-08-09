@@ -2356,8 +2356,8 @@ body.adminimal-theme ul.rules-operations a, .rules-elements-add ul.action-links 
 }
 
 body.adminimal-theme .rules-autocomplete-button {
-  height: 27px;
-  top: -2px;
+  height: 28px;
+  top: -1px;
 }
 
 body.adminimal-theme ul.rules-autocomplete .rules-dsac-group {
@@ -2847,9 +2847,29 @@ html body.adminimal-theme.page-admin-reports-updates .overflow-fix {
   text-align: left;
 }
 
-.adminimal-theme .rules-elements-add ul.action-links a {
+body.adminimal-theme .rules-elements-add ul.action-links a,
+body.adminimal-theme ul.rules-operations a,
+body.adminimal-theme .rules-elements-add ul.action-links a {
   font-family: sans-serif;
   font-size: 14px;
+  border: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+body.adminimal-theme .rules-elements-add ul.action-links a:hover,
+body.adminimal-theme ul.rules-operations a:hover,
+body.adminimal-theme .rules-elements-add ul.action-links a:hover {
+    text-decoration: underline;
+    background: transparent;
+    color: #0074BD;
+}
+
+body.adminimal-theme ul.rules-operations .delete a,
+body.adminimal-theme ul.rules-operations .delete a:hover,
+body.adminimal-theme ul.rules-operations .delete_event a,
+body.adminimal-theme ul.rules-operations .delete_event a:hover {
+  color: #E25D5D;
 }
 
 .adminimal-theme form input.rules-switch-button {

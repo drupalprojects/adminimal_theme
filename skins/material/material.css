@@ -138,6 +138,7 @@ body.adminimal-menu #admin-menu .dropdown li.admin-menu-action:first-child a {
 body.adminimal-menu #admin-menu .admin-menu-search input {
   background: #1B2327;
   box-shadow: inset 0px -2px 0px #64696C;
+  transition: all, 0.3s;
 }
 
 body.adminimal-menu #admin-menu .admin-menu-search input:focus {
@@ -1015,4 +1016,28 @@ body.adminimal-skin-material.overlay #overlay-tabs li:last-of-type a {
 
 body.adminimal-skin-material.overlay ul.secondary {
   background: #F9F9F9;
+}
+
+body.adminimal-skin-material .rules-elements-add ul.action-links a,
+body.adminimal-skin-material ul.rules-operations a,
+body.adminimal-skin-material .rules-elements-add ul.action-links a {
+    background: transparent;
+    color: #2196F3;
+    box-shadow: none;
+    padding: 8px 18px;
+    margin: 5px 0 0 0;
+}
+
+body.adminimal-skin-material .rules-elements-add ul.action-links a:hover,
+body.adminimal-skin-material ul.rules-operations a:hover,
+body.adminimal-skin-material .rules-elements-add ul.action-links a:hover {
+    background: transparent;
+    color: #2196F3;
+    box-shadow: none;
+}
+
+body.adminimal-skin-material .rules-elements-add ul.action-links a:focus,
+body.adminimal-skin-material ul.rules-operations a:focus,
+body.adminimal-skin-material .rules-elements-add ul.action-links a:focus {
+  text-decoration: none;
 }
