@@ -666,22 +666,32 @@ div.exposed-filters input#edit-submit {
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 0.2rem;
-  margin: 0;
+  transition: all, 0.3s;
 }
 
 input[type="submit"]:hover,
 input.form-submit:hover,
 a.button:hover,
 div.exposed-filters input#edit-submit:hover {
-
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
 }
 
 input[type="submit"]:active,
 input.form-submit:active,
 a.button:active,
 div.exposed-filters input#edit-submit:active {
-
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
 }
+
+input[type="submit"]:focus,
+input.form-submit:focus,
+a.button:focus,
+div.exposed-filters input#edit-submit:focus {
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+}
+
 
 /* Green Button */
 input[type="submit"][id^="edit-submit"],
@@ -704,7 +714,6 @@ input#edit-actions-save,
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 0.2rem;
-  margin: 0;
 }
 
 input[type="submit"][id^="edit-submit"]:hover,
@@ -715,17 +724,31 @@ input#edit-save:hover,
 input#edit-submit:hover,
 input#edit-actions-save:hover,
 #media-browser-page a.button-yes:hover {
-
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 
-input#edit-submit:active,
+input[type="submit"][id^="edit-submit"]:active,
 input#edit-actions-submit:active,
 input[id^="save-continue"]:active,
 input[type="submit"][id^="edit-save"]:active,
 input#edit-save:active,
 input#edit-submit:active,
-input#edit-actions-save:active {
+input#edit-actions-save:active,
+#media-browser-page a.button-yes:active {
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+}
 
+input[type="submit"][id^="edit-submit"]:focus,
+input#edit-actions-submit:focus,
+input[id^="save-continue"]:focus,
+input[type="submit"][id^="edit-save"]:focus,
+input#edit-save:focus,
+input#edit-submit:focus,
+input#edit-actions-save:focus,
+#media-browser-page a.button-yes:focus {
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
 }
 
 /* Red Button */
@@ -749,7 +772,7 @@ input[id*="remove-button"],
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 0.2rem;
-  margin: 0;
+  transition: all, 0.3s;
 }
 
 input#edit-delete:hover,
@@ -760,7 +783,7 @@ a.button.remove:hover,
 input[id*="remove-button"]:hover,
 .page-node-delete input#edit-submit:hover,
 body.page-admin-modules-uninstall input#edit-submit:hover {
-
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 
 input#edit-delete:active,
@@ -770,7 +793,19 @@ input#edit-clear:active,
 input[id*="remove-button"]:active,
 .page-node-delete input#edit-submit:active,
 body.page-admin-modules-uninstall input#edit-submit:active {
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+}
 
+input#edit-delete:focus,
+input#remove-button:focus,
+input#edit-remove:focus,
+input#edit-clear:focus,
+input[id*="remove-button"]:focus,
+.page-node-delete input#edit-submit:focus,
+body.page-admin-modules-uninstall input#edit-submit:focus {
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
 }
 
 /* Blue Button */
@@ -791,7 +826,7 @@ input[type="submit"][id^="edit-return"] {
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 0.2rem;
-  margin: 0;
+  transition: all, 0.3s;
 }
 
 input#edit-preview:hover,
@@ -799,7 +834,7 @@ input#edit-next:hover,
 input#preview-submit:hover,
 input.ief-entity-submit:hover,
 input[type="submit"][id^="edit-return"]:hover {
-
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 
 input#edit-preview:active,
@@ -809,6 +844,19 @@ input.ief-entity-submit:active,
 input[type="submit"][id^="edit-return"]:active {
   border: none;
   color: #fff;
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+}
+
+input#edit-preview:focus,
+input#edit-next:focus,
+input#preview-submit:focus,
+input.ief-entity-submit:focus,
+input[type="submit"][id^="edit-return"]:focus {
+  border: none;
+  color: #fff;
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
 }
 
 /* Orange Button */
@@ -825,6 +873,7 @@ input#edit-buttons-revert,
   font-size: 1.077em;
   font-family: "Lucida Grande",Verdana,sans-serif;
   background: #f69231;
+  transition: all, 0.3s;
 }
 
 a#edit-cancel,a#edit-actions-cancel {
@@ -837,7 +886,7 @@ a#edit-cancel,a#edit-actions-cancel {
 #edit-actions-cancel:hover,
 input#edit-buttons-revert:hover,
 #media-browser-page a.button-no:hover {
-
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 
 #edit-cancel:active,
@@ -846,6 +895,18 @@ input#edit-buttons-revert:active {
   background: #333;
   border: none;
   color: #fff;
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+}
+
+#edit-cancel:focus,
+#edit-actions-cancel:focus,
+input#edit-buttons-revert:focus {
+  background: #333;
+  border: none;
+  color: #fff;
+  outline: none;
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
 }
 
 .waves-input-wrapper input {
@@ -914,6 +975,7 @@ html.js body.adminimal-skin-material #module-filter-submit .form-actions {
 
 body.adminimal-skin-material .form-actions input {
   height: 24px;
+  margin-right: 1rem;
 }
 
 body.adminimal-skin-material .block-search .form-actions input,

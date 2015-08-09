@@ -60,13 +60,13 @@ function adminimal_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Skin selection'),
     '#default_value' => theme_get_setting('adminimal_theme_skin'),
     '#options' => array(
-      'default' => t('Default (No skin)'),
+      'default' => t('Adminimal Default'),
       //'dark' => t('Dark'),
       //'flat' => t('Flat'),
-      'material' => t('Material'),
+      'material' => t('Material (BETA version)'),
       //'alternative' => t('Alternative'),
     ),
-    '#description' => t('Select desired skin style. Note that this feature is in beta stage and there might be some minor styling issues.'),
+    '#description' => t('Select desired skin style. Note that this feature is in beta stage and there might be some issues.'),
     '#required' => FALSE,
   );
 
