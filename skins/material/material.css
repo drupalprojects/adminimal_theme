@@ -587,31 +587,31 @@ a.waves-effect .waves-ripple {
   z-index: -1;
 }
 
-body.adminimal-skin-material ul.secondary {
+body.adminimal-skin-material #navigation ul.secondary {
   overflow: hidden;
 }
 
-body.adminimal-skin-material ul.secondary li {
+body.adminimal-skin-material #navigation ul.secondary li {
   height: 39px;
 }
 
-body.adminimal-skin-material ul.secondary li a {
+body.adminimal-skin-material #navigation ul.secondary li a {
   color: #777 !important;
   background: #fff;
 }
 
-body.adminimal-skin-material ul.secondary li a:hover {
+body.adminimal-skin-material #navigation ul.secondary li a:hover {
   color: #2196F3 !important;
   border-color: #2196F3 !important;
   background: #fff;
 }
 
-body.adminimal-skin-material ul.secondary li a.active {
+body.adminimal-skin-material #navigation ul.secondary li a.active {
   color: #000 !important;
   background: #fff;
 }
 
-body.adminimal-skin-material ul.secondary li a.active:hover {
+body.adminimal-skin-material #navigation ul.secondary li a.active:hover {
   border-color: #000 !important;
 }
 
