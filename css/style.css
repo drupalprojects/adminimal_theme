@@ -2924,15 +2924,33 @@ body.adminimal-theme ul.rules-operations .delete_event a:hover {
   background: #2D2D2D;
 }
 
-#toolbar div.toolbar-menu ul li.active-trail a {
+.adminimal-theme #toolbar div.toolbar-menu ul li.active-trail a {
   background: #0074BD;
   text-shadow: none;
 }
 
-div#toolbar div.toolbar-shortcuts ul li a.active {
+.adminimal-theme div#toolbar div.toolbar-shortcuts ul li a.active {
   background: #505050;
 }
 
-.form-item.form-type-textfield.form-item-view-args label{
+.adminimal-theme .form-item.form-type-textfield.form-item-view-args label{
   line-height: 46px;
+}
+
+.adminimal-theme #dashboard #disabled-blocks h2 {
+  background-color: transparent;
+  background-position-y: -33px;
+  background-position-x: 0px;
+  line-height: 16px;
+  padding: 2px 8px 0px 18px;
+}
+
+.adminimal-theme #dashboard.customize-inactive #disabled-blocks h2:hover,
+.adminimal-theme #dashboard.customize-inactive #disabled-blocks .block:hover {
+  background-position-y: -33px !important;
+  background-position-x: 0px !important;
+}
+
+.adminimal-theme #dashboard #disabled-blocks .block {
+  margin-right: 8px;
 }

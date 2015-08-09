@@ -657,10 +657,10 @@ input.form-submit,
 a.button,
 div.exposed-filters input#edit-submit {
   cursor: pointer;
-  background: #e3e3e3;
+  background: #BBBBBB;
   border: none;
   padding: 6px 18px;
-  color: #555;
+  color: #fff;
   text-align: center;
   font-size: 1.077em;
   font-family: Roboto, sans-serif;
@@ -682,7 +682,7 @@ input.form-submit:active,
 a.button:active,
 div.exposed-filters input#edit-submit:active {
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 input[type="submit"]:focus,
@@ -690,7 +690,7 @@ input.form-submit:focus,
 a.button:focus,
 div.exposed-filters input#edit-submit:focus {
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 
@@ -737,7 +737,7 @@ input#edit-submit:active,
 input#edit-actions-save:active,
 #media-browser-page a.button-yes:active {
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 input[type="submit"][id^="edit-submit"]:focus,
@@ -749,7 +749,7 @@ input#edit-submit:focus,
 input#edit-actions-save:focus,
 #media-browser-page a.button-yes:focus {
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 /* Red Button */
@@ -795,7 +795,7 @@ input[id*="remove-button"]:active,
 .page-node-delete input#edit-submit:active,
 body.page-admin-modules-uninstall input#edit-submit:active {
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 input#edit-delete:focus,
@@ -806,7 +806,7 @@ input[id*="remove-button"]:focus,
 .page-node-delete input#edit-submit:focus,
 body.page-admin-modules-uninstall input#edit-submit:focus {
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 /* Blue Button */
@@ -846,7 +846,7 @@ input[type="submit"][id^="edit-return"]:active {
   border: none;
   color: #fff;
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 input#edit-preview:focus,
@@ -857,7 +857,7 @@ input[type="submit"][id^="edit-return"]:focus {
   border: none;
   color: #fff;
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 /* Orange Button */
@@ -897,7 +897,7 @@ input#edit-buttons-revert:active {
   border: none;
   color: #fff;
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 #edit-cancel:focus,
@@ -907,7 +907,7 @@ input#edit-buttons-revert:focus {
   border: none;
   color: #fff;
   outline: none;
-  box-shadow: inset 0 0px 8px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0px 8px rgba(0,0,0,0.4);
 }
 
 .waves-input-wrapper input {
