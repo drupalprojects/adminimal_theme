@@ -2954,3 +2954,30 @@ body.adminimal-theme ul.rules-operations .delete_event a:hover {
 .adminimal-theme #dashboard #disabled-blocks .block {
   margin-right: 8px;
 }
+
+.adminimal-theme .field-name-commerce-discount-offer .form-item-commerce-discount-fields-commerce-discount-offer-und-form-type .form-radios .form-item input,
+.adminimal-theme .field-name-commerce-discount-offer .form-wrapper .form-wrapper .form-item div.form-radios .form-item input {
+  display: inline-block;
+}
+
+.adminimal-theme .field-name-commerce-discount-offer .form-wrapper .form-wrapper .form-item div.form-radios input[type=radio],
+.adminimal-theme .form-item-commerce-discount-type .form-radios input[type=radio] {
+  top: -2px;
+}
+
+.adminimal-theme .field-widget-inline-entity-form .ief-entity-operations input {
+  margin-bottom: 0 !important;
+}
+
+.ief-entity-operations {
+  margin-bottom: 0;
+}
+
+.field-widget-inline-entity-form .container-inline.form-wrapper {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.field-widget-commerce-line-item-manager table .form-wrapper {
+  margin-bottom: 0;
+}
