@@ -2877,7 +2877,7 @@ body.adminimal-theme ul.rules-operations .delete_event a:hover {
   padding: 5px;
 }
 
-.adminimal-theme .field-widget-inline-entity-form .ief-entity-table tr.ief-row-entity-form {
+.adminimal-theme .field-type-commerce-product-reference .ief-entity-table tr.ief-row-entity-form {
   background: #F1F6FF;
   border: 3px solid #0074BD;
 }
@@ -2887,7 +2887,7 @@ body.adminimal-theme ul.rules-operations .delete_event a:hover {
   padding: 10px 10px;
 }
 
-.adminimal-theme .field-widget-inline-entity-form tr.ief-row-form .ief-form-row {
+.adminimal-theme .field-type-commerce-product-reference tr.ief-row-form .ief-form-row {
   background: transparent url("../images/arrow-down.svg") no-repeat 4px 8px;
 }
 
@@ -2980,4 +2980,8 @@ body.adminimal-theme ul.rules-operations .delete_event a:hover {
 
 .field-widget-commerce-line-item-manager table .form-wrapper {
   margin-bottom: 0;
+}
+
+.tabledrag-toggle-weight-wrapper {
+  margin-bottom: 5px;
 }
