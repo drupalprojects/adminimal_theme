@@ -161,7 +161,8 @@ input#edit-submit:hover,
 input#edit-actions-save:hover,
 .field-widget-inline-entity-form .container-inline .form-submit:hover,
 #media-browser-page a.button-yes:hover,
-input.add-new-condition:hover {
+input.add-new-condition:hover,
+#edit-field-product-und-form-actions input.ief-entity-submit:hover {
   background: #0a6700;
   border-radius: 0;
   border: none;
@@ -176,7 +177,8 @@ input#edit-save:active,
 input#edit-submit:active,
 .field-widget-inline-entity-form .container-inline .form-submit:active,
 input#edit-actions-save:active,
-input.add-new-condition:active {
+input.add-new-condition:active,
+#edit-field-product-und-form-actions input.ief-entity-submit:active {
   border-radius: 0;
   border: none;
   color: #fff;
@@ -190,7 +192,8 @@ input#edit-save:focus,
 input#edit-submit:focus,
 .field-widget-inline-entity-form .container-inline .form-submit:focus,
 input#edit-actions-save:focus,
-input.add-new-condition:focus {
+input.add-new-condition:focus,
+#edit-field-product-und-form-actions input.ief-entity-submit:focus {
   outline: 3px solid #D0E8CE;
 }
 
@@ -380,6 +383,19 @@ html body input.disabled:focus {
   color: #CCCCCC;
   text-decoration: line-through;
   cursor: not-allowed;
+}
+
+input[type="submit"]:disabled {
+  background: repeating-linear-gradient(
+    -45deg,
+    #FFFFFF,
+    #D2D2D2 4px
+  ) !important;
+  color: #6B6B6B !important;
+  cursor: not-allowed !important;
+  outline: none !important;
+  opacity: 0.665 !important;
+  text-shadow: 1px 1px 0px #fff !important;
 }
 
 /* END Buttons */
