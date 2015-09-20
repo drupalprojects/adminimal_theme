@@ -107,6 +107,27 @@ function adminimal_preprocess_html(&$vars) {
    ),
   );
   drupal_add_html_head($viewport, 'viewport');
+
+  // Remove the no-sidebars class which is always added by core. Core assumes
+  // the sidebar regions are called sidebar_first and sidebar_second, which
+  // is not the case in this theme.
+  $key = array_search('no-sidebars', $vars['classes_array']);
+  if ($key !== FALSE) {
+    unset($vars['classes_array'][$key]);
+  }
+  // Add information about the number of sidebars.
+  if (!empty($vars['page']['sidebar_left']) && !empty($vars['page']['sidebar_right'])) {
+    $vars['classes_array'][] = 'two-sidebars';
+  }
+  elseif (!empty($vars['page']['sidebar_left'])) {
+    $vars['classes_array'][] = 'one-sidebar sidebar-left';
+  }
+  elseif (!empty($vars['page']['sidebar_right'])) {
+    $vars['classes_array'][] = 'one-sidebar sidebar-right';
+  }
+  else {
+    $vars['classes_array'][] = 'no-sidebars';
+  }
 }
 
 /**
