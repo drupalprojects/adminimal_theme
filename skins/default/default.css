@@ -431,6 +431,10 @@ ul.action-links a {
   transition: all, 0.3s;
 }
 
+body.no-rounded-buttons ul.action-links a {
+  border-radius: 0;
+}
+
 ul.action-links a:hover {
   text-decoration: none;
   background: #0074BD;

@@ -46,6 +46,11 @@ function adminimal_preprocess_html(&$vars) {
     $vars['classes_array'][] = 'style-checkboxes';
   }
 
+  // Disable rounded buttons setting.
+  if (!theme_get_setting('rounded_buttons')) {
+    $vars['classes_array'][] = 'no-rounded-buttons';
+  }
+
   // Add icons to the admin configuration page.
   if (theme_get_setting('display_icons_config')) {
     drupal_add_css($adminimal_path . '/css/icons-config.css', array('group' => CSS_THEME, 'weight' => 10, 'preprocess' => TRUE));

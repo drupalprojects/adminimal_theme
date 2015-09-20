@@ -84,6 +84,13 @@ function adminimal_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('display_icons_config'),
   );
 
+  $form['adminimal_custom']['rounded_buttons'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use rounded buttons'),
+    '#description' => t('Uncheck this setting if you dont like the rounded button styling for some action links'),
+    '#default_value' => theme_get_setting('rounded_buttons'),
+  );
+
   $form['adminimal_custom']['avoid_custom_font'] = array(
     '#type' => 'checkbox',
     '#title' => t('Avoid using "Open Sans" font'),
