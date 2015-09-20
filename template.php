@@ -107,7 +107,6 @@ function adminimal_preprocess_html(&$vars) {
    ),
   );
   drupal_add_html_head($viewport, 'viewport');
-
 }
 
 /**
@@ -120,7 +119,7 @@ function adminimal_preprocess_page(&$vars) {
     '#theme' => 'menu_local_tasks',
     '#secondary' => $vars['tabs']['#secondary'],
   );
-
+  unset($vars['page']['hidden']);
 }
 
 /**
@@ -248,7 +247,6 @@ function adminimal_admin_block($variables) {
   $output .= '</div>';
 
   return $output;
-
 }
 
 /**
