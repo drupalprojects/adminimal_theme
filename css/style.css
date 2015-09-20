@@ -2649,6 +2649,28 @@ body.page-admin-structure-views-view #content-wrapper {
   table-layout: fixed;
 }
 
+/* Fix Views left and right sidebar display issue see #2562275 */
+body.page-admin-structure-views-view.sidebar-left #content-wrapper #main-content {
+  padding-left: 240px;
+}
+
+body.page-admin-structure-views-view.sidebar-right #content-wrapper #main-content {
+  padding-right: 240px;
+}
+
+body.page-admin-structure-views-view.sidebar-right #content-wrapper #sidebar-right {
+  margin-left: -240px;
+}
+
+body.page-admin-structure-views-view.two-sidebars #content-wrapper #main-content {
+  padding-left: 240px;
+  padding-right: 240px;
+}
+
+body.page-admin-structure-views-view.two-sidebars #content-wrapper #sidebar-right {
+  margin-left: -240px;
+}
+
 /* Fix Module Filter form float... see #2444477 */
 body.adminimal-theme #module-filter-update-status-form {
   float: none;
