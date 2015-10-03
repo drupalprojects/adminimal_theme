@@ -584,6 +584,7 @@ tr.even,tr.odd {
   border-style: solid;
   border-color: #ddd;
   background: #f3f4ee;
+  transition: all, 0.15s;
 }
 
 tr.odd {
@@ -3006,4 +3007,8 @@ body.adminimal-theme ul.rules-operations .delete_event a:hover {
 
 .tabledrag-toggle-weight-wrapper {
   margin-bottom: 5px;
+}
+
+body.page-admin-config-system-actions #edit-parent {
+  margin-top: 30px;
 }

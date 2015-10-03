@@ -64,7 +64,7 @@ function adminimal_form_system_theme_settings_alter(&$form, &$form_state) {
       //'dark' => t('Dark'),
       //'flat' => t('Flat'),
       'material' => t('Material (BETA version)'),
-      //'alternative' => t('Alternative'),
+      'alternative' => t('Alternative'),
     ),
     '#description' => t('Select desired skin style. Note that this feature is in beta stage and there might be some issues.'),
     '#required' => FALSE,
