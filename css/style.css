@@ -817,6 +817,9 @@ input.form-autocomplete,input.form-text,input.form-file,textarea.form-textarea,s
   color: #333;
   vertical-align: baseline;
   box-sizing: inherit;
+  outline: 2px solid transparent;
+  outline-offset: 0px;
+  transition: all, 0.1s;
 }
 
 /* Fix webkit select on OS X see issue #2351221 */
@@ -3011,4 +3014,20 @@ body.adminimal-theme ul.rules-operations .delete_event a:hover {
 
 body.page-admin-config-system-actions #edit-parent {
   margin-top: 30px;
+}
+
+body.sticky-actions .form-actions.form-wrapper {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #CCCCCC;
+  width: 100%;
+  left: 0;
+  padding: 20px 40px 8px;
+  margin: 0;
+  z-index: 999;
+}
+
+body.sticky-actions #page {
+  margin-bottom: 60px;
 }

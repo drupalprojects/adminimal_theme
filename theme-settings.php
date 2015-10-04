@@ -91,6 +91,13 @@ function adminimal_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('rounded_buttons'),
   );
 
+  $form['adminimal_custom']['sticky_actions'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Sticky form actions'),
+    '#description' => t('This will make the form actions div fixed bottom positioning. So for example when you visit the node edit page you wont need to scroll down to save/preview/delete the node. The form action buttons will be sticky to the bottom of the screen.'),
+    '#default_value' => theme_get_setting('sticky_actions'),
+  );
+
   $form['adminimal_custom']['avoid_custom_font'] = array(
     '#type' => 'checkbox',
     '#title' => t('Avoid using "Open Sans" font'),

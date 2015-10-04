@@ -1065,3 +1065,13 @@ body.adminimal-skin-material ul.rules-operations a:focus,
 body.adminimal-skin-material .rules-elements-add ul.action-links a:focus {
   text-decoration: none;
 }
+
+body.sticky-actions.adminimal-skin-material .form-actions.form-wrapper {
+  padding: 20px 40px 20px;
+  box-shadow: -20px 2px 40px rgba(0,0,0,0.2);
+  border-bottom: none;
+}
+
+body.sticky-actions.adminimal-skin-material #page {
+    margin-bottom: 80px;
+}

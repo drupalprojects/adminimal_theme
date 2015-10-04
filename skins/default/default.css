@@ -460,3 +460,7 @@ ul.action-links a:hover {
 .overlay #overlay-tabs {
   right: 2px;
 }
+
+body.sticky-actions .form-actions.form-wrapper {
+  box-shadow: -20px 2px 40px rgba(0,0,0,0.4);
+}
