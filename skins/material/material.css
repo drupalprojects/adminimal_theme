@@ -399,7 +399,7 @@ body.page-admin-appearance.adminimal-skin-material .theme-selector .operations l
 body.adminimal-skin-material.style-checkboxes input[type=checkbox],
 body.adminimal-skin-material.style-checkboxes input[type=radio] {
 -webkit-appearance:none; /* Safari and Chrome */
-  display: inline-block;
+  display: inline-block !important;
   position: relative;
   top: 3px;
   margin-right: 0.25em;
@@ -407,8 +407,8 @@ body.adminimal-skin-material.style-checkboxes input[type=radio] {
   background: #fff;
   border: 2px solid #757575;
   border-radius: 2px;
-  width: 14px;
-  height: 14px;
+  width: 14px !important;
+  height: 14px !important;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: background 0.5s ease;

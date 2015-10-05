@@ -3031,3 +3031,148 @@ body.sticky-actions .form-actions.form-wrapper {
 body.sticky-actions #page {
   margin-bottom: 60px;
 }
+
+.adminimal-theme fieldset.features-export-component.collapsed {
+  background: transparent;
+}
+
+.adminimal-theme fieldset.features-export-component .fieldset-title {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+.adminimal-theme.page-admin-structure-features fieldset {
+  box-shadow: none;
+  background: transparent;
+}
+
+.adminimal-theme.page-admin-structure-features fieldset legend {
+  background: transparent;
+}
+
+.adminimal-theme.page-admin-structure-features #edit-export fieldset.collapsible.collapse-processed .fieldset-legend {
+  padding-left: 10px;
+  background-position-x: 0px;
+  background-position-y: 19px;
+  margin-left: 0px;
+}
+
+.adminimal-theme.page-admin-structure-features #edit-export fieldset.collapsible.collapse-processed.collapsed .fieldset-legend {
+  background-position-y: 16px;
+}
+
+.adminimal-theme .features-export-parent #edit-export fieldset.collapsible legend {
+  padding-left: 10px;
+  margin-left: -12px;
+}
+
+.adminimal-theme .features-export-parent fieldset.collapsible {
+  margin-top: 0;
+  border: none;
+}
+
+.adminimal-theme .features-export-parent fieldset.collapsible.collapsed legend {
+  margin-left: 0px;
+}
+
+html.js .adminimal-theme #features-export-form fieldset.collapsed {
+  min-height: 40px;
+}
+
+.adminimal-theme #features-export-wrapper div.features-export-parent {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.adminimal-theme #features-filter span {
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 10px;
+  color: #929292;
+  background-color: #EFEFEF;
+  font-size: 0px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 0;
+  width: 10px;
+  height: 20px;
+  transition: all, 0.2s;
+}
+
+.adminimal-theme #features-filter span:hover{
+  background-color: #E05D5D;
+}
+
+#edit-features-filter-wrapper > div > div.form-item.form-type-textfield.form-item-features-filter {
+  margin-right: 10px;
+}
+
+.adminimal-theme #features-filter span:after {
+  content: "X";
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  left: 5px;
+  font-size: 10px;
+  width: 10px;
+  height: 11px;
+  color: #909090;
+  transition: all, 0.2s;
+}
+
+.adminimal-theme #features-filter span:hover:after {
+  color: #fff;
+}
+
+.adminimal-theme #features-filter .form-item.form-type-checkbox.form-item-checkall {
+  margin: 8px 2px;
+}
+
+.adminimal-theme #edit-features-filter {
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
+
+.adminimal-theme div.features-export-list {
+  background-color: #FFFFFF;
+  padding: 10px 5px;
+  border: none;
+}
+
+.adminimal-theme #features-export-form input[size="60"].form-text {
+  width: auto;
+}
+
+.adminimal-theme #features-export-form input[size="60"].form-text#edit-features-filter {
+  width: 200px;
+  padding-right: 30px;
+}
+
+.adminimal-theme #features-export-wrapper .component-added .form-type-checkbox,
+.adminimal-theme #features-export-wrapper .component-detected .form-type-checkbox,
+.adminimal-theme #features-export-wrapper .component-included .form-type-checkbox,
+.adminimal-theme #features-export-wrapper .features-conflict .form-item {
+  padding: 4px 8px;
+  margin-bottom: 8px;
+}
+
+.adminimal-theme #features-export-wrapper .form-item label.option {
+  font-size: 14px;
+  text-transform: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.adminimal-theme #features-export-wrapper div.component-added label.option {
+  position: relative;
+  top: -1px;
+}
+
+.adminimal-theme #features-legend .fieldset-wrapper .component-detected {
+  font-style: normal;
+}
