@@ -4,7 +4,7 @@
   .style-checkboxes input[type=radio],
   .style-checkboxes input[type=checkbox]#edit-delete {
     -webkit-appearance:none;
-    display: inline-block !important;
+    display: inline-block;
     position: relative;
     top: 3px;
     margin-right: 0.25em;
