@@ -3180,3 +3180,13 @@ html.js .adminimal-theme #features-export-form fieldset.collapsed {
 .adminimal-theme #features-legend .fieldset-wrapper .component-detected {
   font-style: normal;
 }
+
+#features-filter input {
+  display: inline-block;
+  width: 16px;
+}
+
+#features-filter label {
+  position: relative;
+  top: -1px;
+}
