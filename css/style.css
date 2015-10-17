@@ -842,10 +842,6 @@ input.form-autocomplete,input.form-text,input.form-file,textarea.form-textarea,s
   }
 }
 
-#module-filter-modules {
-  min-height: 0 !important;
-}
-
 input#edit-module-filter-name {
   background: transparent;
   border:none;
@@ -2117,17 +2113,17 @@ div.krumo-wrapper li {
 }
 
 #module-filter-tabs.bottom-fixed {
-    position: relative;
+  position: initial;
 }
 
 body.adminimal-theme div.dev-query {
-    background: none repeat scroll 0 0 #000000;
-    bottom: 0;
-    color: #82eb12;
-    display: block;
-    font-family: courier;
-    overflow: auto;
-    padding: 5px;
+  background: none repeat scroll 0 0 #000000;
+  bottom: 0;
+  color: #82eb12;
+  display: block;
+  font-family: courier;
+  overflow: auto;
+  padding: 5px;
 }
 
 /* Ckeditor Styling */

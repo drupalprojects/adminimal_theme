@@ -493,7 +493,7 @@ body.adminimal-skin-alternative fieldset legend {
   font-family: "Segoe UI", "Helvetica",sans-serif;
   font-size: 21px;
   font-weight: 100;
-  color: #AFAFAF;
+  color: #9E9E9E;
   margin-bottom: 2px;
 }
 
@@ -569,7 +569,7 @@ body.adminimal-skin-alternative #branding h1.page-title {
   font-weight: 300;
   line-height: 38px;
   margin: 0;
-  padding: 0 0 14px;
+  padding: 0 0 12px;
   letter-spacing: normal;
 }
 
@@ -637,4 +637,10 @@ body.adminimal-skin-alternative #permissions td.module {
 body.adminimal-skin-alternative div.form-type-radio div.description,
 body.adminimal-skin-alternative div.form-type-checkbox div.description {
   color: #AFAFAF;
+}
+
+body.adminimal-skin-alternative tr.even,
+body.adminimal-skin-alternative tr.odd {
+  background-color: #fff;
+  transition: all, 0.2s;
 }

@@ -41,7 +41,7 @@ div.vertical-tabs ul li.first a {
 }
 
 div.vertical-tabs .vertical-tabs-pane ul li.first a {
-  border-top: inherit;
+  border-top: 2px solid #0074BD;
 }
 
 div.vertical-tabs ul li.vertical-tab-button strong {
