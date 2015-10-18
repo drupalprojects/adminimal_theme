@@ -100,6 +100,15 @@ body.adminimal-skin-material #help p {
   font-size: 13px;
 }
 
+body.adminimal-skin-material div.messages ul.krumo-node {
+  margin : 0;
+}
+
+body.adminimal-skin-material div.messages ul.krumo-node li.krumo-child {
+  font-size: 12px;
+  padding-bottom: 0;
+}
+
 body.adminimal-skin-material div.warning {
   background-color: #fff3e0;
   border: none;
