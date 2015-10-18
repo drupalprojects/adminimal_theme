@@ -2126,6 +2126,11 @@ body.adminimal-theme div.dev-query {
   padding: 5px;
 }
 
+body.adminimal-theme div.dev-query strong {
+  color: #FFE414;
+}
+
+
 /* Ckeditor Styling */
 
 body.adminimal-theme .cke_reset_all,body.adminimal-theme  .cke_reset_all * {
@@ -3205,6 +3210,15 @@ body.sticky-actions #module-filter-submit.fixed.fixed-bottom .form-actions.form-
   padding: 32px 0 0 0px;
 }
 
+.sticky-actions #locale-translation-filter-form .form-actions {
+  float: left;
+  padding: 20px 0 0 3em;
+}
+
+[dir="rtl"] .sticky-actions #locale-translation-filter-form .form-actions {
+  padding: 20px 26px 0 2em;
+}
+
 [dir="rtl"] body.sticky-actions .form-actions.form-wrapper {
   left: initial;
   right: 0;
@@ -3241,4 +3255,14 @@ html[dir="rtl"].js input.form-autocomplete {
 
 [dir="rtl"] input.form-checkbox {
   margin-right: 16px !important;
+}
+
+body.adminimal-skin-alternative.adminimal-theme.page-admin-structure-features #edit-export > legend,
+body.adminimal-skin-alternative.adminimal-theme.page-admin-structure-features #edit-info > legend,
+body.adminimal-skin-alternative.adminimal-theme.page-admin-structure-features #edit-features-legend > legend {
+  padding-left: 0;
+}
+
+.page-admin-structure-features-create form div.buttons {
+  text-align: left;
 }
