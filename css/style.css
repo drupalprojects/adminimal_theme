@@ -2113,7 +2113,7 @@ div.krumo-wrapper li {
 }
 
 #module-filter-tabs.bottom-fixed {
-  position: initial;
+  position: fixed;
 }
 
 body.adminimal-theme div.dev-query {
@@ -3185,4 +3185,60 @@ html.js .adminimal-theme #features-export-form fieldset.collapsed {
 #features-filter label {
   position: relative;
   top: -1px;
+}
+
+body.sticky-actions #module-filter-submit.fixed.fixed-bottom .form-actions.form-wrapper {
+  position: relative;
+  width: initial;
+  border-top: none;
+  padding: 0;
+  margin: 0;
+}
+
+#locale-translation-filter-form .form-item-language, #locale-translation-filter-form .form-item-translation, #locale-translation-filter-form .form-item-group {
+  padding-right: 1em;
+  margin: 0 2em 0 0;
+  width: auto;
+}
+
+#locale-translation-filter-form .form-actions {
+  padding: 32px 0 0 0px;
+}
+
+[dir="rtl"] body.sticky-actions .form-actions.form-wrapper {
+  left: initial;
+  right: 0;
+}
+
+html[dir="rtl"].js input.form-autocomplete {
+  text-indent: 1em;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  [dir="rtl"] input.form-autocomplete,
+  [dir="rtl"] input.form-text,
+  [dir="rtl"] input.form-file,
+  [dir="rtl"] textarea.form-textarea,
+  [dir="rtl"] select.form-select {
+    -webkit-padding-start: 16px;
+    -webkit-padding-end: 8px;
+  }
+}
+
+[dir="rtl"] body.adminimal-theme div.admin-panel.admin h3 {
+  background-position-x: 100%;
+}
+
+[dir="rtl"] dl dd,
+[dir="rtl"] dl dl {
+  background-position-x: 100%;
+}
+
+[dir="rtl"] input.form-checkbox,
+[dir="rtl"] input.form-radio {
+  margin-left: 0.25em;
+}
+
+[dir="rtl"] input.form-checkbox {
+  margin-right: 16px !important;
 }
