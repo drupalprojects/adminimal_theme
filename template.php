@@ -38,6 +38,11 @@ function adminimal_preprocess_html(&$vars) {
   // Add conditional CSS for IE6.
   drupal_add_css($adminimal_path . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'weight' => 999, 'preprocess' => TRUE));
 
+  //Add Homebox module support
+  if (module_exists('homebox')) {
+    drupal_add_css($adminimal_path . '/css/homebox_custom.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 1));
+  }
+
   // Add theme name to body class.
   $vars['classes_array'][] = 'adminimal-theme';
 
