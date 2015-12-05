@@ -36,6 +36,11 @@ body.adminimal {
 
 .adminimal .content-header {
   background-color: #333;
+  padding: 1rem 0 0;
+}
+
+.adminimal.toolbar-tray-open.toolbar-fixed.toolbar-horizontal {
+  padding-top: 4rem !important;
 }
 
 .adminimal thead th {
@@ -147,6 +152,18 @@ body.adminimal {
 
 .adminimal .is-horizontal .tabs.primary .tabs__tab:first-child.is-active {
   box-shadow: -0.5rem 0px 0 #fff;
+}
+
+.adminimal .is-horizontal ul.tabs.secondary li:first-of-type {
+  margin-left: 0;
+}
+
+[dir="rtl"] .adminimal .is-horizontal ul.tabs.secondary li:first-of-type {
+  margin-left: 1em;
+}
+
+[dir="rtl"] .adminimal .is-horizontal ul.tabs.secondary li:first-of-type {
+  margin-right: 0;
 }
 
 .adminimal .vertical-tabs {
@@ -308,12 +325,12 @@ body.adminimal {
   box-shadow: none;
 }
 
-.js .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:hover,
-.js .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:hover,
-.js .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:hover,
-.js .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:focus,
-.js .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:focus,
-.js .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:focus {
+.js .adminimal .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:hover,
+.js .adminimal .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:hover,
+.js .adminimal .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:hover,
+.js .adminimal .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:focus,
+.js .adminimal .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:focus,
+.js .adminimal .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:focus {
   box-shadow: none;
 }
 
@@ -621,6 +638,8 @@ body.adminimal {
 
 .adminimal .dropbutton-single .dropbutton-action a {
   border-radius: 0 !important;
+  background-image: none;
+  background: #F5F5F2;
 }
 
 .adminimal .ui-dialog .ui-dialog-titlebar {
@@ -698,43 +717,47 @@ body.adminimal {
 
 /* Main menu icons. */
 
-.toolbar-icon-system-admin-content:active:before,
-.toolbar-icon-system-admin-content.is-active:before {
+.adminimal .toolbar-icon-system-admin-content:active:before,
+.adminimal .toolbar-icon-system-admin-content.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/file.svg);
 }
 
-.toolbar-icon-system-admin-structure:active:before,
-.toolbar-icon-system-admin-structure.is-active:before {
+.adminimal .toolbar-icon-system-admin-structure:active:before,
+.adminimal .toolbar-icon-system-admin-structure.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/orgchart.svg);
 }
 
-.toolbar-icon-system-themes-page:active:before,
-.toolbar-icon-system-themes-page.is-active:before {
+.adminimal .toolbar-icon-system-themes-page:active:before,
+.adminimal .toolbar-icon-system-themes-page.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/paintbrush.svg);
 }
 
-.toolbar-icon-entity-user-collection:active:before,
-.toolbar-icon-entity-user-collection.is-active:before {
+.adminimal .toolbar-icon-entity-user-collection:active:before,
+.adminimal .toolbar-icon-entity-user-collection.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/people.svg);
 }
 
-.toolbar-icon-system-modules-list:active:before,
-.toolbar-icon-system-modules-list.is-active:before {
+.adminimal .toolbar-icon-system-modules-list:active:before,
+.adminimal .toolbar-icon-system-modules-list.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/puzzlepiece.svg);
 }
 
-.toolbar-icon-system-admin-config:active:before,
-.toolbar-icon-system-admin-config.is-active:before {
+.adminimal .toolbar-icon-system-admin-config:active:before,
+.adminimal .toolbar-icon-system-admin-config.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/wrench.svg);
 }
 
-.toolbar-icon-system-admin-reports:active:before,
-.toolbar-icon-system-admin-reports.is-active:before {
+.adminimal .toolbar-icon-system-admin-reports:active:before,
+.adminimal .toolbar-icon-system-admin-reports.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/barchart.svg);
 }
 
-.toolbar-icon-help-main:active:before,
-.toolbar-icon-help-main.is-active:before {
+.adminimal .toolbar-icon-help-main:active:before,
+.adminimal .toolbar-icon-help-main.is-active:before {
   background-image: url(/core/themes/stable/images/core/icons/787878/questionmark-disc.svg);
 }
 /* Main menu icons end. */
+
+.adminimal.path-batch .layout-container {
+    padding-top: 1.3rem;
+}
