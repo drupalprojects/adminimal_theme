@@ -28,6 +28,7 @@ function adminimal_preprocess_html(&$vars) {
   // Add default styles.
   drupal_add_css($adminimal_path . '/css/reset.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => -999));
   drupal_add_css($adminimal_path . '/css/style.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 1));
+  drupal_add_css($adminimal_path . '/css/ckeditor.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 2));
 
   // Add conditional CSS for IE8 and below.
   drupal_add_css($adminimal_path . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => TRUE));
