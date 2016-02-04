@@ -992,7 +992,7 @@ ul.action-links li {
 
 ul.action-links a {
   padding-left: 15px;/* LTR */
-  font: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
   font-size: 23px;
   font-weight: 300;
   background: transparent url(../images/add.png) no-repeat 0 center;
