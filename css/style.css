@@ -677,7 +677,8 @@ table.system-status-report tr.warning {
 /* Fieldsets */
 fieldset {
   border: solid 1px #ddd;
-  border-top: 3px solid #0074BD;
+  border-top: none;
+  box-shadow: 0px -3px 0 #0074BD;
   padding: 12px;
   margin: 0 0 20px;
 }
@@ -763,6 +764,7 @@ input.empty {
 /* Filter */
 .filter-wrapper {
   border-top: 0;
+  box-shadow: none;
   padding: 10px 2px;
 }
 
