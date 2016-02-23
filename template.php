@@ -28,7 +28,6 @@ function adminimal_preprocess_html(&$vars) {
   // Add default styles.
   drupal_add_css($adminimal_path . '/css/reset.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => -999));
   drupal_add_css($adminimal_path . '/css/style.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 1));
-  drupal_add_css($adminimal_path . '/css/ckeditor.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 2));
 
   // Add conditional CSS for IE8 and below.
   drupal_add_css($adminimal_path . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => TRUE));
@@ -70,6 +69,11 @@ function adminimal_preprocess_html(&$vars) {
   // Add icons to the admin configuration page.
   if (theme_get_setting('avoid_custom_font')) {
     drupal_add_css($adminimal_path . '/css/avoid_custom_font.css', array('group' => CSS_THEME, 'weight' => 9000, 'preprocess' => TRUE));
+  }
+
+  // Load CKEditor styles if enabled in settings.
+  if (theme_get_setting('adminimal_ckeditor')) {
+    drupal_add_css($adminimal_path . '/css/ckeditor-adminimal.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 2));
   }
 
   // Define Default media queries.
