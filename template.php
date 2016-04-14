@@ -86,6 +86,11 @@ function adminimal_preprocess_html(&$vars) {
     $media_query_tablet = theme_get_setting('media_query_tablet');
   }
 
+  // Use Bootstrap Gids.
+  if (theme_get_setting('use_bootstrap_grids')) {
+    drupal_add_css($adminimal_path . '/css/bootstrap-grids.css', array('group' => CSS_THEME, 'weight' => 1000, 'preprocess' => TRUE));
+  }
+
   // Load custom Adminimal skin.
   $adminimal_skin = theme_get_setting('adminimal_theme_skin');
   if ((!is_null($adminimal_skin))) {
