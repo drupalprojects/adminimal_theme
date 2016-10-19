@@ -20,6 +20,10 @@
   src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNShsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
 }
 
+html {
+  zoom: 1.1;
+}
+
 body.adminimal {
   font: normal 81.3%/1.538em "Open Sans", sans-serif;
 }
