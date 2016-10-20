@@ -769,3 +769,40 @@ body.adminimal {
 .adminimal.path-batch .layout-container {
     padding-top: 1.3rem;
 }
+
+/* Module: Views */
+.adminimal .views-display-top {
+  background-color: #fafafa;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.adminimal .views-displays {
+  border: 1px solid #e8e8e8;
+}
+
+.adminimal .views-admin .form-edit .form-actions {
+  border-color: #e8e8e8;
+  background-color: #fafafa;
+}
+
+.adminimal .views-ui-display-tab-bucket .views-display-setting:nth-of-type(even) {
+  background-color: inherit;
+}
+
+.adminimal .views-displays .tabs.secondary a {
+  border-radius: 0;
+}
+
+.adminimal .view-preview-form__title {
+  background-color: #fafdfe;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 1.2em;
+}
+
+.adminimal .views-preview-wrapper {
+  border: 1px solid #e8e8e8;
+}
+
+.adminimal .views-ui-dialog .views-override {
+  background-color: #f6f6f6;
+}
