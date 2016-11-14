@@ -177,8 +177,8 @@ body.adminimal {
 
 .adminimal .vertical-tabs {
   border-radius: 0;
-  border: none;
-  background: transparent;
+  border: 1px solid #b5b5b5;
+  background: #f2f2f0;
 }
 
 .adminimal .vertical-tabs__panes {
