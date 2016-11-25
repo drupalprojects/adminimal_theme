@@ -22,6 +22,43 @@ function adminimal_preprocess_maintenance_page(&$vars) {
  */
 function adminimal_preprocess_html(&$vars) {
 
+  // watchdog('Emergency', 'This is a test emergency watchdog mesage' , NULL , WATCHDOG_EMERGENCY);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Debug', 'This is a test debug watchdog mesage' , NULL , WATCHDOG_DEBUG);
+  // watchdog('Notice', 'This is a test notice watchdog mesage' , NULL , WATCHDOG_NOTICE);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Warning', 'This is a test warning watchdog mesage' , NULL , WATCHDOG_WARNING);
+  // watchdog('Debug', 'This is a test debug watchdog mesage' , NULL , WATCHDOG_DEBUG);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Error', 'This is a test error watchdog mesage' , NULL , WATCHDOG_ERROR);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Notice', 'This is a test notice watchdog mesage' , NULL , WATCHDOG_NOTICE);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Debug', 'This is a test debug watchdog mesage' , NULL , WATCHDOG_DEBUG);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Notice', 'This is a test notice watchdog mesage' , NULL , WATCHDOG_NOTICE);
+  // watchdog('Critical', 'This is a test critical watchdog mesage' , NULL , WATCHDOG_CRITICAL);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Alert', 'This is a test alert watchdog mesage' , NULL , WATCHDOG_ALERT);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Debug', 'This is a test debug watchdog mesage' , NULL , WATCHDOG_DEBUG);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+  // watchdog('Notice', 'This is a test notice watchdog mesage' , NULL , WATCHDOG_NOTICE);
+  // watchdog('Debug', 'This is a test debug watchdog mesage' , NULL , WATCHDOG_DEBUG);
+  // watchdog('Info', 'This is a test info watchdog mesage' , NULL , WATCHDOG_INFO);
+
+
   // Get adminimal folder path.
   $adminimal_path = drupal_get_path('theme', 'adminimal');
 
@@ -72,7 +109,7 @@ function adminimal_preprocess_html(&$vars) {
   }
 
   // Load CKEditor styles if enabled in settings.
-  if (theme_get_setting('adminimal_ckeditor')) {
+  if (theme_get_setting('adminimal_ckeditor') and theme_get_setting('adminimal_theme_skin') != 'dark') {
     drupal_add_css($adminimal_path . '/css/ckeditor-adminimal.css', array('group' => CSS_THEME, 'media' => 'all', 'weight' => 2));
   }
 
@@ -463,4 +500,19 @@ function adminimal_table($variables) {
   $output .= "</table>\n";
   $output .= "</div>\n";
   return $output;
+}
+
+/**
+ * Set dark skin for CKEditor.
+ * Implements hook_ckeditor_settings_alter().
+ */
+function adminimal_ckeditor_settings_alter(&$settings) {
+
+  // Check if selected adminimal skin is dark.
+  if (theme_get_setting('adminimal_theme_skin') == 'dark') {
+    $adminimal_path = drupal_get_path('theme', 'adminimal');
+    global $base_url;
+    $settings['skin'] = 'adminimal-dark, '. $base_url .'/'. $adminimal_path . '/skins/dark/ckeditor/';
+    array_push($settings['contentsCss'], $base_url .'/'. $adminimal_path . '/skins/dark/ckeditor/contents.css');
+  }
 }

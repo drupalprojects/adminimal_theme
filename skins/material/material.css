@@ -1123,3 +1123,20 @@ html.js .module-filter-inputs-wrapper .form-item.form-type-checkbox,
 html.js .module-filter-inputs-wrapper .form-item.form-type-radio {
   background: transparent;
 }
+
+body.adminimal-skin-material .ctools-twisty {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+  border-width: 4px 4px 0;
+  line-height: 0;
+  right: 6px;
+  position: absolute;
+  padding: 0;
+  top: 16px;
+}
+
+body.adminimal-skin-material .ctools-dropbutton-processed.open .ctools-twisty {
+  top: 12px;
+}

@@ -3052,6 +3052,10 @@ body.adminimal-skin-alternative.adminimal-theme.page-admin-structure-features #e
  * Hide dummy checkbox in Fast Permissions Administration (FPA) see #2653436.
  * by @rcodina.
  */
-.fpa-container .dummy-checkbox {
+.adminimal-theme .fpa-container .dummy-checkbox {
   display: none !important;
+}
+
+.adminimal-theme.page-admin-reports-dblog #block-system-help .content {
+  margin-bottom: 3em;
 }
