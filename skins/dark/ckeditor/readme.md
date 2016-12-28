@@ -8,12 +8,8 @@ documentation.
 
 Features
 -------------------
-"Moono-lisa" is a monochromatic skin, which offers a modern, flat and minimalistic look which blends very well in modern design.
+"Adminimal Dark" is a monochromatic skin, which offers a modern, dark and minimalistic look which blends very well in modern design.
 It comes with the following features:
-
-- Chameleon feature with brightness.
-- High-contrast compatibility.
-- Graphics source provided in SVG.
 
 Directory Structure
 -------------------
