@@ -36,7 +36,6 @@ body.adminimal {
 .adminimal h1,
 .adminimal .heading-a {
   font-weight: 300;
-  margin-bottom: 19px;
   margin-bottom: 1rem;
   font-size: 2.35em;
   line-height: 1.2em;
@@ -92,7 +91,6 @@ body.adminimal {
 
 .adminimal .tabs.primary {
   margin: 0;
-  margin: 0;
 }
 
 .adminimal .tabs.primary .tabs__tab.is-active {
@@ -109,7 +107,7 @@ body.adminimal {
 
 [dir="rtl"] .is-collapse-enabled .tabs__trigger {
   border-left: 1px solid transparent;
-  border-radius: 0 0 0 0;
+  border-radius: 0;
 }
 
 .adminimal .is-open .tabs__tab.is-active {
