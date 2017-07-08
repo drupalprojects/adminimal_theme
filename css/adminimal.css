@@ -608,8 +608,12 @@ body.adminimal {
 
   input[type=checkbox]:checked,
   input[type=checkbox]:disabled:checked,
+  input[type=checkbox].error:checked,
+  input[type=checkbox].error:focus:checked,
   input[type=radio]:checked,
-  input[type=radio]:disabled:checked{
+  input[type=radio]:disabled:checked,
+  input[type=radio].error:checked,
+  input[type=radio].error:focus:checked {
     background: #0074BD;
     box-shadow: inset 0px 0px 0px 3px #fff;
   }
